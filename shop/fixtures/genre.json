@@ -1,0 +1,129 @@
+[{
+    "pk": 1,
+    "model": "shop.genre",
+    "fields": {
+      "name": "rock",
+      "friendly_name": "Rock"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "shop.genre",
+    "fields": {
+      "name": "indie_alternative",
+      "friendly_name": "Indie / Alternative"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "shop.genre",
+    "fields": {
+      "name": "metal_punk",
+      "friendly_name": "Metal & Punk"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "shop.genre",
+    "fields": {
+      "name": "folk_singer_songwriter",
+      "friendly_name": "Folk & Singer-songwriter"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "shop.genre",
+    "fields": {
+      "name": "electronic_dance",
+      "friendly_name": "Electronic & Dance"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "shop.genre",
+    "fields": {
+      "name": "pop",
+      "friendly_name": "Pop"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "shop.genre",
+    "fields": {
+      "name": "country",
+      "friendly_name": "Country"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "shop.genre",
+    "fields": {
+      "name": "jazz",
+      "friendly_name": "Jazz"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "shop.genre",
+    "fields": {
+      "name": "funk_soul",
+      "friendly_name": "Funk / Soul"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "shop.genre",
+    "fields": {
+      "name": "classical",
+      "friendly_name": "Classical"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "shop.genre",
+    "fields": {
+      "name": "hip_hop",
+      "friendly_name": "Hip Hop"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "shop.genre",
+    "fields": {
+      "name": "latin",
+      "friendly_name": "Latin"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "shop.genre",
+    "fields": {
+      "name": "stage_screen",
+      "friendly_name": "Stage & Screen"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "shop.genre",
+    "fields": {
+      "name": "reggae",
+      "friendly_name": "Reggae"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "shop.genre",
+    "fields": {
+      "name": "blues",
+      "friendly_name": "Blues"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "shop.genre",
+    "fields": {
+      "name": "world",
+      "friendly_name": "World"
+    }
+  }
+]

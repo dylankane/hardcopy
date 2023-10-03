@@ -1,0 +1,338 @@
+[
+ {
+   "pk": 1,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340155",
+   	"name": "Dark Side Of The Moon",
+   	"artist": "Pink Floyd",
+   	"description": "The Dark Side of the Moon is the eighth studio album by the English rock band Pink Floyd, released on 1 March 1973 by Harvest Records in the UK and Capitol Records in the US.",
+   	"release_date": 1973,
+   	"category": 1,
+   	"genre": 1,
+   	"price": 30.99,
+   	"image_url": "https://i.discogs.com/mMxJHZMv_EUMgDso6PMI1HKsHHntkdG2ULQ2KW-1vHc/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NzEw/NC0xNDcyNTcyOTMx/LTUxMDQuanBlZw.jpeg",
+   	"image": "dark-side-of-the-moon.jpg"
+   }
+ },
+ {
+   "pk": 2,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340156",
+   	"name": "Is This It",
+   	"artist": "The Strokes",
+   	"description": "Is This It is the debut studio album by American band the Strokes",
+   	"release_date": 2001,
+   	"category": 1,
+   	"genre": 2,
+   	"price": 24.99,
+   	"image_url": "https://i.discogs.com/UMLNSgraQ68YSUb0-5DF1P19vUxPZ36TWNL9ALRlG1Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTAz/NzQtMTQ1Njk0MTMz/My0zMDY2LmpwZWc.jpeg",
+   	"image": "is-this-it.jpg"
+   }
+ },
+ {
+   "pk": 3,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340157",
+   	"name": "The Clash",
+   	"artist": "The Clash",
+   	"description": "The Clash is the debut studio album by English punk rock band, The Clash. It was released on 8 April 1977 through CBS Records",
+   	"release_date": 1977,
+   	"category": 1,
+   	"genre": 3,
+   	"price": 28.99,
+   	"image_url": "https://i.discogs.com/btwyRchLnxlg0KHMq32rXSy6ci6uanqtiIu6pP5G6I4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDg4/NzY0LTE1NDc4NTAz/ODYtMjkxNC5qcGVn.jpeg",
+   	"image": "the-clash.jpg"
+   }
+ },
+ {
+   "pk": 4,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340158",
+   	"name": "Helplessness Blues",
+   	"artist": "Fleet Foxes",
+   	"description": "Helplessness Blues is the second studio album by American band Fleet Foxes, released on May 3, 2011, by Sub Pop and Bella Union. The album received universal acclaim from critics, going on to be nominated for Best Folk Album at the 54th Annual Grammy Awards.",
+   	"release_date": 2011,
+   	"category": 1,
+   	"genre": 4,
+   	"price": 25.99,
+   	"image_url": "https://i.discogs.com/hi_oDfICk-8urdkpUO1REGR-g6O-imk86lJ1jgs7nDc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTY2/NDUtMTMyMTg2Mzc2/MC5qcGVn.jpeg",
+   	"image": "helplessness.jpg"
+   }
+ },
+ {
+   "pk": 5,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340159",
+   	"name": "Music For the Jilted generation",
+   	"artist": "The Prodigy",
+   	"description": "Music for the Jilted Generation is the second studio album by English electronic music group the Prodigy. It was first released in 4 July 1994 by XL Recordings in the United Kingdom and by Mute Records in the United States.",
+   	"release_date": 1994,
+   	"category": 1,
+   	"genre": 5,
+   	"price": 22.99,
+   	"image_url": "https://i.discogs.com/r_KqzFE3mSa7xZR-Uz-UPMpkX_MB269nUUAAk21CNa4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MjYt/MTM3MDg2MjY3Ny0y/NjI3LmpwZWc.jpeg",
+   	"image": "music-for-the-jilted-generation.jpg"
+   }
+ },
+ {
+   "pk": 6,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340160",
+   	"name": "Renaissance",
+   	"artist": "Beyoncé",
+   	"description": "Renaissance is the seventh studio album by American singer Beyoncé, released on July 29, 2022, by Parkwood Entertainment and Columbia Records.",
+   	"release_date": 2022,
+   	"category": 1,
+   	"genre": 6,
+   	"price": 32.99,
+   	"image_url": "https://i.discogs.com/dI9opFrp7aL5bORSUJ6OQkC77YFSg649YOUOk7nUuMo/rs:fit/g:sm/q:90/h:534/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDM3/NjczLTE2OTIwODk3/ODgtNzUwNy5qcGVn.jpeg",
+   	"image": "renaissance.jpg"
+   }
+ },
+ {
+   "pk": 7,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340161",
+   	"name": "Red Headed Stranger",
+   	"artist": "Willie Nelson",
+   	"description": "Red Headed Stranger is the eighteenth studio album by American outlaw country singer Willie Nelson, released in 1975.",
+   	"release_date": 1975,
+   	"category": 1,
+   	"genre": 7,
+   	"price": 29.99,
+   	"image_url": "https://i.discogs.com/fhat5CADYWANhC1T0U-kY4l9dmgeU2VCB0HtMVVqWVQ/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjA0/NTAtMTUzOTgzNjE4/OC01OTMzLmpwZWc.jpeg",
+   	"image": "red-headed-stranger.jpg"
+   }
+ },
+ {
+   "pk": 8,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340162",
+   	"name": "A love Supreme",
+   	"artist": "John Coltrane",
+   	"description": "A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964 at Van Gelder Studio in Englewood Cliffs, New Jersey, leading a quartet featuring pianist McCoy Tyner, bassist Jimmy Garrison and drummer Elvin Jones.",
+   	"release_date": 1964,
+   	"category": 1,
+   	"genre": 8,
+   	"price": 26.99,
+   	"image_url": "https://i.discogs.com/fGpBfJZOBOXcombzBDMfneERKusKwmEO03qCaTid4sY/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4OTA3/NDctMTQyODg4ODc4/NC00ODEzLmpwZWc.jpeg",
+   	"image": "a-love-supreme.jpg"
+   }
+ },
+ {
+   "pk": 9,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340163",
+   	"name": "Songs In The Key Of Life",
+   	"artist": "Stevie Wonder",
+   	"description": "Songs in the Key of Life is the eighteenth studio album by American singer, songwriter and musician Stevie Wonder. A double album, it was released on September 28, 1976, by Tamla Records, a division of Motown.",
+   	"release_date": 1976,
+   	"category": 1,
+   	"genre": 9,
+   	"price": 29.99,
+   	"image_url": "https://i.discogs.com/YzhtLts7LkthVlFHqcaq5ZNZ59GEwslZA9KCw556CSc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NTIz/My0xNDI2MTY2MTc0/LTkwODYuanBlZw.jpeg",
+   	"image": "song-in-the-key-of-life.jpg"
+   }
+ },
+ {
+   "pk": 10,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340164",
+   	"name": "Bach: The Goldberg Variations",
+   	"artist": "Glenn Gould",
+   	"description": "Bach: The Goldberg Variations is the debut album of Canadian classical pianist Glenn Gould. An interpretation of Johann Sebastian Bach's Goldberg Variations, the 1956 record launched Gould's career as a renowned international pianist, and became one of the most well-known piano recordings",
+   	"release_date": 1956,
+   	"category": 1,
+   	"genre": 10,
+   	"price": 42.99,
+   	"image_url": "https://i.discogs.com/nm7HPC5MHJMa9pqt4ODA8i1qUVGhdeQg6krEBPRxulQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Nzk5/MTctMTYwODYyMTQz/MC04NTE3LmpwZWc.jpeg",
+   	"image": "the-golderg-variations.jpg"
+   }
+ },
+ {
+   "pk": 11,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340165",
+   	"name": "Enter the Wu-Tang (36 Chambers)",
+   	"artist": "Wu-Tang Clan",
+   	"description": "Enter the Wu-Tang (36 Chambers) is the debut studio album by the American hip-hop group Wu-Tang Clan, released on November 9, 1993, by BMG, RCA Records and Loud Records. Recording sessions took place during late 1992 to early 1993 at Firehouse Studio in New York City.",
+   	"release_date": 1993,
+   	"category": 1,
+   	"genre": 11,
+   	"price": 25.99,
+   	"image_url": "https://i.discogs.com/JVtYto3PpCrhttx7V3aR09GKcOlPw4SE8RYrdxaWPTk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Mzc0/OS0xMTg1MTM0MTM1/LmpwZWc.jpeg",
+   	"image": "enter-the-wu-tang.jpg"
+   }
+ },
+ {
+   "pk": 12,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340166",
+   	"name": "Buena Vista Social Club",
+   	"artist": "Buena Vista Social Club",
+   	"description": "Buena Vista Social Club is the debut album by the Buena Vista Social Club, an ensemble of Cuban musicians directed by Juan de Marcos González",
+   	"release_date": 1997,
+   	"category": 1,
+   	"genre": 12,
+   	"price": 26.99,
+   	"image_url": "https://i.discogs.com/ESuMEYQ9fu88_rndyHJP7SNx4Y1PjibOlKZ2oTBi_xQ/rs:fit/g:sm/q:90/h:520/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjE2/NDEtMTMyNTcwMzYy/MS5qcGVn.jpeg",
+   	"image": "buena-vista-social-club.jpg"
+   }
+ },
+ {
+   "pk": 13,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340167",
+   	"name": "The West Side Story",
+   	"artist": "The West Side Story",
+   	"description": "West Side Story is the soundtrack album to the 1961 film West Side Story, featuring music by Leonard Bernstein and lyrics by Stephen Sondheim.",
+   	"release_date": 1961,
+   	"category": 1,
+   	"genre": 13,
+   	"price": 15.99,
+   	"image_url": "https://i.discogs.com/QeEjP0d-L-rW6ycf5ms3bKRI5n7bjnjcLI9UUVDVFeM/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzM0/MDcxLTE0OTU1MDIz/ODktMzczNS5qcGVn.jpeg",
+   	"image": "the-west-side-story.jpg"
+   }
+ },
+ {
+   "pk": 14,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340168",
+   	"name": "Catch A Fire",
+   	"artist": "The Wailers",
+   	"description": "Catch a Fire is the fifth studio album by the reggae band The Wailers, released in April 1973. It was their first album released by Island Records.",
+   	"release_date": 1973,
+   	"category": 1,
+   	"genre": 14,
+   	"price": 23.99,
+   	"image_url": "https://i.discogs.com/OIfdx5gdoPvpNCOkEJJxGTo3BxdPvR21Ue4a8vZuRIE/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjcz/My0xNTQ5NTQyMjM3/LTk0NjMuanBlZw.jpeg",
+   	"image": "catch-a-fire.jpg"
+   }
+ },
+ {
+   "pk": 15,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340169",
+   	"name": "The Real Folk Blues",
+   	"artist": "John Lee Hooker",
+   	"description": "The Real Folk Blues is an album by blues musician John Lee Hooker that was recorded in Chicago in 1966 and released by the Chess label.",
+   	"release_date": 1966,
+   	"category": 1,
+   	"genre": 15,
+   	"price": 21.99,
+   	"image_url": "https://i.discogs.com/OIfdx5gdoPvpNCOkEJJxGTo3BxdPvR21Ue4a8vZuRIE/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjcz/My0xNTQ5NTQyMjM3/LTk0NjMuanBlZw.jpeg",
+   	"image": "real-folk-blues.jpg"
+   }
+ },
+ {
+   "pk": 16,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340170",
+   	"name": "The Rising Of The Moon: Irish Songs of Rebellion",
+   	"artist": "The Clancy Brothers",
+   	"description": "The Rising of the Moon: Irish Songs of Rebellion is a collection of traditional Irish folk songs performed by The Clancy Brothers and Tommy Makem. It was the group's first album and was initially recorded in 1956",
+   	"release_date": null,
+   	"category": 1,
+   	"genre": 16,
+   	"price": 22.99,
+   	"image_url": "https://i.discogs.com/N2hqtqx6BtrqknnCJdLGeno8Ox1o2A1JCaEyMGO5XK8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjMw/MDM1LTE1MzkzMDQx/OTItNDcxNC5qcGVn.jpeg",
+   	"image": "rising-of-the-moon.jpg"
+   }
+ },
+ {
+   "pk": 17,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340171",
+   	"name": "DENON DP-29F Belt Drive Turntable - Silver",
+   	"artist": "",
+   	"description": "The Denon DP-29F Belt Drive Turntable makes playing analog records simple thanks to its fully automatic operation. With a touch of a button the music starts playing and when the record's over the tonearm returns to its original position and the turntable stops. This makes sure you don't accidentally scratch your record.This turntable has a built-in RIAA phono equalizer, which allows you to connect it straight to an amp that doesn't have an equalizer.",
+   	"release_date": null,
+   	"category": 2,
+   	"genre": null,
+   	"price": 199.99,
+   	"image_url": "https://media.currys.biz/i/currysprod/10213568?$l-large$&fmt=auto",
+   	"image": "turntable1.webp"
+   }
+ },
+ {
+   "pk": 18,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340172",
+   	"name": "LENCO LS-100 Belt Drive Bluetooth Turntable - Brown Wood",
+   	"artist": "",
+   	"description": "Play your record collection with the Lenco LS-100 Belt Drive Bluetooth Turntable. There's a pair of full-sized speakers included in the package, so you can fill your room with high-quality audio.The record player is equipped with auto-stop function, so your records will stop turning when they're over. Also, the hinged plastic cover protects your records from dust.",
+   	"release_date": null,
+   	"category": 2,
+   	"genre": null,
+   	"price": 149.99,
+   	"image_url": "https://media.currys.biz/i/currysprod/10229894?$l-large$&fmt=auto",
+   	"image": "turntablesystem2.webp"
+   }
+ },
+ {
+   "pk": 19,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340173",
+   	"name": "Cup Pink Floyd - Prism",
+   	"artist": "",
+   	"description": "These mugs are not suitable for the microwave or dishwasher",
+   	"release_date": null,
+   	"category": 3,
+   	"genre": null,
+   	"price": 10.99,
+   	"image_url": "https://cdn.europosters.eu/image/1300/mugs/pink-floyd-prism-i46900.jpg",
+   	"image": "pink-floyd-prism.jpg"
+   }
+ },
+ {
+   "pk": 20,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340174",
+   	"name": "Folklore",
+   	"artist": "Taylor Swift",
+   	"description": "Folklore is the eighth studio album by American singer-songwriter Taylor Swift. It was a surprise album, released on July 24, 2020, via Republic Records",
+   	"release_date": null,
+   	"category": 4,
+   	"genre": 6,
+   	"price": 5.99,
+   	"image_url": "https://i.discogs.com/xUFPuI083LKQbtPq8Ma4bG-uBLso17JrBTKrvQsOaNo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Njcw/OTMwLTE1OTU2MjYw/MDMtNjUxOC5qcGVn.jpeg",
+   	"image": "folklore.jpg"
+   }
+ },
+ {
+   "pk": 21,
+   "model": "shop.product",
+   "fields": {
+   	"sku": "pp5001340175",
+   	"name": "The Ballad Of Darren",
+   	"artist": "Blur",
+   	"description": "The Ballad of Darren, the ninth album from Britpop pioneers Blur, catches four friends reconvening in their 50s to tackle daunting adult problems — the end of romance and the onset of middle age",
+   	"release_date": null,
+   	"category": 5,
+   	"genre": 2,
+   	"price": 32.99,
+   	"image_url": "https://i.discogs.com/qB9HFaesrp3LxJRE9xhzjZu93BwzSjT9ySXUu2YemQQ/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MzEz/NTE4LTE2OTAwMTky/MTgtMTA1My5qcGVn.jpeg",
+   	"image": "ballad-of-darren.jpg"
+   }
+ }
+]

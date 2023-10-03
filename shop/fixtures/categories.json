@@ -1,0 +1,41 @@
+[{
+    "pk": 1,
+    "model": "shop.category",
+    "fields": {
+      "name": "vinyl",
+      "friendly_name": "Vinyl"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "shop.category",
+    "fields": {
+      "name": "equipment",
+      "friendly_name": "Equipment"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "shop.category",
+    "fields": {
+      "name": "merchandise",
+      "friendly_name": "Merchandise"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "shop.category",
+    "fields": {
+      "name": "clearance",
+      "friendly_name": "Clearance"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "shop.category",
+    "fields": {
+      "name": "new_releases",
+      "friendly_name": "New Releases"
+    }
+  }
+]
