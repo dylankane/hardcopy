@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+    border-radius: 0 !important;
+}
+
+body {
+    /* background-color: #f5efcd; */
+    background-color: #f4f1e0;
+    font-family: 'Oswald';
+    color: #321e1e;
+    border-radius: 0 !important;
+}
+
+a {
+    color: #321e1e;
+}
+
+.jumbotron {
+    background-image: url('/media/jumbotron-image-3-modified.jpg');
+    background-size: cover;
+}
+
+.card, .card-footer{
+    background-color: #f4f1e0;
+}
+
+#search-btn {
+    background-color: #321e1e;
+}
+
+.fa-magnifying-glass {
+    color: #f4f1e0;
+}
+
+.btn-dark {
+    background-color: black;
+}
+
+.tags {
+    color: #321e1e;
+}
