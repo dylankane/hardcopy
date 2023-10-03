@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+                <div class="image-container my-5">
+                    {% if product.image %}
+                        <a href="{{ product.image.url }}" target="_blank">
+                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                        </a>
+                        {% else %}
+                        <a href="">
+                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="product-details-container mb-5 mt-md-5 text-center">
+                    <p class="mb-2">Album Title: <strong>{{ product.name }}</strong></p>
+                    {% if product.artist %}
+                    <p class="mb-2">Artist: <strong>{{ product.artist }}</strong></p>
+                    {% else %}
+                    <p class="mb-0"></p>
+                    {% endif %}
+                    <p class="mb-2">{{ product.description }}</p>
+                    <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
+                    {% if product.category %}
+                    <p class="small mt-1 mb-0 tags">
+                        <a class="mx-3" href="{% url 'shop' %}?category={{ product.category.name }}">
+                            <i class="fa-solid fa-hashtag"></i>{{ product.category.friendly_name }}
+                        </a>
+                        <a class="mx-3" href="{% url 'shop' %}?genre={{ product.genre.name }}">
+                            <i class="fa-solid fa-hashtag"></i>{{ product.genre.friendly_name }}
+                        </a>
+                    </p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
