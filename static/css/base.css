@@ -29,7 +29,10 @@ a:hover {
 
 .card, .card-footer{
     background-color: #f4f1e0;
+    font-family: Noto Sans;
+    font-size: .9em;
 }
+
 
 #search-btn {
     background-color: #321e1e;
@@ -62,4 +65,13 @@ a:hover {
 
 li {
     list-style-type: none;
+}
+
+#sidebar {
+    font-size : .9em;
+}
+
+.sidebar-lists {
+    overflow:scroll; 
+    height:250px;
 }

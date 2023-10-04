@@ -15,16 +15,16 @@
         <div class="row">
             <div class="col-2 mt-5">
 
-                <div class="w-100 border-right border-dark">
+                <div class="w-100 border-right border-dark" id="sidebar">
                     <h3>SORT BY</h3>
                         <ul class="p-0">
-                            <li class="m-2"><a class="p-2" href="#" class="">Price (low to high)</a></li>
-                            <li class="m-2"><a class="p-2" href="#" class="">Price(high to low)</a></li>
-                            <li class="m-2"><a class="p-2" href="#" class="">Year(old to young)</a></li>
-                            <li class="m-2"><a class="p-2" href="#" class="">Year(young to old)</a></li>
+                            <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc" class="">Price(low to high)</a></li>
+                            <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=desc" class="">Price(high to low)</a></li>
+                            <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=asc" class="">Year(old to young)</a></li>
+                            <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=desc" class="">Year(young to old)</a></li>
                         </ul>
                     <h3>GENRES</h3>
-                        <ul class="p-0">
+                        <ul class="p-0 sidebar-lists">
                             <li class="m-2"><a class="p-2" href="#" class="">Rock</a></li>
                             <li class="m-2"><a class="p-2" href="#" class="">Indie/Alternative</a></li>
                             <li class="m-2"><a class="p-2" href="#" class="">Metal & Punk</a></li>
@@ -41,6 +41,12 @@
                             <li class="m-2"><a class="p-2" href="#" class="">Reggae</a></li>
                             <li class="m-2"><a class="p-2" href="#" class="">Blues</a></li>
                             <li class="m-2"><a class="p-2" href="#" class="">World / Traditional</a></li>
+                        </ul>
+                    <h3>ARTISTS</h3>
+                        <ul class="p-0 sidebar-lists">
+                            {% for artist in artists %}
+                            <li class="m-2"><a class="p-2" href="#" class="">{{ artist }}</a></li>
+                            {% endfor %}
                         </ul>
                 </div>
 
@@ -63,29 +69,40 @@
                     <div class="row mt-1 mb-2">
                         <div class="row">
                             {% for product in products %}
-                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
                                 <div class="card h-100 border-0">
                                     {% if product.image %}
                                     <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                        <img class="card-img-top img-fluid mb-2" src="{{ product.image.url }}" alt="{{ product.name }}">
                                     </a>
                                     {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
                                         <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image2" alt="{{ product.name }}">
                                     </a>
                                     {% endif %}
-                                    <div class="card-body pb-0">
+                                    <div class="card-body p-0 w-100">
                                         <p class="mb-0">{{ product.name }}</p>
-                                    </div>
-                                    <div class="card-footer pt-0 border-0 text-left">
-                                        <div class="row">
-                                            <div class="col">
-                                                {% if product.artist %}
-                                                <p class="lead mb-0 text-left font-weight-bold">{{ product.artist }}</p>
+                                        {% if product.artist %}
+                                                <p class="mb-0 text-left"><a>{{ product.artist }}</a></p>
                                                 {% else %}
                                                     <p></p>
                                                 {% endif %}
+                                    </div>
+                                    <div class="card-footer p-0 border-0 text-left">
+                                        <div class="row">
+                                            <div class="col">
+                                                <p class="small mt-0 mb-0 tags">
+                                                    <a class="" href="{% url 'shop' %}?category={{ product.category.name }}">
+                                                        <i class="fa-solid fa-hashtag"></i>{{ product.category.friendly_name }}
+                                                    </a>
+                                                </p>
+                                                <p class="small mt-0 mb-0 tags">
+                                                    <a class="" href="{% url 'shop' %}?genre={{ product.genre.name }}">
+                                                        <i class="fa-solid fa-hashtag"></i>{{ product.genre.friendly_name }}
+                                                    </a>
+                                                </p>
                                                 <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                                <a class=" text-left btn border-dark rounded-0">Add to cart</a>
                                             </div>
                                         </div>
                                     </div>
