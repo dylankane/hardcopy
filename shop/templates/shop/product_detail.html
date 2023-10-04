@@ -26,6 +26,11 @@
                     {% else %}
                     <p class="mb-0"></p>
                     {% endif %}
+                    {% if product.release_date %}
+                    <p class="mb-2">Year Released: <strong>{{ product.release_date }}</strong></p>
+                    {% else %}
+                    <p class="mb-0"></p>
+                    {% endif %}
                     <p class="mb-2">{{ product.description }}</p>
                     <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
                     {% if product.category %}
