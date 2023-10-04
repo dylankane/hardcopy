@@ -11,50 +11,91 @@
           <a class="btn btn-dark btn-lg border-0 rounded-0 mx-2" href="#" role="button">CEARANCE</a>
         </p>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">ALL PRODUCTS</h2>
-                <hr class="w-50 mb-1">
+            <div class="col-2 mt-5">
+
+                <div class="w-100 border-right border-dark">
+                    <h3>SORT BY</h3>
+                        <ul class="p-0">
+                            <li class="m-2"><a class="p-2" href="#" class="">Price (low to high)</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Price(high to low)</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Year(old to young)</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Year(young to old)</a></li>
+                        </ul>
+                    <h3>GENRES</h3>
+                        <ul class="p-0">
+                            <li class="m-2"><a class="p-2" href="#" class="">Rock</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Indie/Alternative</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Metal & Punk</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Folk</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Electronic & Dance</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Pop</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Country</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Jazz</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Funk & Soul</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Classical</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Hip Hop</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Latin</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Stage & Screen</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Reggae</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">Blues</a></li>
+                            <li class="m-2"><a class="p-2" href="#" class="">World / Traditional</a></li>
+                        </ul>
+                </div>
+
             </div>
-        </div>
-        <div class="row">
-            <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-2">
-                    <div class="row">
-                        {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                </a>
-                                {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image2" alt="{{ product.name }}">
-                                </a>
-                                {% endif %}
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
-                                </div>
-                                <div class="card-footer pt-0 border-0 text-left">
-                                    <div class="row">
-                                        <div class="col">
-                                            {% if product.artist %}
-                                            <p class="lead mb-0 text-left font-weight-bold">{{ product.artist }}</p>
-                                            {% else %}
-                                                <p></p>
-                                            {% endif %}
-                                            <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+            <div class="col">
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <h2 class="logo-font">PRODUCTS</h2>
+                    {% for c in current_categories %}
+                    <a class="tags p-2" href="{% url 'shop' %}?category={{ c.name }}">
+                        <i class="fa-solid fa-hashtag"></i>{{ c.friendly_name }}
+                    </a>
+                {% endfor %}
+                    <hr class="w-50 mb-1">
+                </div>
+            </div>
+            <div class="row">
+            
+                <div class="product-container col-10 offset-1">
+                    <div class="row mt-1 mb-2">
+                        <div class="row">
+                            {% for product in products %}
+                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                                <div class="card h-100 border-0">
+                                    {% if product.image %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    </a>
+                                    {% else %}
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image2" alt="{{ product.name }}">
+                                    </a>
+                                    {% endif %}
+                                    <div class="card-body pb-0">
+                                        <p class="mb-0">{{ product.name }}</p>
+                                    </div>
+                                    <div class="card-footer pt-0 border-0 text-left">
+                                        <div class="row">
+                                            <div class="col">
+                                                {% if product.artist %}
+                                                <p class="lead mb-0 text-left font-weight-bold">{{ product.artist }}</p>
+                                                {% else %}
+                                                    <p></p>
+                                                {% endif %}
+                                                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        {% endfor %}
                         </div>
-                    {% endfor %}
                     </div>
+                
                 </div>
-
             </div>
         </div>
     </div>

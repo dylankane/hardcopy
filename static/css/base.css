@@ -15,6 +15,13 @@ a {
     color: #321e1e;
 }
 
+a:hover {
+    /* border: 1px solid black; */
+    background-color: #321e1e !important;
+    color: white !important;
+    text-decoration: none;
+}
+
 .jumbotron {
     background-image: url('/media/jumbotron-image-3-modified.jpg');
     background-size: cover;
@@ -38,4 +45,21 @@ a {
 
 .tags {
     color: #321e1e;
+}
+
+#dropdownMenuLink {
+    font-family: "Oswald";
+}
+
+.dropdown-menu {
+    background-color: #f4f1e0;
+}
+
+.dropdown-divider {
+    border-color:#321e1e;
+    border-width: .1em;
+}
+
+li {
+    list-style-type: none;
 }
