@@ -38,13 +38,14 @@
     {% endblock %}
 
     <title>Hard Copy {% block extra_title %}{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon (1).ico">
   </head>
   <body>
     <header>
       <nav class="navbar navbar-light">
         <div class="container-fluid">
           <div class text-center>
-            <a href="" class=""><h1>HARD COPY</h1></a>
+            <h1><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h1>
           </div>
           <form class="d-flex input-group w-auto" method="GET" action="{% url 'shop' %}">
             <input type="text" name="q" class="form-control rounded-0" placeholder="Search" aria-label="Search"/>
@@ -64,20 +65,32 @@
         </div>
         <hr class="w-100">
         <div class="row text-center w-100">
-          <div class="col">
-            <a href="">VINYLS</a>
+          <div class=" col dropdown show">
+            <a class="dropdown-toggle p-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              VINYLS
+            </a>
+          
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="{% url 'shop' %}?category=vinyl,new_releases,clearance">All Vinyls</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Genres</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">New Releases</a>
+
+            </div>
+
           </div>
           <div class="col">
-            <a href="">EQUIPMENT</a>
+            <a class="p-2" href="{% url 'shop' %}?category=equipment">EQUIPMENT</a>
           </div>
           <div class="col">
-            <a href="">MERCH</a>
+            <a class="p-2" href="{% url 'shop' %}?category=merchandise">MERCH</a>
           </div>
           <div class="col">
-            <a href="">NEW RELEASES</a>
+            <a class="p-2" href="{% url 'shop' %}?category=new_releases">NEW RELEASES</a>
           </div>
           <div class="col">
-            <a href="">CLEARANCE</a>
+            <a class="p-2" href="{% url 'shop' %}?category=clearance">CLEARANCE</a>
           </div>
         </div>
       </nav>
