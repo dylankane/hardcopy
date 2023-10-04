@@ -75,3 +75,8 @@ li {
     overflow:scroll; 
     height:250px;
 }
+
+.fa-heart {
+    color: red;
+    font-size: large;
+}

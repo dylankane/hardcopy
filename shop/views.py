@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Genre
 
 
 def index(request):
@@ -9,11 +9,16 @@ def index(request):
     including sorting and search criteria"""
 
     products = Product.objects.all()
-    artists = Product.objects.order_by('artist').values_list('artist', flat=True).distinct()
+    genre_list = Genre.objects.all()
+    artists = Product.objects.order_by('artist').values_list(
+        'artist', flat=True).distinct()
+    current_artist = None
     query = None
     categories = None
+    genres = None
     sort = None
     direction = None
+    # artist = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -38,6 +43,15 @@ def index(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
 
+        if 'genre' in request.GET:
+            genres = request.GET['genre'].split(',')
+            products = products.filter(genre__name__in=genres)
+            genres = Genre.objects.filter(name__in=genres)
+
+        if 'artist' in request.GET:
+            current_artist = request.GET['artist']
+            products = products.filter(artist=current_artist)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -60,8 +74,11 @@ def index(request):
     context = {
         'products': products,
         'artists': artists,
+        'current_artist': current_artist,
         'search_term': query,
         'current_categories': categories,
+        'current_genres': genres,
+        'genre_list': genre_list,
         'current_sorting': current_sorting,
     }
     return render(request, 'shop/index.html', context)
