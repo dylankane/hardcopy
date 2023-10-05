@@ -85,3 +85,7 @@ li {
     color: red;
     font-size: large;
 }
+
+.cart-image {
+    max-height: 150px;
+}

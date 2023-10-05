@@ -15,12 +15,69 @@
         </div>
     </div>
 
-
     <div class="row">
         <div class="col">
             {% if cart_items %}
-            <div>
-                {{ cart_items }}
+            <div class="table-responsive">
+                <table class="table table-sm table-borderless">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">PRODUCTS</th>
+                        <th scope="col"></th>
+                        <th scope="col">PRICE</th>
+                        <th scope="col">QUANTITY</th>
+                        <th scope="col">SUBTOTAL</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in cart_items %}
+                        <tr>
+                            <td class="w-25">
+                                <img class="img-fluid cart-image" src="{{ item.product.image.url }}">
+                            </td>
+                            <td class="align-middle">
+                                <p>{{ item.product.name }}</p>
+                                <p class="text-muted">{{ item.product.artist }}</p>
+                            </td>
+                            <td class="align-middle">
+                                <p>€{{ item.product.price }}</p>
+                            </td>
+                            <td class="align-middle">
+                                <p class="w-25">{{ item.quantity }}</p>
+                            </td>
+                            <td class="align-middle">
+                                <p>{{ item.product.price }}</p>
+                            </td>
+                        </tr>
+                        
+                    {% endfor %}
+                    <tr>
+                        <td colspan="5" class="pt-5 text-right">
+                            <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                            {% if free_delivery_delta > 0 %}
+                                <p class="mb-1 text-danger">
+                                    You could get free delivery by spending just <strong>€{{ free_delivery_delta }}</strong> more!
+                                </p>
+                            {% endif %}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">
+                            <a href="{% url 'shop' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">KEEP SHOPPING</span>
+                            </a>
+                            <a href="" class="btn btn-black rounded-0 btn-lg">
+                                <span class="text-uppercase">CHECKOUT</span>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                  </table>
             </div>
             {% else %}
             <div class="col">
