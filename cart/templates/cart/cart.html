@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col my-5 text-center">
+            <h2>CART[1]</h2>
+            <hr>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col">
+            {% if cart_items %}
+            <div class="row">
+                <div class="col">
+                </div>
+            </div>
+            {% else %}
+            <div class="col">
+                <div class="row">
+                    <h2>Nothing here yet</h2>
+                </div>
+                <div class="row">
+                    <p>Lets fix that!</p>
+                </div>
+                <div class="row">
+                    <p>
+                        <a class="btn btn-dark btn-lg border-0 rounded-0 mx-2" href="{% url 'shop' %}"
+                            role="button">KEEP SHOPPING</a>
+                    </p>
+                </div>
+            </div>
+            {% endif %}
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

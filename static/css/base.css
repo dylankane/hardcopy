@@ -27,6 +27,11 @@ a:hover {
     background-size: cover;
 }
 
+.banner {
+    background-color: black;
+    color: white;
+}
+
 .card, .card-footer{
     background-color: #f4f1e0;
     font-family: Noto Sans;
