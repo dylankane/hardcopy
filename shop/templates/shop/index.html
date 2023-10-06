@@ -91,7 +91,7 @@
                                                     </a>
                                                 </p>
                                                 <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                                                <a class=" text-left btn border-dark rounded-0">Add to cart</a><span class="float-right"><i class="far fa-heart red"></i></span>
+                                                <a href="{% url 'add_to_cart' product.id %}" class=" text-left btn border-dark rounded-0">Add to cart</a><span class="float-right"><i class="far fa-heart red"></i></span>
                                             </div>
                                         </div>
                                     </div>

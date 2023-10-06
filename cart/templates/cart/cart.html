@@ -44,7 +44,7 @@
                                 <p>€{{ item.product.price }}</p>
                             </td>
                             <td class="align-middle p-5 w-25">
-                                <form class="form update-form" method="POST" action="">
+                                <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                                     {% csrf_token %}
 
                                     <div class="form-group">
@@ -73,13 +73,14 @@
                                                     </span>
                                                 </button>
                                             </div>
-                                            <div class="input-group-append ml-2">
-                                                <a class="update-link p-2"><i class="fa-solid fa-arrows-rotate"></i></a>
-                                            </div>
+                                            
 
                                         </div>
                                     </div>
                                 </form>
+                               
+                                <a class="update-link p-2"><i class="fa-solid fa-arrows-rotate"></i></a>
+                            
                             </td>
                             <td class="align-middle text-center">
                                 <p>€{{ item.product.price }}</p>
@@ -151,7 +152,10 @@
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function (e) {
+        console.log('Update link clicked');
         var form = $(this).prev('.update-form');
+        console.log(form);
+        console.log(form.serialize());
         form.submit();
     })
 
