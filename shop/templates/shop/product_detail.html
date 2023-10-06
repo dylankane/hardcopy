@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="product-details-container mb-5 mt-md-5 text-center">
+                <div class="product-details-container mb-5 mt-md-5 text-left">
                     <p class="mb-2">Album Title: <strong>{{ product.name }}</strong></p>
                     {% if product.artist %}
                     <p class="mb-2">Artist: <strong>{{ product.artist }}</strong></p>
@@ -47,11 +47,34 @@
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
+
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
                                     <div class="input-group">
-                                        <input class="form-control qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" id="id_qty_{{ product.id }}">
+
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-qty btn btn-dark rounded-0"
+                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                                <span>
+                                                    <i class="fa-solid fa-minus"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+
+                                        <input class="form-control qty_input" type="number"
+                                            name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}"
+                                            id="id_qty_{{ product.id }}">
+
+                                        <div class="input-group-append">
+                                            <button class="increment-qty btn btn-dark rounded-0"
+                                                data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                                <span>
+                                                    <i class="fa-solid fa-plus"></i>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    
                                     </div>
                                 </div>
                             </div>
@@ -73,4 +96,9 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'shop/includes/quantity_input_script.html' %}
 {% endblock %}
