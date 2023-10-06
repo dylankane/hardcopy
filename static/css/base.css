@@ -4,11 +4,14 @@ html {
 }
 
 body {
-    /* background-color: #f5efcd; */
+    
     background-color: #f4f1e0;
     font-family: 'Oswald';
-    color: #321e1e;
+    color: #321e1e !important;
     border-radius: 0 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #321e1e;
 }
 
 a {
@@ -18,9 +21,10 @@ a {
 a:hover {
     /* border: 1px solid black; */
     background-color: #321e1e !important;
-    color: white !important;
+    color: #f4f1e0 !important;
     text-decoration: none;
 }
+
 
 .jumbotron {
     background-image: url('/media/jumbotron-image-3-modified.jpg');
@@ -47,8 +51,19 @@ a:hover {
     color: #f4f1e0;
 }
 
+.btn {
+    color:#321e1e;
+}
+
 .btn-dark {
-    background-color: black;
+    background-color: #321e1e;
+    color: #f4f1e0
+}
+
+
+.btn-dark:hover {
+    background-color: #f4f1e0;
+    color: #321e1e;
 }
 
 .tags {
@@ -88,4 +103,43 @@ li {
 
 .cart-image {
     max-height: 150px;
+}
+
+thead {
+    background-color: #321e1e;
+    color: #f4f1e0;
+}
+
+.form-control {
+    background-color: #f4f1e0;
+    border: 1px solid #321e1e;
+}
+
+.qty_input {
+    background-color: #f4f1e0;
+    border: none !important;
+}
+
+.remove-item,
+.update-link {
+    cursor: pointer;
+}
+
+/* .remove-item:hover, */
+/* .update-link:hover {
+    background-color: #f4f1e0 !important;
+    color: #321e1e !important;
+    border: 1px solid #321e1e;
+} */
+
+.remove-item:hover {
+    background-color: #f4f1e0 !important;
+}
+
+td p {
+    margin: 0;
+}
+
+#tally-box{
+    background-color: #321e1e24;
 }
