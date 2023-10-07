@@ -10,6 +10,7 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """ Add item to cart with its quantity """
 
+    source = request.GET.get('source')
     quantity = int(request.POST.get('quantity'))
     # redirect_url = request.GET.get('redirect_url')
     redirect_url = request.POST.get('redirect_url')
@@ -21,7 +22,18 @@ def add_to_cart(request, item_id):
         cart[item_id] = quantity
 
     request.session['cart'] = cart
-    return redirect(redirect_url)
+
+    if source == 'product_detail':
+        # Redirect to the product detail page
+        return redirect(reverse('product_detail', args=[item_id]))
+    elif source == 'shop':
+        # Redirect to the home page
+        return redirect(reverse('shop'))  # Use the appropriate URL name for your home page view
+    else:
+        # Default to redirecting to the home page
+        return redirect(reverse('shop'))
+
+    # return redirect(redirect_url)
 
 
 def adjust_cart(request, item_id):

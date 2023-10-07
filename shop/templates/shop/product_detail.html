@@ -44,7 +44,7 @@
                     </p>
                     {% endif %}
 
-                    <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
+                    <form class="form" action="{% url 'add_to_cart' product.id %}?source=product_detail" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
 
