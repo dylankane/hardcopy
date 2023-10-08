@@ -1,4 +1,7 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
+
+from shop.models import Product
 
 
 def view_cart(request):
@@ -10,6 +13,7 @@ def view_cart(request):
 def add_to_cart(request, item_id):
     """ Add item to cart with its quantity """
 
+    product = Product.objects.get(pk=item_id)
     source = request.GET.get('source')
     quantity = int(request.POST.get('quantity'))
     # redirect_url = request.GET.get('redirect_url')
@@ -20,17 +24,19 @@ def add_to_cart(request, item_id):
         cart[item_id] += quantity
     else:
         cart[item_id] = quantity
+        messages.success(
+            request, f'{product.name} has been successfully added to your cart'
+            )
 
     request.session['cart'] = cart
 
     if source == 'product_detail':
-        # Redirect to the product detail page
         return redirect(reverse('product_detail', args=[item_id]))
+
     elif source == 'shop':
-        # Redirect to the home page
-        return redirect(reverse('shop'))  # Use the appropriate URL name for your home page view
+        return redirect(reverse('shop'))
+
     else:
-        # Default to redirecting to the home page
         return redirect(reverse('shop'))
 
     # return redirect(redirect_url)
