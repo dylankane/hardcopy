@@ -142,16 +142,19 @@ td p {
 
 #tally-box{
     background-color: #321e1e24;
+    /* background-color: #dfd2bd; */
+    /* background-color: #e1d9cc; */
 }
 
 /* toast messages */
 
 .message-box {
-    background-color: #f4f1e0;
+    background-color: #9a9a9a;
     position: fixed;
     top: 72px;
     right: 15px;
     z-index: 99999999999;
+    opacity: 1 !important;
 }
 
 
@@ -161,7 +164,14 @@ td p {
 
 .toast-body,
 .toast-header {
+    opacity: 1 !important;
     background-color: #321e1e24;
     color:#321e1e;
     font-family: Noto Sans;
+}
+
+.cart-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
