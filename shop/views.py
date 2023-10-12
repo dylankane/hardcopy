@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Genre
+from .forms import ProductForm
 
 
 def index(request):
@@ -94,3 +95,26 @@ def product_detail(request, product_id):
         'product': product
     }
     return render(request, 'shop/product_detail.html', context)
+
+
+def add_product(request):
+    """For adding products to store """
+
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added product')
+            return redirect(reverse('add_product'))
+        else:
+            messages.error(request, 'Failed to add product. \
+                Please check the form data is correct')
+    else:
+        form = ProductForm()
+
+    template = 'shop/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
