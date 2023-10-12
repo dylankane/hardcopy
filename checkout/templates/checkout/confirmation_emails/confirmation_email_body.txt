@@ -1,0 +1,24 @@
+Hi {{ order.full_name }}!
+
+We have recieved your order. 
+
+This is your confirmation email for your order at Hard Copy Vinyl Records. Your order info is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+Delivery: €{{ order.delivery_cost }}
+Grand Total: €{{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+We've got your phone number: {{ order.phone_number }} and email: {{ order.email }} incase we need to get in touch with you.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thanks for your order!
+
+Happy Listening
+
+Hard Copy
