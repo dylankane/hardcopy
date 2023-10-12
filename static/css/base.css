@@ -83,6 +83,10 @@ a:hover {
     border-width: .1em;
 }
 
+/* #user-options {
+    min-width: 550px;
+} */
+
 li {
     list-style-type: none;
 }
@@ -118,6 +122,19 @@ thead {
 .qty_input {
     background-color: #f4f1e0;
     border: none !important;
+}
+
+.allauth-form-content input {
+    border-radius: 0;
+    border-color:#321e1e;
+}
+
+.allauth-form-content label:not([for='id_remember']) {
+    display: none;
+}
+
+.allauth-form-content input::placeholder {
+    color:#9a9a9a;
 }
 
 .remove-item,

@@ -74,8 +74,25 @@
 
 				<div class="row">
 					<ul class="list-inline list-unstyled text-center">
-						<li class="list-inline-item">
-							<a href="#" class="p-2"><i class="fa-solid fa-user"></i></a>
+
+						<li class="list-inline-item dropdown">
+							<a data-toggle="dropdown" href="#" class="p-2" aria-haspopup="true" aria-expanded="false">
+								<i class="fa-solid fa-user"></i>
+							</a>
+
+							<div class="dropdown-menu border-0 rounded-0 mt-4 mr-5 w-100" aria-labelledby="user-options" id="user-options">
+								{% if request.user.is_authenticated %}
+									{% if request.user.is_superuser %}
+										<a href="#" class="dropdown-item">Stock Management</a>
+									{% endif %}
+									<a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+									<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+								{% else %}
+									<a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+									<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+								{% endif %}
+							</div>
+
 						</li>
 						<li class="list-inline-item">
 							<a href="{% url 'view_cart' %}" class="p-2">
