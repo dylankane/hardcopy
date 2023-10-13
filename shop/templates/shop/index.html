@@ -117,6 +117,16 @@
                                                 </form>
                                                 <span class="float-right"><i class="far fa-heart red"></i></span>
                                             </div>
+                                            <div class="row">
+                                                {% if request.user.is_superuser %}
+                                                <div class="col">
+                                                    <small><a href="{% url 'edit_product' product.id %}">Edit</a></small>
+                                                </div>
+                                                <div class="col">
+                                                    <small><a href="{% url 'delete_product' product.id %}">Delete</a></small>
+                                                </div>
+                                                {% endif %}   
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
