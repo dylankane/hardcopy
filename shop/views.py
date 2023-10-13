@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
 from .models import Product, Category, Genre
 from .forms import ProductForm
@@ -97,8 +98,12 @@ def product_detail(request, product_id):
     return render(request, 'shop/product_detail.html', context)
 
 
+@login_required
 def add_product(request):
     """For adding products to store """
+    if not request.user.is_superuser:
+        messgae.error(request, 'Sorry only staff members have access to that')
+        return redirect(reverse('index'))
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -120,11 +125,15 @@ def add_product(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_product(request, product_id):
     """For editing products"""
+    if not request.user.is_superuser:
+        messgae.error(request, 'Sorry only staff members have access to that')
+        return redirect(reverse('index'))
 
     product = get_object_or_404(Product, pk=product_id)
-    
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
@@ -147,7 +156,13 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_product(request, product_id):
+    """To delete a product"""
+    if not request.user.is_superuser:
+        messgae.error(request, 'Sorry only staff members have access to that')
+        return redirect(reverse('index'))
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'You have successfully deleted the product!')
