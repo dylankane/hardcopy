@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models.functions import Lower
 from .models import Product, Category, Genre
 from .forms import ProductForm
+from reviews.models import CustomerReviews
 
 
 def index(request):
@@ -91,9 +92,11 @@ def product_detail(request, product_id):
     """ A view to show individual produt and its details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = CustomerReviews.objects.filter(product=product)
 
     context = {
-        'product': product
+        'product': product,
+        'reviews': reviews,
     }
     return render(request, 'shop/product_detail.html', context)
 
@@ -167,3 +170,13 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'You have successfully deleted the product!')
     return redirect(reverse('index'))
+
+
+def review_list(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    reviews = CustomerReviews.filter(product=product)
+
+    context = {
+        'reviews': reviews
+    }
+    return render(request, 'shop/product_detail.html', context)
