@@ -13,4 +13,12 @@ urlpatterns = [
         'delete_product/<int:product_id>/',
         views.delete_product,
         name='delete_product'),
+    path(
+        'wish_list/<int:product_id>/',
+        views.wish_list,
+        name='wish_list'),
+    path(
+        'list_of_wishes/',
+        views.list_of_wishes,
+        name='list_of_wishes'),
 ]

@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <hr class="w-75">
+            <div class="row">
+                <div class="col text-center mt-3">
+                    <h2>YOUR WISH LIST</h2>
+                    <hr class="w-50">
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="row">
+                        {% for product in products %}
+                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
+                            <div class="card h-100 border-0">
+                                {% if product.product.image %}
+                                <a href="{% url 'product_detail' product.product.id %}">
+                                    <img class="card-img-top img-fluid mb-2" src="{{ product.product.image.url }}"
+                                        alt="{{ product.name }}">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'product_detail' product.product.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image2.jpg"
+                                        alt="{{ product.name }}">
+                                </a>
+                                {% endif %}
+                                <div class="card-body p-0 w-100">
+                                    <span class="float-right">
+                                        <form class="wish_form" action="{% url 'wish_list' product.product.id %}"method="POST">
+                                            {% csrf_token %}
+                                            <button class="wish-list-remove" type="submit" name="wish_list_id"
+                                                value="{{product.id}}" title="Remove from wish list"><i class="fa-regular fa-trash-can fa-lg"></i></button>
+                                        </form>
+                                    </span>
+                                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.product.price }}</p>
+                                    <p class="mb-0">
+                                        <a class="p-1" href="{% url 'product_detail' product.product.id %}">{{ product.product.name }}</a>
+                                    </p>
+                                    {% if product.product.artist %}
+                                    <p class="mb-0 text-left">
+                                        <a class="p-1" href="{% url 'shop' %}?artist={{ product.product.artist }}">{{ product.product.artist }}</a>
+                                    </p>
+                                    {% endif %}
+                                </div>
+                                <div class="card-footer p-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col mt-2">
+                                                <span class="float-left ml-4">
+                                                    <p class="small tags">
+                                                        <a class="p-1" href="{% url 'shop' %}?category={{ product.product.category.name }}">
+                                                            <i class="fa-solid fa-hashtag"></i>{{ product.product.category.friendly_name }}
+                                                        </a>
+                                                    </p>
+                                                </span>
+                                                <span class="float-right mr-4">
+                                                    <p class="small tags">
+                                                        <a class="p-1" href="{% url 'shop' %}?genre={{ product.product.genre.name }}">
+                                                            <i class="fa-solid fa-hashtag"></i>{{ product.product.genre.friendly_name }}
+                                                        </a>
+                                                    </p>
+                                                </span>
+                                            
+                                            <form class="form text-center"
+                                                action="{% url 'add_to_cart' product.product.id %}?source=list_of_wishes"
+                                                method="POST">
+                                                {% csrf_token %}
+                                                <input class="hidden-qty" type="number" name="quantity" value="1"
+                                                    min="1" max="99" data-item_id="{{ product.product.id }}"
+                                                    id="id_qty_{{ product.product.id }}">
+                                                <input type="submit" class="btn-dark rounded-0 text-uppercase mt-3 w-75"
+                                                    value="Add to Cart">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% empty %}
+                        <div class="row-12 text-center w-100 pt-5">
+                            <p>
+                                You dont have anything in your wish list yet, browse all our products here:
+                            </p>
+                            <a href="{% url 'shop' %}" class="btn-dark p-2">ALL PRODUCTS</a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

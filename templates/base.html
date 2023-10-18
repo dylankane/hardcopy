@@ -74,6 +74,18 @@
 
 				<div class="row">
 					<ul class="list-inline list-unstyled text-center">
+						{% if request.user.is_authenticated %}
+						<li class="list-inline-item">
+							<a href="{% url 'list_of_wishes' %}" class="p-2">
+								<i class="fa-sharp fa-solid fa-bookmark"></i>
+								<!-- [{% if product_count %}
+								{{ product_count }}
+								{% else %}
+								0
+								{% endif %}] -->
+							</a>
+						</li>
+						{% endif %}
 
 						<li class="list-inline-item dropdown">
 							<a data-toggle="dropdown" href="#" class="p-2" aria-haspopup="true" aria-expanded="false">
@@ -92,8 +104,8 @@
 									<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
 								{% endif %}
 							</div>
-
 						</li>
+
 						<li class="list-inline-item">
 							<a href="{% url 'view_cart' %}" class="p-2">
 								<i class="fa-solid fa-cart-shopping"></i>
