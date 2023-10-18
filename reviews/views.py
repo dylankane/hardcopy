@@ -3,8 +3,10 @@ from django.contrib import messages
 from shop.models import Product
 from .models import CustomerReviews
 from .forms import ReviewForm
+from django.contrib.auth.decorators import login_required
 
 
+@login_required
 def add_review(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
 

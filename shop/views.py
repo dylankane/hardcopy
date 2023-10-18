@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category, Genre, WishList
 from .forms import ProductForm
 from reviews.models import CustomerReviews
+from django.db.models import Avg
 # from django.contrib.auth.models import User
 
 
@@ -114,6 +115,8 @@ def product_detail(request, product_id):
     user = request.user
     product = get_object_or_404(Product, pk=product_id)
     reviews = CustomerReviews.objects.filter(product=product)
+    review_count = reviews.count()
+    review_avg = reviews.aggregate(Avg("rating", default=0))
 
     if request.user.is_authenticated:
         wish_item = WishList.objects.filter(user=user, product=product)
@@ -126,6 +129,8 @@ def product_detail(request, product_id):
             'reviews': reviews,
             'wished_for': wished_for,
             'user': user,
+            'review_count': review_count,
+            'review_avg': review_avg,
         }
         return render(request, 'shop/product_detail.html', context)
 
@@ -133,6 +138,8 @@ def product_detail(request, product_id):
         context = {
             'product': product,
             'reviews': reviews,
+            'review_count': review_count,
+            'review_avg': review_avg,
         }
         return render(request, 'shop/product_detail.html', context)
 
@@ -211,9 +218,11 @@ def delete_product(request, product_id):
 def review_list(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = CustomerReviews.filter(product=product)
+    review_count = reviews.count()
 
     context = {
-        'reviews': reviews
+        'reviews': reviews,
+        'review_count': review_count,
     }
     return render(request, 'shop/product_detail.html', context)
 

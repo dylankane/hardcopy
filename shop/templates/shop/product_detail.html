@@ -114,16 +114,56 @@
             </div>
         </div>
     </div>
-    <hr>
+    <hr class="w-50">
+    <div class="row">
+        <div class="col-12 text-center pb-5">
+            
+                <!-- <h3>Leave a Review</h3> -->
+                <a href="{% url 'add_review' product.id %}" class="btn-dark p-2 w-50">WRITE A REVIEW FOR {{ product.name|upper }}</a>
+            
+        </div>
+        <!-- <hr class="w-50"> -->
+    </div>
+    
     <div class="row mb-5">
         <div class="col-6">
-            <h3>Reviews</h3>
+            <h3>Reviews [
+                {% if review_count %}
+				{{ review_count }}
+				{% else %}
+				0
+				{% endif %}
+                ]</h3>
+                <h2>Average Rating [
+                {% if review_avg %}
+				{{ review_avg }}
+				{% else %}
+				0
+				{% endif %}
+                    ] </h2>
             {% for review in reviews %}
             <div class="reviews" style="padding: 10px;">
                 <p class="text-muted">By: <strong>{{ review.author }}</strong> |
                     <span class="text-muted">{{ review.created_on }}</span>
                 </p>
-                <p>{{ review.rating }}/5</p>
+                <p>
+                <span class="pr-4">{{ review.rating }}/5</span>
+                {% if review.rating == 1  %}
+                <span><i class="fa-regular fa-face-tired fa-lg"></i></span>
+                {% endif %}
+                {% if review.rating == 2  %}
+                <span><i class="fa-regular fa-face-frown fa-lg"></i></i></span>
+                {% endif %}
+                {% if review.rating == 3  %}
+                <span><i class="fa-regular fa-face-meh fa-lg"></i></span>
+                {% endif %}
+                {% if review.rating == 4  %}
+                <span><i class="fa-regular fa-face-smile fa-lg"></i></span>
+                {% endif %}
+                {% if review.rating == 5  %}
+                <span><i class="fa-regular fa-face-kiss-wink-heart fa-lg"></i></span>
+                {% endif %}
+                </p>
                 {% if user == review.author %}
                 {{ review.body | linebreaks }}
                 <a href="#" class="badge text-bg-light px-2">Delete</a>
@@ -131,14 +171,13 @@
                 {% else %}
                 {{ review.body | linebreaks }}
                 {% endif %}
+                <hr>
             </div>
             {% endfor %}
         </div>
-        <div class="col-6">
-            <h3>Leave a Review</h3>
-            <a href="{% url 'add_review' product.id %}" class="btn-dark p-2">Wirite a review for {{ product.name }}</a>
-        </div>
+        
     </div>
+    
     <hr>
 </div>
 {% endblock %}
