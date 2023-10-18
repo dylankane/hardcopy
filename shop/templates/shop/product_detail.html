@@ -24,28 +24,44 @@
             <div class="product-details-container mb-5 mt-md-5 text-left">
                 <p class="mb-2">Album Title: <strong>{{ product.name }}</strong></p>
                 {% if product.artist %}
-                <p class="mb-2">Artist: <strong>{{ product.artist }}</strong></p>
+                    <p class="mb-2">Artist: <strong>{{ product.artist }}</strong></p>
                 {% else %}
-                <p class="mb-0"></p>
+                    <p class="mb-0"></p>
                 {% endif %}
                 {% if product.release_date %}
-                <p class="mb-2">Year Released: <strong>{{ product.release_date }}</strong></p>
+                    <p class="mb-2">Year Released: <strong>{{ product.release_date }}</strong></p>
                 {% else %}
-                <p class="mb-0"></p>
+                    <p class="mb-0"></p>
                 {% endif %}
-                <p class="mb-2">{{ product.description }}</p>
-                <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
+                    <p class="mb-2">{{ product.description }}</p>
+                    <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
                 {% if product.category %}
-                <p class="small mt-1 mb-0 tags">
+                    <p class="small mt-1 mb-0 tags">
                     <a class="mx-3" href="{% url 'shop' %}?category={{ product.category.name }}">
                         <i class="fa-solid fa-hashtag"></i>{{ product.category.friendly_name }}
                     </a>
                     <a class="mx-3" href="{% url 'shop' %}?genre={{ product.genre.name }}">
                         <i class="fa-solid fa-hashtag"></i>{{ product.genre.friendly_name }}
                     </a>
-                </p>
+                    </p>
                 {% endif %}
 
+                <form class="wish_form" action="{% url 'wish_list' product.id %}" method="POST">
+                    {% csrf_token %}
+                    {% if user.is_authenticated %}
+                        {% if wished_for %}
+                            <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}"><i
+                                    class="fa-sharp fa-solid fa-bookmark fa-beat"></i></button>
+                        {% else %}
+                            <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}"><i
+                                    class="fa-sharp fa-regular fa-bookmark"></i></button>
+                        {% endif %}
+                    {% else %}
+                        <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}"><i
+                                class="fa-sharp fa-regular fa-bookmark"></i></button>
+                    {% endif %}
+                </form>
+                
                 <form class="form" action="{% url 'add_to_cart' product.id %}?source=product_detail" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
@@ -104,23 +120,23 @@
             <h3>Reviews</h3>
             {% for review in reviews %}
             <div class="reviews" style="padding: 10px;">
-                <p class="text-muted">By: <strong>{{ review.author }}</strong> | 
+                <p class="text-muted">By: <strong>{{ review.author }}</strong> |
                     <span class="text-muted">{{ review.created_on }}</span>
                 </p>
                 <p>{{ review.rating }}/5</p>
                 {% if user == review.author %}
-                    {{ review.body | linebreaks }}
-                    <a href="#" class="badge text-bg-light px-2">Delete</a>
-                    <a href="#" class="badge text-bg-light px-2">Edit</a>
+                {{ review.body | linebreaks }}
+                <a href="#" class="badge text-bg-light px-2">Delete</a>
+                <a href="#" class="badge text-bg-light px-2">Edit</a>
                 {% else %}
-                    {{ review.body | linebreaks }}
+                {{ review.body | linebreaks }}
                 {% endif %}
             </div>
             {% endfor %}
         </div>
         <div class="col-6">
             <h3>Leave a Review</h3>
-            <a href="{% url 'add_review' product.id %}" class="btn-dark p-2" >Wirite a review for {{ product.name }}</a>
+            <a href="{% url 'add_review' product.id %}" class="btn-dark p-2">Wirite a review for {{ product.name }}</a>
         </div>
     </div>
     <hr>

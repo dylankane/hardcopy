@@ -4,7 +4,6 @@ from shop.models import Product
 
 
 class CustomerReviews(models.Model):
-    # product = models.ManyToManyField(to='shop.Product')
     product = models.ForeignKey(
         Product, on_delete=models.CASCADE, related_name='review')
     body = models.TextField()

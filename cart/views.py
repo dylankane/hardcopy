@@ -40,6 +40,9 @@ def add_to_cart(request, item_id):
     elif source == 'shop':
         return redirect(reverse('shop'))
 
+    elif source == 'list_of_wishes':
+        return redirect(reverse('list_of_wishes'))
+
     else:
         return redirect(reverse('shop'))
 
