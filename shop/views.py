@@ -8,7 +8,6 @@ from .models import Product, Category, Genre, WishList
 from .forms import ProductForm
 from reviews.models import CustomerReviews
 from django.db.models import Avg
-# from django.contrib.auth.models import User
 
 
 def index(request):
@@ -116,7 +115,7 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     reviews = CustomerReviews.objects.filter(product=product)
     review_count = reviews.count()
-    review_avg = reviews.aggregate(Avg("rating", default=0))
+    review_avg = reviews.aggregate(Avg("rating", default=0))['rating__avg']
 
     if request.user.is_authenticated:
         wish_item = WishList.objects.filter(user=user, product=product)
