@@ -101,7 +101,7 @@ li {
     list-style-type: none;
 }
 
-#sidebar {
+#side-column {
     font-size : .9em;
 }
 
@@ -252,4 +252,18 @@ td p {
 
 .hidden-qty {
     display: none;
+}
+
+.social-icon:hover {
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+    /* text-decoration: none; */
+}
+
+.social-icon {
+    color: var(--text) !important;
+}
+
+#footer {
+    background-color: var(--background-secondary);
 }

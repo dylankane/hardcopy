@@ -50,19 +50,18 @@
 	{% endblock %}
 
 	<title>Hard Copy {% block extra_title %}{% endblock %}</title>
-	<link rel="icon" type="image/x-icon" href="/media/favicon (1).ico">
+	<link rel="icon" type="image/x-icon" href="/media/favicon(1).ico">
 </head>
 
 <body>
 	<header>
 		<nav class="navbar navbar-light">
 			<div class="container-fluid">
-				<div class text-center>
+				<div>
 					<h1><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h1>
 				</div>
 				<form class="d-flex input-group w-auto" method="GET" action="{% url 'shop' %}">
-					<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH"
-						aria-label="Search" />
+					<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label="Search">
 					<div class="input-group-append">
 						<button class="form-control btn rounded-0" id="search-btn" type="submit">
 							<span class="icon">
@@ -121,7 +120,7 @@
 			</div>
 			<hr class="w-100">
 			<div class="row text-center w-100">
-				<div class=" col dropdown show">
+				<div class="col dropdown show">
 					<a class="dropdown-toggle p-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">
 						VINYLS
@@ -180,7 +179,7 @@
 	{% endblock %}
 
 	{% block postloadjs %}
-	<script type="text/javascript">
+	<script>
 		$('.toast').toast('show');
 		// $('.toast').toast({delay:2000, animation:true});
 		
