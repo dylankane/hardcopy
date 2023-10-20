@@ -7,7 +7,7 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+        <div class="col-8 offset-2 col-md-6 offset-md-0 col-lg-4 offset-lg-2">
             <div class="image-container my-5">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
@@ -19,21 +19,23 @@
                 </a>
                 {% endif %}
             </div>
+            <div class="row">
+                <a href="{% url 'shop' %}" class="btn rounded-0 border-0 w-100 mb-2 ml-2">
+                    <span class="icon"><i class="fa-regular fa-hand-point-left"></i>
+                    </span><span>KEEP SHOPPING</span>
+                </a>
+            </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="product-details-container mb-5 mt-md-5 text-left">
                 <p class="mb-2">Album Title: <strong>{{ product.name }}</strong></p>
                 {% if product.artist %}
                     <p class="mb-2">Artist: <strong>{{ product.artist }}</strong></p>
-                {% else %}
-                    <p class="mb-0"></p>
                 {% endif %}
                 {% if product.release_date %}
                     <p class="mb-2">Year Released: <strong>{{ product.release_date }}</strong></p>
-                {% else %}
-                    <p class="mb-0"></p>
                 {% endif %}
-                    <p class="mb-2">{{ product.description }}</p>
+                    <p class="mb-2" id="product-detail-description">{{ product.description }}</p>
                     <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
                 {% if product.category %}
                     <p class="small mt-1 mb-0 tags">
@@ -98,15 +100,10 @@
                         </div>
 
                         <div class="col-12">
-                            <a href="{% url 'shop' %}" class="btn btn-outline-black rounded-0 mt-5">
-                                <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
-                                </span>
-                                <span class="text-uppercase">Keep Shopping</span>
-                            </a>
-                            <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
-                                value="Add to Cart">
+                            <input type="submit" class="btn rounded-0 text-uppercase mt-5 w-100"
+                                value="Add to Cart" id="add-to-cart-btn">
                         </div>
+                        
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
                 </form>
@@ -115,69 +112,75 @@
         </div>
     </div>
     <hr class="w-50">
-    <div class="row">
-        <div class="col-12 text-center pb-5">
-            
-                <!-- <h3>Leave a Review</h3> -->
-                <a href="{% url 'add_review' product.id %}" class="btn-dark p-2 w-50">WRITE A REVIEW FOR {{ product.name|upper }}</a>
-            
+</div>
+<!-- Review Section -->
+<div class="container-fluid" id="review-board">
+    <div class="row mt-4 mb-4">
+        <div class="col-12 text-center">
+            <a href="{% url 'add_review' product.id %}" class="btn-dark p-2 w-75"><small>Write a review for {{ product.name|upper }}</small></a>
         </div>
-        <!-- <hr class="w-50"> -->
     </div>
-    
     <div class="row mb-5">
-        <div class="col-6">
-            <h3>Reviews [
-                {% if review_count %}
-				{{ review_count }}
-				{% else %}
-				0
-				{% endif %}
-                ]</h3>
-                <h2>Average Rating [
-                {% if review_avg %}
-				{{ review_avg }}
-				{% else %}
-				0
-				{% endif %}
-                    ] </h2>
-            {% for review in reviews %}
-            <div class="reviews" style="padding: 10px;">
-                <p class="text-muted">By: <strong>{{ review.author }}</strong> |
-                    <span class="text-muted">{{ review.created_on }}</span>
-                </p>
-                <p>
-                <span class="pr-4">{{ review.rating }}/5</span>
-                {% if review.rating == 1  %}
-                <span><i class="fa-regular fa-face-tired fa-lg"></i></span>
-                {% endif %}
-                {% if review.rating == 2  %}
-                <span><i class="fa-regular fa-face-frown fa-lg"></i></i></span>
-                {% endif %}
-                {% if review.rating == 3  %}
-                <span><i class="fa-regular fa-face-meh fa-lg"></i></span>
-                {% endif %}
-                {% if review.rating == 4  %}
-                <span><i class="fa-regular fa-face-smile fa-lg"></i></span>
-                {% endif %}
-                {% if review.rating == 5  %}
-                <span><i class="fa-regular fa-face-kiss-wink-heart fa-lg"></i></span>
-                {% endif %}
-                </p>
-                {% if user == review.author %}
-                {{ review.body | linebreaks }}
-                <a href="#" class="badge text-bg-light px-2">Delete</a>
-                <a href="#" class="badge text-bg-light px-2">Edit</a>
-                {% else %}
-                {{ review.body | linebreaks }}
-                {% endif %}
-                <hr>
+        <div class="col-xs-12 col-md-8 offset-md-2">
+            <div class="row w-100">
+                <div class="col-6">
+                    <h5>Reviews [
+                        {% if review_count %}
+		        		{{ review_count }}
+		        		{% else %}
+		        		0
+		        		{% endif %}]
+                    </h5>
+                </div>
+                <div class="col-6 text-right p-0">
+                    <h5>Rating [
+                        {% if review_avg %}
+		        		{{ review_avg }}
+		        		{% else %}
+		        		0
+		        		{% endif %}]
+                    </h5>
+                </div>
             </div>
-            {% endfor %}
+            <div class="row">
+                <div class="col-12">
+                    {% for review in reviews %}
+                    <div class="reviews" style="padding: 10px;">
+                        <p class="text-muted">By: <strong>{{ review.author }}</strong> |
+                            <span class="text-muted">{{ review.created_on }}</span>
+                        </p>
+                        <p>
+                        <span class="pr-4">{{ review.rating }}/5</span>
+                        {% if review.rating == 1  %}
+                        <span><i class="fa-regular fa-face-tired fa-lg"></i></span>
+                        {% endif %}
+                        {% if review.rating == 2  %}
+                        <span><i class="fa-regular fa-face-frown fa-lg"></i></i></span>
+                        {% endif %}
+                        {% if review.rating == 3  %}
+                        <span><i class="fa-regular fa-face-meh fa-lg"></i></span>
+                        {% endif %}
+                        {% if review.rating == 4  %}
+                        <span><i class="fa-regular fa-face-smile fa-lg"></i></span>
+                        {% endif %}
+                        {% if review.rating == 5  %}
+                        <span><i class="fa-regular fa-face-kiss-wink-heart fa-lg"></i></span>
+                        {% endif %}
+                        </p>
+                        {% if user == review.author %}
+                        {{ review.body | linebreaks }}
+                        <a href="#" class="badge text-bg-light px-2">Delete</a>
+                        <a href="#" class="badge text-bg-light px-2">Edit</a>
+                        {% else %}
+                        {{ review.body | linebreaks }}
+                        {% endif %}
+                        <hr>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
-        
     </div>
-    
     <hr>
 </div>
 {% endblock %}
