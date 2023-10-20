@@ -265,3 +265,8 @@ def list_of_wishes(request):
         'products': products,
     }
     return render(request, 'shop/list_of_wishes.html', context)
+
+
+def about(request):
+
+    return render(request, "shop/about.html")
