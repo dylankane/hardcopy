@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--text);
 }
 
+p {
+    letter-spacing: .075em;
+}
+
 a {
     color: var(--text);
 }
@@ -85,11 +89,35 @@ a:hover {
     color: var(--text);
 }
 
+.btn:hover {
+    background-color: var(--text);
+    color: var(--background);
+}
+
 .btn-dark {
     background-color: var(--text);
     color: var(--background);
 }
 
+.btn-dark:hover {
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+}
+
+#add-to-cart-btn {
+    background-color: var(--text);
+    color: var(--background);
+}
+
+#add-to-cart-btn:hover {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+ .title-dark {
+    background-color: var(--text);
+    color: var(--background);
+ }
 
 .btn-dark:hover {
     background-color: var(--background);
@@ -139,10 +167,14 @@ a:hover {
 }
 
 #sort-dropdown {
-    /* top: 100%;
-    left: 0;
-    transform-origin: bottom left; */
     background-color: var(--background) !important;
+    /* width: 500px !important; */
+    /* position: static; */
+}
+.sort-inner a {
+    font-family: Noto Sans;
+    /* width: 100vw !important; */
+    /* position: static; */
 }
 
 .sort-inner {
@@ -151,17 +183,10 @@ a:hover {
 }
 
 
-/* #user-options {
-    min-width: 550px;
-} */
 
 li {
     list-style-type: none;
 }
-
-/* #side-column {
-    font-size : .9em;
-} */
 
 
 
@@ -321,4 +346,28 @@ td p {
 
 #footer {
     background-color: var(--background-secondary);
+}
+
+
+/* About Page */
+
+#about-container p {
+    font-family: Noto Sans;
+}
+
+
+/* Stock Management */
+
+#stock-container p {
+    font-family: Noto Sans;
+}
+
+/* product detail page */
+
+#product-detail-description {
+    font-family:  Noto Sans;
+}
+
+.review-board {
+    font-size: Noto Sans;
 }

@@ -11,48 +11,64 @@
     <p class="banner lead m-0 rounded-0 w-100 text-center"> FREE DELIVERY ON ORDERS OVER
     €{{ free_delivery_threshold }}!!</p>
 </div>
-<div class="container-fluid">
-    <!-- Mobile filtering -->
-    <div class="row w-100 mt-3">
-        <div class="col-12 d-md-none dropdown w-100">
-            <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Sort & Filter Products
-            </button>
 
-            
-            <div class="dropdown-menu w-100 p-0 rounded-0 border-0" aria-labelledby="dropdownMenuButton">
-                <div class="container-fluid" id="sort-dropdown"></div>
-                    <div class="row w-100 m-0">
-                        <div class="col-4 sort-inner">
-                            <h3>Sort By</h3>
-                            <ul class="p-0">
-                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc">Price(low to high)</a></li>
-                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=desc">Price(high to low)</a></li>
-                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=asc">Year(old to young)</a></li>
-                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=desc">Year(young to old)</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-4 m-0 p-0 sort-inner">
-                            <h3>Genres</h3>
+
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col-4">
+            <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
+                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SORT BY
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="row w-100 m-0" id="sort-dropdown">
+                    <div class="col-12 p-3 m-0 sort-inner">
+                        <h3>Sort By</h3>
+                        <ul class="p-0">
+                            <li><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc">Price(low to high)</a></li>
+                            <li><a class="p-2" href="{% url 'shop' %}?sort=price&direction=desc">Price(high to low)</a></li>
+                            <li><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=asc">Year(old to young)</a></li>
+                            <li><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=desc">Year(young to old)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 text-center">
+            <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
+                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENRES
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="row w-100 m-0" id="sort-dropdown">
+                    <div class="col-12 p-0 m-0 sort-inner">
+                        <h3>Genres</h3>
                             <ul class="p-0 sidebar-lists">
                                 {% for genre in genre_list %}
-                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?genre={{ genre.name }}">{{ genre.friendly_name }}</a></li>
+                                <li><a class="p-2" href="{% url 'shop' %}?genre={{ genre.name }}">{{ genre.friendly_name }}</a></li>
                                 {% endfor %}
                             </ul>
-                        </div>
-                        <div class="col-4 sort-inner">
-                            <h3>Artists</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 text-right">
+            <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
+                type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARTISTS
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="row w-100 m-0" id="sort-dropdown">
+                    <div class="col-12 p-0 m-0 sort-inner">
+                        <h3>Artists</h3>
                             <ul class="p-0 sidebar-lists">
                                 {% for artist in artists %}
-                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
+                                <li><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
                                 {% endfor %}
                             </ul>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Filtering -->
     <div class="row">
         <div class="col-4 col-lg-3 d-none d-md-block mt-5 ml-3 pr-0" id="filtering">
@@ -214,13 +230,10 @@
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">COMPANY</h6>
           <ul class="list-unstyled mb-0">
-            <li class="mb-2"><a href="{% url 'contact_message' %}" class="text-muted p-2">Contact Us</a></li>
-            <li class="mb-2"><a href="#" class="text-muted p-2">About Us</a></li>
-            <li class="mb-2"><a href="#" class="text-muted p-2">T & C's</a></li>
-            {% if request.user.is_authenticated %}
-            <li class="mb-2"><a href="#" class="text-muted p-2">T & C's</a></li>
-            {% endif %}
-           
+            <li class="mb-2"><a href="{% url 'about' %}" class="text-muted p-2">Contact Us</a></li>
+            <li class="mb-2"><a href="{% url 'about' %}#about-section" class="text-muted p-2">About Us</a></li>
+            <li class="mb-2"><a href="{% url 'about' %}#shipping-section" class="text-muted p-2">Shipping</a></li>
+            <li class="mb-2"><a href="{% url 'about' %}#terms-section" class="text-muted p-2">T & C's</a></li>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
@@ -245,6 +258,11 @@
           </div>
         </div>
       </div>
+      <div class="row text-center">
+        {% if request.user.is_superuser %}
+        <a href="{% url 'add_product' %}" class="btn btn-dark w-100 p-2">STOCK MANAGEMENT</a>
+        {% endif %}
+    </div>
     </div>
 
     <!-- Copyrights -->
