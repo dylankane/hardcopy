@@ -3,18 +3,24 @@
 
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-6">
+    <div class="container" id="stock-container">
+        <div class="row mb-5">
+            <div class="col-8 offset-2 text-center">
                 <hr>
                 <h2 class="logo-font mb-4">STOCK MANAGEMENT</h2>
-                <h5 class="text-muted">Add a Product</h5>
-                <hr>
+                <h4>Logged-in staff members can add a new product from the form below.</h4>
+                <p>If you wish to edit or delete a product, once you are logged-in with your staff account,
+                    just find the product through the normal store front, and below the "ADD TOO CART" button
+                    you will find a link to edit and to delete
+                </p>
+                <p>Alternatively you can log into the admin panel and manage the stock from there.
+                </p>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12 col-md-6">
+            <div class="col-8 offset-2">
+                <h5 class="text-muted">Add a Product</h5>
                 <form method="POST" action="{% url 'add_product' %}" enctype="multipart/form-data" class="form mb-2" >
                     {% csrf_token %}
                     {% for field in form %}
