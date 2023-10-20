@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container-fluid">
+    <div class="col-8 offset-2 mb-5">
+        <!-- About Section -->
+        <div class="row vh-100 text-center">
+            <h1>About PEDAL</h1>
+            <p>
+                Pedal is a space for showcasing amazingly unique bike builds.
+                Where biker lovers of all kinds can come to admire other peoples builds and post an
+                article about their own unique build. Whether its a refurbished 90's mtb, a brand new 
+                carbon gravel bike or a vintage steel road racer, all is welcome. Its a place to encourage tinkering
+                around with bike parts and sharing your expierience with others. 
+                Dont settle for an off the shelf bike, experiment.
+                And check out parts and components fron other bike categories to yours, they might inspire something unique
+                Nothing is too weird!! 
+            </p>
+            <h2>Have a look around, sign up and get involved!!</h2>
+        </div>
+        <hr>
+        <!-- Contact section -->
+        <div class="row mb-5 text-center" id="contact">
+            <h1>Contact Us</h1>
+            <p class="pb-5">Please get in touch with our admin staff with the link below if you are having any 
+                issue with any of the features of the site. Login in or sign up issues, user account problems, 
+                password reset or require assistance adding or removing content. Or if you wish to report any 
+                innapropriate behaviour / content of another user. 
+            </p>
+            <p>Please check the T&C's below general rules 
+                of the site.
+            </p>
+            <div class="text-center my-5">
+                <a href="{% url 'send_message' %}" class="btn btn-outline-dark">Send Message</a>
+            </div>
+            <p>
+                Please check out and follow us on our social media, we throw up some great content there too, 
+                sharing other resources for bike builds and tips and tricks on DIY builds.
+            </p>
+            <div class="social text-center mb-5">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item m-4">
+                        <a href="mailto:pedalbikeblog@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li class="list-inline-item m-4">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="list-inline-item m-4">
+                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="list-inline-item m-4">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item m-4">
+                        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <!-- Terms and conditions section -->
+        <div class="row pb-5" id="tc">
+            <h1>T&Cs</h1>
+                <p>These terms and conditions outline the rules and regulations for the use of PEDAL Website.
+                By accessing this website we assume you accept these terms and conditions in full. 
+                Do not continue to use the PEDAL website if you do not accept all of the terms and conditions stated on this page.
+                </p>
+            
+            <h2>User Accounts</h2>
+                <p>To create posts and make comments on this website, you must create a user account.  
+                    You are responsible for all activity that occurs under your user account.
+                </p>
+            <h2>Content</h2>
+                <p>You are responsible for the content that you post on this website. 
+                    You agree not to post any content that is illegal, harmful, threatening, abusive, harassing, defamatory, 
+                    or otherwise objectionable. You also agree not to post any content that infringes on the copyright or 
+                    other intellectual property rights of others.
+                </p>
+                <p>The comments section of this website is a public forum. You agree to treat other users with respect.</p>
+                <p>The owners of this website have the right to remove or edit any content that they deem to be inappropriate. 
+                    They also have the right to delete user accounts for any reason.
+                </p>
+            <h2>General Conduct</h2>
+                <p>In addition to the above, you agree to abide by the following general rules of conduct:</p>
+                <ul>
+                    <li>You are not allowed to bully or harass other users.</li>
+                    <li>You are not allowed to solicit links or other forms of spam.</li>
+                    <li>You are not allowed to post inappropriate content, such as pornography or hate speech.</li>
+                </ul>
+                <p>The owners of this website have the right to take any action they deem necessary to enforce 
+                    these terms and conditions. This includes, but is not limited to, removing content, deleting user accounts, 
+                    and reporting users to the appropriate authorities.</p>
+            <h2>Changes to Terms and Conditions</h2>
+                <p>The owners of this website reserve the right to change these terms and conditions at any time. You are responsible for checking these terms and conditions regularly for changes.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
