@@ -1,99 +1,178 @@
 {% extends "base.html" %}
+{% load static %}
+
+
 
 {% block content %}
 
-
-<div class="container-fluid">
-    <div class="col-8 offset-2 mb-5">
-        <!-- About Section -->
-        <div class="row vh-100 text-center">
-            <h1>About PEDAL</h1>
-            <p>
-                Pedal is a space for showcasing amazingly unique bike builds.
-                Where biker lovers of all kinds can come to admire other peoples builds and post an
-                article about their own unique build. Whether its a refurbished 90's mtb, a brand new 
-                carbon gravel bike or a vintage steel road racer, all is welcome. Its a place to encourage tinkering
-                around with bike parts and sharing your expierience with others. 
-                Dont settle for an off the shelf bike, experiment.
-                And check out parts and components fron other bike categories to yours, they might inspire something unique
-                Nothing is too weird!! 
-            </p>
-            <h2>Have a look around, sign up and get involved!!</h2>
-        </div>
-        <hr>
-        <!-- Contact section -->
-        <div class="row mb-5 text-center" id="contact">
+<div class="container-fluid" id="about-container">
+     <!-- Contact section -->
+     <div class="row text-center mt-5 pt-5" id="contact-section">
+        <div class="col-8 offset-2 mb-5">
             <h1>Contact Us</h1>
-            <p class="pb-5">Please get in touch with our admin staff with the link below if you are having any 
-                issue with any of the features of the site. Login in or sign up issues, user account problems, 
-                password reset or require assistance adding or removing content. Or if you wish to report any 
-                innapropriate behaviour / content of another user. 
-            </p>
-            <p>Please check the T&C's below general rules 
-                of the site.
-            </p>
-            <div class="text-center my-5">
-                <a href="{% url 'send_message' %}" class="btn btn-outline-dark">Send Message</a>
-            </div>
             <p>
-                Please check out and follow us on our social media, we throw up some great content there too, 
-                sharing other resources for bike builds and tips and tricks on DIY builds.
+                We are an online store only. Our business is based in Co. Dublin, Ireland. However we do not provide and collection point,
+                or face to face customer services.
+            <br>
+                Please get in touch with our staff directly through the link below, by phone, email or by social media, if you are having any 
+                issue with any of the features of the store or have any questions about your orders. We will be back to you ASAP. 
             </p>
-            <div class="social text-center mb-5">
+            <div class="text-center">
                 <ul class="list-unstyled list-inline">
                     <li class="list-inline-item m-4">
-                        <a href="mailto:pedalbikeblog@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                        <span><i class="fa-solid fa-phone fa-lg"></i></span><p>00353 123456789</p>
                     </li>
                     <li class="list-inline-item m-4">
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                        <span><i class="fa-solid fa-envelope fa-lg"></i></span><p>hardcopy@hardcopy.com</p> 
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center mb-3">
+                <a href="{% url 'contact_message' %}" class="btn btn-dark">SEND US A MESSAGE</a>
+            </div>
+            
+            <div class="text-center">
+                <p>
+                    Please check out and follow us on our social media, You will find info about new stock and much more!!
+                </p>
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item m-4">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-lg"></i></a>
                     </li>
                     <li class="list-inline-item m-4">
-                        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
                     </li>
                     <li class="list-inline-item m-4">
-                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-lg"></i></a>
                     </li>
                     <li class="list-inline-item m-4">
-                        <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="https://www.spotify.com/"><i class="fa-brands fa-spotify fa-lg"></i></a>
+                    </li>
+                    <li class="list-inline-item m-4">
+                        <a href="https://www.spotify.com/"><i class="fa-brands fa-youtube fa-lg"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
-        <hr>
-        <!-- Terms and conditions section -->
-        <div class="row pb-5" id="tc">
-            <h1>T&Cs</h1>
-                <p>These terms and conditions outline the rules and regulations for the use of PEDAL Website.
-                By accessing this website we assume you accept these terms and conditions in full. 
-                Do not continue to use the PEDAL website if you do not accept all of the terms and conditions stated on this page.
-                </p>
-            
-            <h2>User Accounts</h2>
-                <p>To create posts and make comments on this website, you must create a user account.  
-                    You are responsible for all activity that occurs under your user account.
-                </p>
-            <h2>Content</h2>
-                <p>You are responsible for the content that you post on this website. 
-                    You agree not to post any content that is illegal, harmful, threatening, abusive, harassing, defamatory, 
-                    or otherwise objectionable. You also agree not to post any content that infringes on the copyright or 
-                    other intellectual property rights of others.
-                </p>
-                <p>The comments section of this website is a public forum. You agree to treat other users with respect.</p>
-                <p>The owners of this website have the right to remove or edit any content that they deem to be inappropriate. 
-                    They also have the right to delete user accounts for any reason.
-                </p>
-            <h2>General Conduct</h2>
-                <p>In addition to the above, you agree to abide by the following general rules of conduct:</p>
-                <ul>
-                    <li>You are not allowed to bully or harass other users.</li>
-                    <li>You are not allowed to solicit links or other forms of spam.</li>
-                    <li>You are not allowed to post inappropriate content, such as pornography or hate speech.</li>
-                </ul>
-                <p>The owners of this website have the right to take any action they deem necessary to enforce 
-                    these terms and conditions. This includes, but is not limited to, removing content, deleting user accounts, 
-                    and reporting users to the appropriate authorities.</p>
-            <h2>Changes to Terms and Conditions</h2>
-                <p>The owners of this website reserve the right to change these terms and conditions at any time. You are responsible for checking these terms and conditions regularly for changes.</p>
+    </div>
+    <hr id="about-section">
+     <!-- About Section -->
+    <div class="row mt-5">
+        <div class="col-8 offset-2">
+            <h1 class="title-dark p-2 mb-2">About HARD COPY</h1>
+            <p>
+                Hard Copy is an online vinyl record store, based in Ireland but shipping all over Europe. We stock a 
+                wide variety of vinyl records from classic collectibles to modern releases. Catering for all tastes, 
+                from classic rock to modern techno. Customers of all walks of life will find their music here, from a 
+                sunday morning listener to a session DJ.
+            </p>
+            <p class="mb-5">
+                We also stock merchandise from different artists and a small collection of high quality audio equipment 
+                to help you get the best out of this beautiful format that is vinyl. Have a look around the store we are 
+                sure you will fnd something you like!
+            </p>
+            <h1 class="title-dark p-2 mb-2">About US</h1>
+            <p>
+                The store was set up and launched by Frank and Tom, two life long listeners, lovers and collectors of vinyl records.
+                With experience in retail and audio engineering, between them they made the perfect business partners to take on this project. 
+                With their passion for vinyl, they wanted to make a one stop shop for anyone else sharing that love or people 
+                looking to start their vinyl journey for their frst time. They have an eclectic taste for music, and wanted the store to represent that.
+            </p>
+            <p>
+                The team here at HARD COPY, prioritise good customer care over anything else. We hope this comes through in the service you recieve. 
+                Any queries you have please get in touch.
+            </p class="mb-5">
+            <h1 class="title-dark p-2 mb-2">About The Site</h1>
+            <p class="mb-5">
+                The web store we have built here, aims to make the purchasing proccess as simple as posible. From the home page, a list of all our 
+                products are availible, for browsing. The products can be sorted and filtered by category, music genre, or product type. 
+                At the top of each page a search bar is available making it easy to find the exact product you are looking for.
+            </p>
+            <p>
+                Each product has a review section where customers can leave their review of the product helping to inform or future purchasers.
+                As a user of the site you can register for an account, ggiving you the ability to create wishlists of items you like but are not ready to purchase yet, 
+                write reviews of products / albums, and save you checkout details to make future purchases even easier.
+            </p>
+            <h3>Have a rumage around!!</h3>
+        </div>
+    </div>
+    <hr id="shipping-section">
+    <!-- Shipping section -->
+    <div class="row mt-5 pt-5">
+        <div class="col-8 offset-2 mb-5">
+            <h1 class="title-dark">Shipping Info</h1>
+            <p class="banner lead m-0 rounded-0 w-100 text-center mb-5"> FREE DELIVERY ON ORDERS OVER
+                €{{ free_delivery_threshold }} within the EU!!
+            </p>
+            <p class="mb-5">
+                <strong>Shipping within the EU:</strong> 
+                <br>
+                If your order does not meet the free order threshold, A delivery fee of 10% of your total cart will be applied. 
+                This rate is a flat rate on all products to all countries with th EU.
+                <br>
+                <strong>Shipping to the UK:</strong>
+                <br>
+                The same rate applies.
+                Due to Brexit you may be subject to a customs charge levied by Royal Mail. This is unfortunately outside of our control.
+                <br>
+                <strong>Shipping to the rest of the world:</strong>
+                <br>
+                Whilst currently we are only delivering to the EU and the UK from our web store. If you want to contact us, and we can discuss
+                shipping to other regions and a delivery rate can be provided on request.
+            </p>
+            <p class="mb-5">
+            The delivery of our items is handle by a third party logistics company, with Orders within the Republic of Ireland, 
+            taking 2-3 working days from purchase, and orders to the EU and UK taking 5-7 working days from time of purchase. 
+            However once your order is places and payment confirmed a confirmation email will be sent with up to date delivery times, 
+            and any further info on the shipping will be sent via email. Returns must be within 30 days of recieving your purchases. 
+            For more info on returns and refunds check out our T&C's section
+            </p>
+        </div>
+    </div>
+    <hr id="terms-section">
+    <!-- Terms and conditions section -->
+    <div class="row mt-5">
+        <div class="col-8 offset-2 mb-5">
+            <h1 class="title-dark">T&Cs</h1>         
+            <p>By using our website, you agree to the following terms and conditions.
+            </p> 
+            <h3>General</h3>
+            <p>You must agree to all of the terms and conditions in this section before you can create an account or make a purchase.
+                We reserve the right to change these terms and conditions at any time without notice.
+            </p>
+            <h3>Account Creation</h3>
+            <p>To create an account, you must provide your name, email address, and a password.
+                You agree to keep your account information confidential and to not share it with anyone else.
+                We reserve the right to suspend or terminate your account for any reason, including but not limited to violating these terms and conditions or engaging in fraudulent activity.
+                Payments
+            </p>
+            <h3>Payment</h3>
+            <p>We accept all major credit and debit cards.
+                All payments are processed through a secure online payment system.
+                We reserve the right to cancel any order if payment is not received or is fraudulent.
+            </p>
+            <h3>Returns</h3>
+            <p>We accept returns within 30 days of purchase. Returned items must be in new and unused condition.
+                Return shipping costs are the responsibility of the customer.
+            </p>
+            <h3>Refunds</h3>
+            <p>Refunds will be issued to the original form of payment.
+                Refunds may take up to 5 business days to process.
+            </p>
+            <h3>Intellectual Property</h3>
+            <p>All content on our website, including but not limited to images, text, and logos, is protected by copyright and other intellectual property laws.
+                You may not copy, reproduce, distribute, or transmit any content from our website without our express written permission.
+            </p>
+            <h3>Disclaimer</h3>
+            <p>We make no warranties or representations, express or implied, as to the accuracy, completeness, or timeliness of any information on our website.
+                We are not responsible for any errors or omissions on our website.
+                We are not responsible for any damages arising from your use of our website or the purchase of products from our website.
+            </p>
+            <h3>Governing Law</h3>
+            <p>These terms and conditions will be governed by and construed in accordance with the laws of the EU.
+            </p>
+            <p>Thank you for shopping at HARD COPY!
+            </p>
         </div>
     </div>
 </div>
