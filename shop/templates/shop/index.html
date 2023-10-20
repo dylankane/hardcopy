@@ -2,161 +2,199 @@
 {% load static %}
 
 {% block content %}
-<div class="jumbotron  rounded-0">
+<div class="jumbotron  rounded-0 m-0 ">
     <p class="text-right mx-4">
         <img src="/media/Hard-Copy-logo-modified-small.png" alt="Large banner image of room with musical intruments and vinyl records">
     </p>
-    <p class="banner lead my-1 rounded-0 w-50 text-center"> FREE DELIVERY ON ORDERS OVER
-        €{{ free_delivery_threshold }}!!</p>
 </div>
-    <div class="container-fluid">
-        <div class="row">
+<div class="m-0 p-0 w-100"></div>
+    <p class="banner lead m-0 rounded-0 w-100 text-center"> FREE DELIVERY ON ORDERS OVER
+    €{{ free_delivery_threshold }}!!</p>
+</div>
+<div class="container-fluid">
+    <!-- Mobile filtering -->
+    <div class="row w-100 mt-3">
+        <div class="col-12 d-md-none dropdown w-100">
+            <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sort & Filter Products
+            </button>
 
-
-
-            <div class="col-3 mt-5">
-                <h3>SORT BY</h3>
-                <ul class="p-0">
-                    <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc">Price(low to high)</a></li>
-                    <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=desc">Price(high to low)</a></li>
-                    <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=asc">Year(old to young)</a></li>
-                    <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=desc">Year(young to old)</a></li>
-                </ul>
-                <h3>GENRES</h3>
-                <ul class="p-0 sidebar-lists">
-                    {% for genre in genre_list %}
-                    <li class="m-2"><a class="p-2"
-                            href="{% url 'shop' %}?genre={{ genre.name }}">{{ genre.friendly_name }}</a></li>
-                    {% endfor %}
-                </ul>
-                <h3>ARTISTS</h3>
-                <ul class="p-0 sidebar-lists">
-                    {% for artist in artists %}
-                    <li class="m-2"><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-
-            <div class="col">
-                <div class="row">
-                    <div class="col text-center mt-3">
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                        </button>
-                        <h2>PRODUCTS</h2>
-                        {% for c in current_categories %}
-                        <a class="tags p-2" href="{% url 'shop' %}?category={{ c.name }}">
-                            <i class="fa-solid fa-hashtag"></i>{{ c.friendly_name }}
-                        </a>
-                        {% endfor %}
-                        {% for g in current_genres %}
-                        <a class="tags p-2" href="{% url 'shop' %}?genre={{ g.name }}">
-                            <i class="fa-solid fa-hashtag"></i>{{ g.friendly_name }}
-                        </a>
-                        {% endfor %}
-                        <hr class="w-50 mb-1">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="product-container col-10 offset-1">
-                        <div class="row mt-1 mb-2">
-                            {% for product in products %}
-                            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
-                                <div class="card h-100 border-0">
-                                    {% if product.image %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid mb-2" src="{{ product.image.url }}"
-                                            alt="Image of {{ product.name }}">
-                                    </a>
-                                    {% else %}
-                                    <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image2.jpg"
-                                            alt="No image available">
-                                    </a>
-                                    {% endif %}
-                                    <div class="card-body p-0 w-100">
-                                        <div class="float-right">
-
-                                            <form class="wish_form" action="{% url 'wish_list' product.id %}" method="POST">
-                                                {% csrf_token %}
-                                                {% if user.is_authenticated %}
-                                                    {% if wished_for %}
-                                                        <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Remove from wish list">
-                                                            <i class="fa-sharp fa-solid fa-bookmark fa-beat"></i></button>
-                                                    {% else %}
-                                                        <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Add this product to your wish list">
-                                                            <i class="fa-sharp fa-regular fa-bookmark"></i></button>
-                                                    {% endif %}
-                                                {% else %}
-                                                    <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="You must be logged in to add items to your wish list">
-                                                        <i class="fa-sharp fa-regular fa-bookmark"></i></button>
-                                                {% endif %}
-                                            </form>
-
-                                        </div>
-                                        <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                                        <p class="mb-0">
-                                            <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
-                                        </p>
-                                        {% if product.artist %}
-                                        <p class="mb-0 text-left">
-                                            <a href="{% url 'shop' %}?artist={{ product.artist }}">{{ product.artist }}</a>
-                                        </p>
-                                        {% endif %}
-                                    </div>
-                                    <div class="card-footer p-0 border-0 text-left">
-                                        <div class="row">
-                                            <div class="col mt-2">
-
-                                                <span class="float-left ml-2 small tags">
-                                                        <a class="p-1" href="{% url 'shop' %}?category={{ product.category.name }}">
-                                                            <i class="fa-solid fa-hashtag"></i>{{ product.category.friendly_name }}
-                                                        </a>
-                                                </span>
-                                                <span class="float-right mr-2 small tags">
-                                                        <a class="p-1" href="{% url 'shop' %}?genre={{ product.genre.name }}">
-                                                            <i class="fa-solid fa-hashtag"></i>{{ product.genre.friendly_name }}
-                                                        </a>
-                                                </span>
-                                            
-                                                <form class="form text-center"
-                                                    action="{% url 'add_to_cart' product.id %}?source=list_of_wishes"
-                                                    method="POST">
-                                                    {% csrf_token %}
-                                                    <input class="hidden-qty" type="number" name="quantity" value="1"
-                                                        min="1" max="99" data-item_id="{{ product.product.id }}"
-                                                        id="id_qty_{{ product.id }}">
-                                                    <input type="submit" class="btn-dark rounded-0 text-uppercase mt-3 w-75"
-                                                        value="Add to Cart">
-                                                </form>
-                                            
-                                                {% if request.user.is_superuser %}
-                                                <span class="float-left ml-5 mt-2 small">
-                                                        <a href="{% url 'edit_product' product.id %}">Edit</a>
-                                                </span>
-                                                <span class="float-right mr-5 mt-2 small">
-                                                        <a href="{% url 'delete_product' product.id %}">Delete</a>
-                                                </span>
-                                                {% endif %} 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {% empty %}
-                            <div class="row-12 text-center w-100 pt-5">
-                                <p>Currently we have no stock matching your criteria. Browse all our products here:</p>
-                                <a href="{% url 'shop' %}" class="btn-dark p-2">ALL PRODUCTS</a>
-                            </div>
-                            {% endfor %}
+            
+            <div class="dropdown-menu w-100 p-0 rounded-0 border-0" aria-labelledby="dropdownMenuButton">
+                <div class="container-fluid" id="sort-dropdown"></div>
+                    <div class="row w-100 m-0">
+                        <div class="col-4 sort-inner">
+                            <h3>Sort By</h3>
+                            <ul class="p-0">
+                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc">Price(low to high)</a></li>
+                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=desc">Price(high to low)</a></li>
+                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=asc">Year(old to young)</a></li>
+                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=desc">Year(young to old)</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 m-0 p-0 sort-inner">
+                            <h3>Genres</h3>
+                            <ul class="p-0 sidebar-lists">
+                                {% for genre in genre_list %}
+                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?genre={{ genre.name }}">{{ genre.friendly_name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <div class="col-4 sort-inner">
+                            <h3>Artists</h3>
+                            <ul class="p-0 sidebar-lists">
+                                {% for artist in artists %}
+                                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
+                                {% endfor %}
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="overlay"></div>
+    <!-- Filtering -->
+    <div class="row">
+        <div class="col-4 col-lg-3 d-none d-md-block mt-5 ml-3 pr-0" id="filtering">
+            <h3>SORT BY</h3>
+            <ul class="p-0">
+                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc">Price(low to high)</a></li>
+                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=desc">Price(high to low)</a></li>
+                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=asc">Year(old to young)</a></li>
+                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=desc">Year(young to old)</a></li>
+            </ul>
+            <h3>GENRES</h3>
+            <ul class="p-0 sidebar-lists">
+                {% for genre in genre_list %}
+                <li class="m-2"><a class="p-2"
+                        href="{% url 'shop' %}?genre={{ genre.name }}">{{ genre.friendly_name }}</a></li>
+                {% endfor %}
+            </ul>
+            <h3>ARTISTS</h3>
+            <ul class="p-0 sidebar-lists">
+                {% for artist in artists %}
+                <li class="m-2"><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <!-- Products Header -->
+        <div class="col">
+            <div class="row mb-4">
+                <div class="col text-center mt-3">
+                    <h2>PRODUCTS</h2>
+                    {% for c in current_categories %}
+                    <a class="tags p-2" href="{% url 'shop' %}?category={{ c.name }}">
+                        <i class="fa-solid fa-hashtag"></i>{{ c.friendly_name }}
+                    </a>
+                    {% endfor %}
+                    {% for g in current_genres %}
+                    <a class="tags p-2" href="{% url 'shop' %}?genre={{ g.name }}">
+                        <i class="fa-solid fa-hashtag"></i>{{ g.friendly_name }}
+                    </a>
+                    {% endfor %}
+                    <hr class="w-50 mb-1">
+                </div>
+            </div>
+            <!-- Product Display -->
+            <div class="row">
+                <div class="product-container col-10 offset-1">
+                    <div class="row mt-1 mb-2">
+                        {% for product in products %}
+                        <div class="col-6 col-lg-4 col-xl-3 mb-4">
+                            <div class="card h-100 border-0">
+                                {% if product.image %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top img-fluid mb-2" src="{{ product.image.url }}"
+                                        alt="Image of {{ product.name }}">
+                                </a>
+                                {% else %}
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image2.jpg"
+                                        alt="No image available">
+                                </a>
+                                {% endif %}
+                                <div class="card-body p-0 w-100">
+                                    <div class="float-right">
+                                        <form class="wish_form" action="{% url 'wish_list' product.id %}" method="POST">
+                                            {% csrf_token %}
+                                            {% if user.is_authenticated %}
+                                                {% if wished_for %}
+                                                    <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Remove from wish list">
+                                                        <i class="fa-sharp fa-solid fa-bookmark fa-beat"></i></button>
+                                                {% else %}
+                                                    <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Add this product to your wish list">
+                                                        <i class="fa-sharp fa-regular fa-bookmark"></i></button>
+                                                {% endif %}
+                                            {% else %}
+                                                <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="You must be logged in to add items to your wish list">
+                                                    <i class="fa-sharp fa-regular fa-bookmark"></i></button>
+                                            {% endif %}
+                                        </form>
+                                    </div>
+                                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                                    <p class="mb-0">
+                                        <a href="{% url 'product_detail' product.id %}">{{ product.name }}</a>
+                                    </p>
+                                    {% if product.artist %}
+                                    <p class="mb-0 text-left">
+                                        <a href="{% url 'shop' %}?artist={{ product.artist }}">{{ product.artist }}</a>
+                                    </p>
+                                    {% endif %}
+                                </div>
+                                <div class="card-footer p-0 border-0 text-left">
+                                    <div class="row">
+                                        <div class="col mt-2">
+                                            <span class="float-right ml-2 small tags d-none d-md-block">
+                                                    <a class="p-1" href="{% url 'shop' %}?category={{ product.category.name }}">
+                                                        <i class="fa-solid fa-hashtag"></i>{{ product.category.friendly_name }}
+                                                    </a>
+                                            </span>
+                                            <span class="float-left ml-2 small tags d-md-none">
+                                                <a class="p-1" href="{% url 'shop' %}?category={{ product.category.name }}">
+                                                    <i class="fa-solid fa-hashtag"></i>{{ product.category.friendly_name }}
+                                                </a>
+                                            </span>
+                                            <span class="float-left mr-2 small tags">
+                                                    <a class="p-1" href="{% url 'shop' %}?genre={{ product.genre.name }}">
+                                                        <i class="fa-solid fa-hashtag"></i>{{ product.genre.friendly_name }}
+                                                    </a>
+                                            </span>
+                                        
+                                            <form class="form text-center"
+                                                action="{% url 'add_to_cart' product.id %}?source=list_of_wishes"
+                                                method="POST">
+                                                {% csrf_token %}
+                                                <input class="hidden-qty" type="number" name="quantity" value="1"
+                                                    min="1" max="99" data-item_id="{{ product.product.id }}"
+                                                    id="id_qty_{{ product.id }}">
+                                                <input type="submit" class="btn-dark rounded-0 text-uppercase mt-3 w-75"
+                                                    value="Add to Cart">
+                                            </form>
+                                        
+                                            {% if request.user.is_superuser %}
+                                            <span class="float-left ml-5 mt-2 small">
+                                                    <a href="{% url 'edit_product' product.id %}">Edit</a>
+                                            </span>
+                                            <span class="float-right mr-5 mt-2 small">
+                                                    <a href="{% url 'delete_product' product.id %}">Delete</a>
+                                            </span>
+                                            {% endif %} 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% empty %}
+                        <div class="row-12 text-center w-100 pt-5">
+                            <p>Currently we have no stock matching your criteria. Browse all our products here:</p>
+                            <a href="{% url 'shop' %}" class="btn-dark p-2">ALL PRODUCTS</a>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
      <!-- Footer -->
 <footer>

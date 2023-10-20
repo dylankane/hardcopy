@@ -55,99 +55,120 @@
 
 <body>
 	<header>
-		<nav class="navbar navbar-light">
-			<div class="container-fluid">
-				<div>
-					<h1><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h1>
-				</div>
-				<form class="d-flex input-group w-auto" method="GET" action="{% url 'shop' %}">
-					<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label="Search">
-					<div class="input-group-append">
-						<button class="form-control btn rounded-0" id="search-btn" type="submit">
-							<span class="icon">
-								<i class="fa-solid fa-magnifying-glass"></i>
-							</span>
-						</button>
+		<nav class="d-flex navbar">
+			<div class="container-fluid" id="nav-container">
+				<div class="row d-flex w-100">
+					<!-- Logo -->
+					<div class="col-6 col-lg-3  d-none d-sm-block p-0 text-left">
+						<h1 class="m-0"><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h1>
 					</div>
-				</form>
-
-				<div class="row">
-					<ul class="list-inline list-unstyled text-center">
-						{% if request.user.is_authenticated %}
-						<li class="list-inline-item">
-							<a href="{% url 'list_of_wishes' %}" class="p-2">
-								<i class="fa-sharp fa-solid fa-bookmark"></i>
-								<!-- [{% if product_count %}
-								{{ product_count }}
-								{% else %}
-								0
-								{% endif %}] -->
-							</a>
-						</li>
-						{% endif %}
-
-						<li class="list-inline-item dropdown">
-							<a data-toggle="dropdown" href="#" class="p-2" aria-haspopup="true" aria-expanded="false">
-								<i class="fa-solid fa-user"></i>
-							</a>
-
-							<div class="dropdown-menu border-0 rounded-0 mt-4 mr-5 w-100" aria-labelledby="user-options" id="user-options">
-								{% if request.user.is_authenticated %}
-									{% if request.user.is_superuser %}
-										<a href="{% url 'add_product' %}" class="dropdown-item">Stock Management</a>
-									{% endif %}
-									<a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-									<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-								{% else %}
-									<a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
-									<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-								{% endif %}
+					<div class="col-6 d-sm-none p-0 text-left">
+						<h1 class="m-0" id="small-logo"><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h1>
+					</div>
+					<!-- Small serch bar -->
+					<div class="col-6 d-none d-lg-block">
+						<form class="d-flex input-group" method="GET" action="{% url 'shop' %}">
+							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label="Search">
+							<div class="input-group-append">
+								<button class="form-control btn rounded-0" id="search-btn" type="submit">
+									<span class="icon">
+										<i class="fa-solid fa-magnifying-glass"></i>
+									</span>
+								</button>
 							</div>
-						</li>
-
-						<li class="list-inline-item">
-							<a href="{% url 'view_cart' %}" class="p-2">
-								<i class="fa-solid fa-cart-shopping"></i>
-								[{% if product_count %}
-								{{ product_count }}
-								{% else %}
-								0
-								{% endif %}]
-							</a>
-						</li>
-					</ul>
+						</form>
+					</div>
+					<!-- Nav Icon Links -->
+					<div class="col-6 col-lg-3 p-0">
+						<ul class="list-inline list-unstyled text-right m-0">
+							{% if request.user.is_authenticated %}
+							<li class="list-inline-item">
+								<a href="{% url 'list_of_wishes' %}" class="p-2">
+									<i class="fa-sharp fa-solid fa-bookmark"></i>
+								</a>
+							</li>
+							{% endif %}
+							<li class="list-inline-item dropleft">
+								<a class="p-2" href="#" role="button" data-toggle="dropdown"   aria-haspopup="true" aria-expanded="false">
+									<i class="fa-solid fa-user"></i>
+								</a>
+								<div class="dropdown-menu rounded-0 mt-3" id="user-options" aria-labelledby="user-options" >
+									{% if request.user.is_authenticated %}
+										{% if request.user.is_superuser %}
+											<a href="{% url 'add_product' %}" class="dropdown-item">Stock Management</a>
+											<div class="dropdown-divider"></div>
+										{% endif %}
+										<a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+										<div class="dropdown-divider"></div>
+										<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+									{% else %}
+										<a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+										<div class="dropdown-divider"></div>
+										<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+									{% endif %}
+								</div>
+							</li>
+							<li class="list-inline-item">
+								<a href="{% url 'view_cart' %}" class="p-2">
+									<i class="fa-solid fa-cart-shopping"></i>
+									[{% if product_count %}
+									{{ product_count }}
+									{% else %}
+									0
+									{% endif %}]
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-			</div>
-			<hr class="w-100">
-			<div class="row text-center w-100">
-				<div class="col dropdown show">
-					<a class="dropdown-toggle p-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">
-						VINYLS
-					</a>
+				<!-- Full width search bar -->
+				<div class="row w-100">
+					<div class="col-12 d-lg-none mt-3">
+						<form class="d-flex input-group" method="GET" action="{% url 'shop' %}">
+							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label="Search">
+							<div class="input-group-append">
+								<button class="form-control btn rounded-0" id="search-btn" type="submit">
+									<span class="icon">
+										<i class="fa-solid fa-magnifying-glass"></i>
+									</span>
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			
+				<hr class="w-100">
+				<div class="row text-center w-100">
+					<div class="col dropright show">
+						<a class="dropdown-toggle p-2" href="#" role="button" data-toggle="dropdown" id="dropdownMenuLink" 
+							aria-haspopup="true" aria-expanded="false">
+							VINYLS
+						</a>
 
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-						<a class="dropdown-item" href="{% url 'shop' %}?category=vinyl,new_releases,clearance">All
-							Vinyls</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="">Genres</a>
-						<div class="dropdown-divider"></div>
-						<a class="dropdown-item" href="{% url 'shop' %}?category=new_releases">New Releases</a>
+						<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="{% url 'shop' %}?category=vinyl,new_releases,clearance">ALL VINYLS</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="">GENRES</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="{% url 'shop' %}?category=new_releases">NEW RELEASES</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="{% url 'shop' %}?category=clearance">CLEARANCE</a>
+
+						</div>
 
 					</div>
-
-				</div>
-				<div class="col">
-					<a class="p-2" href="{% url 'shop' %}?category=equipment">EQUIPMENT</a>
-				</div>
-				<div class="col">
-					<a class="p-2" href="{% url 'shop' %}?category=merchandise">MERCH</a>
-				</div>
-				<div class="col">
-					<a class="p-2" href="{% url 'shop' %}?category=new_releases">NEW RELEASES</a>
-				</div>
-				<div class="col">
-					<a class="p-2" href="{% url 'shop' %}?category=clearance">CLEARANCE</a>
+					<div class="col">
+						<a class="p-2" href="{% url 'shop' %}?category=equipment">EQUIPMENT</a>
+					</div>
+					<div class="col">
+						<a class="p-2" href="{% url 'shop' %}?category=merchandise">MERCH</a>
+					</div>
+					<div class="col d-none d-lg-block">
+						<a class="p-2" href="{% url 'shop' %}?category=new_releases">NEW RELEASES</a>
+					</div>
+					<div class="col d-none d-sm-block">
+						<a class="p-2" href="{% url 'shop' %}?category=clearance">CLEARANCE</a>
+					</div>
 				</div>
 			</div>
 		</nav>
