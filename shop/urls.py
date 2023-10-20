@@ -21,4 +21,8 @@ urlpatterns = [
         'list_of_wishes/',
         views.list_of_wishes,
         name='list_of_wishes'),
+    path(
+        'about/',
+        views.about,
+        name='about'),
 ]
