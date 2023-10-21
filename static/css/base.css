@@ -128,6 +128,8 @@ a:hover {
     color: var(--text);
 }
 
+/* dropdowns */
+
 #dropdownMenuLink {
     font-family: "Oswald";
 }
@@ -155,6 +157,12 @@ a:hover {
     background-color: var(--text);
     color: var(--background);
 }
+
+.dropdown-toggle.active:hover {
+    color: var(--background) !important;
+  }
+
+
 /* Filtering */
 
 .sidebar-lists {
@@ -164,32 +172,30 @@ a:hover {
 
 #filtering {
     font-size: .9em;
+    line-height:250%;
 }
 
-#sort-dropdown {
-    background-color: var(--background) !important;
-    /* width: 500px !important; */
-    /* position: static; */
+
+.sort-inner a:hover {
+    
+    background-color: var(--background-secondary) !important;
+    color: var(--text) !important;
 }
-.sort-inner a {
-    font-family: Noto Sans;
-    /* width: 100vw !important; */
-    /* position: static; */
-}
+
 
 .sort-inner {
     background-color: var(--background-secondary) !important;
     font-size: medium;
+    font-family: Noto Sans;
+    font-size: .8em;
+    line-height: 200%;
 }
-
-
 
 li {
     list-style-type: none;
 }
 
-
-
+/* icons */
 .fa-heart {
     color: red;
     font-size: large;

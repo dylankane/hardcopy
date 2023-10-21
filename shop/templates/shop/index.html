@@ -11,56 +11,61 @@
     <p class="banner lead m-0 rounded-0 w-100 text-center"> FREE DELIVERY ON ORDERS OVER
     €{{ free_delivery_threshold }}!!</p>
 </div>
-
+ 
 
 <div class="container-fluid">
-    <div class="row mt-3">
-        <div class="col-4">
+    <div class="row mt-3 d-md-none">
+        <div class="col-4 dropdown w-100">
             <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SORT BY
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <div class="row w-100 m-0" id="sort-dropdown">
+            <div class="dropdown-menu dropdown-menu-full rounded-o p-0" aria-labelledby="dropdownMenuButton">
+                <div class="row w-100 m-0 sort-dropdown">
                     <div class="col-12 p-3 m-0 sort-inner">
                         <h3>Sort By</h3>
                         <ul class="p-0">
                             <li><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc">Price(low to high)</a></li>
+                            <div class="dropdown-divider"></div>
                             <li><a class="p-2" href="{% url 'shop' %}?sort=price&direction=desc">Price(high to low)</a></li>
+                            <div class="dropdown-divider"></div>
                             <li><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=asc">Year(old to young)</a></li>
+                            <div class="dropdown-divider"></div>
                             <li><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=desc">Year(young to old)</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-4 text-center">
+        <div class="col-4 text-center dropdown w-100">
             <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENRES
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <div class="row w-100 m-0" id="sort-dropdown">
-                    <div class="col-12 p-0 m-0 sort-inner">
+            <div class="dropdown-menu dropdown-menu-full rounded-o p-0" aria-labelledby="dropdownMenuButton">
+                <div class="row w-100 m-0 sort-dropdown">
+                    <div class="col-12 p-3 m-0 sort-inner">`
                         <h3>Genres</h3>
                             <ul class="p-0 sidebar-lists">
                                 {% for genre in genre_list %}
                                 <li><a class="p-2" href="{% url 'shop' %}?genre={{ genre.name }}">{{ genre.friendly_name }}</a></li>
+                                <div class="dropdown-divider"></div>
                                 {% endfor %}
                             </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-4 text-right">
+        <div class="col-4 text-right dropdown w-100">
             <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARTISTS
             </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <div class="row w-100 m-0" id="sort-dropdown">
-                    <div class="col-12 p-0 m-0 sort-inner">
+            <div class="dropdown-menu dropdown-menu-full rounded-o p-0" aria-labelledby="dropdownMenuButton">
+                <div class="row w-100 m-0 sort-dropdown">
+                    <div class="col-12 p-3 m-0 sort-inner">
                         <h3>Artists</h3>
                             <ul class="p-0 sidebar-lists">
                                 {% for artist in artists %}
                                 <li><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
+                                <div class="dropdown-divider"></div>
                                 {% endfor %}
                             </ul>
                     </div>
@@ -71,7 +76,7 @@
 
     <!-- Filtering -->
     <div class="row">
-        <div class="col-4 col-lg-3 d-none d-md-block mt-5 ml-3 pr-0" id="filtering">
+        <div class="col-4 col-lg-2 d-none d-md-block mt-5 ml-3 pr-0" id="filtering">
             <h3>SORT BY</h3>
             <ul class="p-0">
                 <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc">Price(low to high)</a></li>
