@@ -1,0 +1,78 @@
+<div class="container-fluid mb-5" id="review-board">
+    <div class="row mt-4 mb-4">
+        <div class="col-12 text-center">
+            <a href="{% url 'add_review' product.id %}" class="btn-dark p-2 w-75"><small>Write a review for {{ product.name|upper }}</small></a>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-xs-12 col-md-8 offset-md-2">
+            <div class="row w-100">
+                <div class="col-6">
+                    <h5>Reviews [
+                        {% if review_count %}
+		        		{{ review_count }}
+		        		{% else %}
+		        		0
+		        		{% endif %}]
+                    </h5>
+                </div>
+                <div class="col-6 text-right p-0">
+                    <h5>Rating [
+                        {% if review_avg %}
+		        		{{ review_avg }}
+		        		{% else %}
+		        		0
+		        		{% endif %}]
+                    </h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {% for review in reviews %}
+                    <div class="reviews" style="padding: 10px;">
+                        <p class="text-muted">By: <strong>{{ review.author }}</strong> |
+                            <span class="text-muted">{{ review.created_on }}</span>
+                        </p>
+                        <p>
+                        <span class="pr-4">{{ review.rating }}/5</span>
+                        {% if review.rating == 1  %}
+                        <span><i class="fa-regular fa-face-tired fa-lg"></i></span>
+                        {% endif %}
+                        {% if review.rating == 2  %}
+                        <span><i class="fa-regular fa-face-frown fa-lg"></i></i></span>
+                        {% endif %}
+                        {% if review.rating == 3  %}
+                        <span><i class="fa-regular fa-face-meh fa-lg"></i></span>
+                        {% endif %}
+                        {% if review.rating == 4  %}
+                        <span><i class="fa-regular fa-face-smile fa-lg"></i></span>
+                        {% endif %}
+                        {% if review.rating == 5  %}
+                        <span><i class="fa-regular fa-face-kiss-wink-heart fa-lg"></i></span>
+                        {% endif %}
+                        </p>
+                        {% if user == review.author %}
+                        {{ review.body | linebreaks }}
+                        <a href="#" class="badge text-bg-light px-2">Delete</a>
+                        <a href="#" class="badge text-bg-light px-2">Edit</a>
+                        {% else %}
+                        {{ review.body | linebreaks }}
+                        {% endif %}
+                        <hr>
+                    </div>
+                    {% empty %}
+                        <div class="row-12 text-center w-100 pt-5">
+                            <p class="mb-5">No reviews for {{ product.name|upper }} yet. Be the first to review it!!</p>
+                            <div class="col-12 text-center">
+                                <a class="btn-dark p-2 mx-3" href="{% url 'shop' %}">
+                                    <span class="icon"><i class="fa-regular fa-hand-point-left"></i></span>
+                                    <span class="text-uppercase">KEEP SHOPPING</span>
+                                    </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
