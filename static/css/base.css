@@ -136,8 +136,10 @@ a:hover {
 
 .dropdown-menu {
     background-color: var(--background);
-    color: var(--text)
-    /* width: 50%; */
+    color: var(--text);
+    /* width: 400px;
+    left: 0;
+    right: 0; */
 }
 
 .dropdown-item {
@@ -376,4 +378,9 @@ td p {
 
 .review-board {
     font-size: Noto Sans;
+}
+
+
+.pagination {
+    justify-content: center;
 }
