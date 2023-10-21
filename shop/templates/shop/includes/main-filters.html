@@ -1,0 +1,22 @@
+<div class="col-4 col-lg-2 d-none d-md-block mt-5 ml-3 pr-0" id="filtering">
+    <h3>SORT BY</h3>
+    <ul class="p-0">
+        <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=asc">Price(low to high)</a></li>
+        <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=price&direction=desc">Price(high to low)</a></li>
+        <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=asc">Year(old to young)</a></li>
+        <li class="m-2"><a class="p-2" href="{% url 'shop' %}?sort=release_date&direction=desc">Year(young to old)</a></li>
+    </ul>
+    <h3>GENRES</h3>
+    <ul class="p-0 sidebar-lists">
+        {% for genre in genre_list %}
+        <li class="m-2"><a class="p-2"
+                href="{% url 'shop' %}?genre={{ genre.name }}">{{ genre.friendly_name }}</a></li>
+        {% endfor %}
+    </ul>
+    <h3>ARTISTS</h3>
+    <ul class="p-0 sidebar-lists">
+        {% for artist in artists %}
+        <li class="m-2"><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
