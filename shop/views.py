@@ -8,6 +8,7 @@ from .models import Product, Category, Genre, WishList
 from .forms import ProductForm
 from reviews.models import CustomerReviews
 from django.db.models import Avg
+from django.core.paginator import Paginator, Page
 
 
 def index(request):
@@ -91,6 +92,11 @@ def index(request):
 
     current_sorting = f'{sort}_{direction}'
 
+    items_per_page = 12
+    paginator = Paginator(products, items_per_page)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
     context = {
         'user': user,
         'products': products,
@@ -104,6 +110,7 @@ def index(request):
         'current_genres': genres,
         'genre_list': genre_list,
         'current_sorting': current_sorting,
+        'page_obj': page_obj,
     }
     return render(request, 'shop/index.html', context)
 
