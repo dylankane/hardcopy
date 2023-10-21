@@ -240,13 +240,6 @@ thead {
     cursor: pointer;
 }
 
-/* .remove-item:hover, */
-/* .update-link:hover {
-    background-color: #f4f1e0 !important;
-    color: #321e1e !important;
-    border: 1px solid #321e1e;
-} */
-
 .remove-item:hover {
     background-color: var(--background) !important;
 }
@@ -264,23 +257,18 @@ td p {
 /* toast messages */
 
 .message-box {
-    background-color: var(--text-faded);
     position: fixed;
     top: 72px;
     right: 15px;
     z-index: 99999999999;
-    opacity: 1 !important;
 }
 
-
 .toast-capper {
-    height: 2px;
+    height: 3px;
 }
 
 .toast-body,
 .toast-header {
-    opacity: 1 !important;
-    background-color: #321e1e24;
     color: var(--text);
     font-family: Noto Sans;
 }
@@ -289,6 +277,11 @@ td p {
     height: 100px;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+.toast-cart-section {
+    background-color: var(--background);
+    color: var(--text);
 }
 
 /* Image widget */

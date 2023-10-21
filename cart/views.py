@@ -24,12 +24,16 @@ def add_to_cart(request, item_id):
     if item_id in list(cart.keys()):
         cart[item_id] += quantity
         messages.success(
-            request, f'Updated {product.name} quantity to {cart[item_id]}'
+            request,
+            f'Updated <strong>{product.name.upper()}</strong> quantity\
+                to <strong>{cart[item_id]}</strong>'
             )
     else:
         cart[item_id] = quantity
         messages.success(
-            request, f'{product.name} has been successfully added to your cart'
+            request,
+            f'<strong>{product.name.upper() }</strong> has been\
+                successfully added to the cart'
             )
 
     request.session['cart'] = cart
@@ -59,12 +63,14 @@ def adjust_cart(request, item_id):
     if quantity > 0:
         cart[item_id] = quantity
         messages.success(
-            request, f'Updated quantity of "{product.name}" to {cart[item_id]}'
+            request, f'Updated quantity of <strong>{product.name.upper()}\
+                </strong> to <strong>{cart[item_id]}</strong>'
             )
     else:
         cart.pop(item_id)
         messages.success(
-            request, f'{product.name} has been removed from your cart'
+            request, f'<strong>{product.name.upper()}</strong> has\
+                been removed from your cart'
             )
 
     request.session['cart'] = cart
@@ -80,7 +86,8 @@ def remove_from_cart(request, item_id):
         # if item_id in cart:
         cart.pop(item_id)
         messages.success(
-            request, f'{product.name} has been removed from your cart'
+            request, f'<strong>{product.name.upper()}</strong> has been\
+                removed from your cart'
             )
 
         request.session['cart'] = cart

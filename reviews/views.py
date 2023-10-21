@@ -17,7 +17,9 @@ def add_review(request, product_id):
             review.product = product
             review.author = request.user
             review.save()
-            messages.success(request, 'Successfully reviewed product')
+            messages.success(
+                request, f'Successfully reviewed\
+                    <strong>{product.name.upper()}</strong>')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to add review. \

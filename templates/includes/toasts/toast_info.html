@@ -1,4 +1,4 @@
-<div class="toast custom-toast" data-autohide="false" role="status" aria-live="polite" aria-atomic="true">
+<div class="toast custom-toast p-3" data-autohide="false" role="status" aria-live="polite" aria-atomic="true">
     <div class="w-100 toast-capper bg-info"></div>
     <div class="toast-header">
         <strong class="mr-auto">ALERT!</strong>
@@ -7,6 +7,6 @@
         </button>
     </div>
     <div class="toast-body">
-        {{ message }}
+        {{ message|safe }}
     </div>
 </div>

@@ -197,7 +197,8 @@ def edit_product(request, product_id):
                 please check the form is valid')
     else:
         form = ProductForm(instance=product)
-        messages.info(request, f'you are now editing {product.name}')
+        messages.info(request, f'you are now editing\
+            <strong>{product.name.upper()}</strong>')
 
     template = 'shop/edit_product.html'
     context = {
@@ -251,13 +252,15 @@ def wish_list(request, product_id):
             wish_item.delete()
             messages.success(
                 request,
-                f'{product.name} successfully removed from your wish list'
+                f'<strong>{product.nameupper()}</strong> successfully\
+                    removed from your wish list'
                 )
         else:
             wish_item.create(user=user, product=product)
             messages.success(
                 request,
-                f'{product.name} has been successfully added to your wish list'
+                f'<strong>{product.name.upper()}</strong> has been\
+                    successfully added to your wish list'
                 )
 
         return redirect('product_detail', product_id=product_id)
