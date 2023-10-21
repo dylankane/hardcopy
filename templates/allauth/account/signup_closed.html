@@ -4,8 +4,15 @@
 
 {% block head_title %}{% trans "Sign Up Closed" %}{% endblock %}
 
-{% block content %}
+{% block inner-content %}
 <h1>{% trans "Sign Up Closed" %}</h1>
 
 <p>{% trans "We are sorry, but the sign up is currently closed." %}</p>
+
+<a href="{% url 'shop' %}" class="btn rounded-0 mt-5">
+    <span class="icon">
+      <i class="fa-regular fa-hand-point-left"></i>
+    </span>
+    <span class="text-uppercase">Keep Shopping</span>
+  </a>
 {% endblock %}
