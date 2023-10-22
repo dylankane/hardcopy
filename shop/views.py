@@ -150,6 +150,15 @@ def product_detail(request, product_id):
         return render(request, 'shop/product_detail.html', context)
 
 
+def genre_view(request):
+    genres = Genre.objects.all()
+    context = {
+        'genres': genres
+    }
+
+    return render(request, 'shop/genre_view.html', context)
+
+
 @login_required
 def add_product(request):
     """For adding products to store """

@@ -25,4 +25,8 @@ urlpatterns = [
         'about/',
         views.about,
         name='about'),
+    path(
+        'genre_view/',
+        views.genre_view,
+        name='genre_view'),
 ]
