@@ -3,7 +3,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "rock",
-      "friendly_name": "Rock"
+      "friendly_name": "Rock",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -11,7 +12,9 @@
     "model": "shop.genre",
     "fields": {
       "name": "indie_alternative",
-      "friendly_name": "Indie / Alternative"
+      "friendly_name": "Indie / Alternative",
+      "image_url": "blob:chrome-untrusted://media-app/49caac96-89a7-4d6f-a740-2b7cbefdb164",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -19,7 +22,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "metal_punk",
-      "friendly_name": "Metal & Punk"
+      "friendly_name": "Metal & Punk",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -27,7 +31,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "folk_singer_songwriter",
-      "friendly_name": "Folk & Singer-songwriter"
+      "friendly_name": "Folk & Singer-songwriter",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -35,7 +40,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "electronic_dance",
-      "friendly_name": "Electronic & Dance"
+      "friendly_name": "Electronic & Dance",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -43,7 +49,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "pop",
-      "friendly_name": "Pop"
+      "friendly_name": "Pop",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -51,7 +58,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "country",
-      "friendly_name": "Country"
+      "friendly_name": "Country",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -59,7 +67,9 @@
     "model": "shop.genre",
     "fields": {
       "name": "jazz",
-      "friendly_name": "Jazz"
+      "friendly_name": "Jazz",
+      "image_url": "blob:chrome-untrusted://media-app/49caac96-89a7-4d6f-a740-2b7cbefdb164",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -67,7 +77,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "funk_soul",
-      "friendly_name": "Funk / Soul"
+      "friendly_name": "Funk / Soul",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -75,7 +86,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "classical",
-      "friendly_name": "Classical"
+      "friendly_name": "Classical",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -83,7 +95,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "hip_hop",
-      "friendly_name": "Hip Hop"
+      "friendly_name": "Hip Hop",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -91,7 +104,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "latin",
-      "friendly_name": "Latin"
+      "friendly_name": "Latin",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -99,7 +113,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "stage_screen",
-      "friendly_name": "Stage & Screen"
+      "friendly_name": "Stage & Screen",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -107,7 +122,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "reggae",
-      "friendly_name": "Reggae"
+      "friendly_name": "Reggae",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -115,7 +131,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "blues",
-      "friendly_name": "Blues"
+      "friendly_name": "Blues",
+      "image": "jazz-genre.jpg"
     }
   },
   {
@@ -123,7 +140,8 @@
     "model": "shop.genre",
     "fields": {
       "name": "world",
-      "friendly_name": "World"
+      "friendly_name": "World",
+      "image": "jazz-genre.jpg"
     }
   }
 ]
