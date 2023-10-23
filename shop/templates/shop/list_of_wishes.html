@@ -6,7 +6,7 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col">
+        <div class="col-12 mt-5 mb-5">
             <hr class="w-75">
             <div class="row">
                 <div class="col text-center mt-3">
@@ -84,10 +84,13 @@
                         </div>
                         {% empty %}
                         <div class="row-12 text-center w-100 pt-5">
-                            <p>
+                            <p class="pb-4">
                                 You dont have anything in your wish list yet, browse all our products here:
                             </p>
-                            <a href="{% url 'shop' %}" class="btn-dark p-2">ALL PRODUCTS</a>
+                            <a href="{% url 'shop' %}" class="btn btn-dark rounded-0 w-50 mb-2 ml-2">
+                                <span class="icon"><i class="fa-regular fa-hand-point-left"></i>
+                                </span><span>KEEP SHOPPING</span>
+                            </a>
                         </div>
                         {% endfor %}
                     </div>
