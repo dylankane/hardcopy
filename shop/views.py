@@ -11,6 +11,9 @@ from django.db.models import Avg
 from django.core.paginator import Paginator, Page
 
 
+# Funtcion to display the home page, displaying all products.
+# Also holding all the sorting and filtering logic.
+# displaying the filtered product lists on the home page
 def index(request):
     """ A view to return main page with products,
     including sorting and search criteria"""
@@ -25,21 +28,15 @@ def index(request):
     genres = None
     sort = None
     direction = None
-    # for item in products:
-    #     product = item.pk
 
-    # wished_for = False
+    if request.user.is_authenticated:
+        wish_item = (
+            WishList.objects.filter(user=user).values_list(
+                'product_id', flat=True))
+        print(wish_item)
 
-    # if request.user.is_authenticated:
-    #     wish_item = WishList.objects.filter(user=user)
-    #     if wish_item.exists():
-    #         wished_for = True
-
-    # wished_list = []
-    # # if request.user.is_authenticated:
-    #     wish_items = WishList.objects.filter(user=user)
-    #     for i in wish_items:
-    #         wished_list.append(i.product)
+    # else:
+    #     wishlist_products = []
 
     if request.GET:
         if 'sort' in request.GET:
@@ -93,6 +90,7 @@ def index(request):
     current_sorting = f'{sort}_{direction}'
 
     items_per_page = 12
+    pagination = products.count() > items_per_page
     paginator = Paginator(products, items_per_page)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
@@ -262,7 +260,7 @@ def wish_list(request, product_id):
             wish_item.delete()
             messages.success(
                 request,
-                f'<strong>{product.nameupper()}</strong> successfully\
+                f'<strong>{product.name.upper()}</strong> successfully\
                     removed from your wish list'
                 )
         else:

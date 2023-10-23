@@ -48,7 +48,7 @@
                             <div class="card h-100 border-0">
                                 {% if product.image %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid mb-2" src="{{ product.image.url }}"
+                                    <img class="card-img-top img-fluid mb-2" src="{{ product.image }}"
                                         alt="Image of {{ product.name }}">
                                 </a>
                                 {% else %}
@@ -62,13 +62,15 @@
                                         <form class="wish_form" action="{% url 'wish_list' product.id %}" method="POST">
                                             {% csrf_token %}
                                             {% if user.is_authenticated %}
-                                                {% if wished_for %}
+                                            
+                                                {% if product.id in wish_item %}
                                                     <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Remove from wish list">
                                                         <i class="fa-sharp fa-solid fa-bookmark fa-beat"></i></button>
                                                 {% else %}
                                                     <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Add this product to your wish list">
                                                         <i class="fa-sharp fa-regular fa-bookmark"></i></button>
                                                 {% endif %}
+                                               
                                             {% else %}
                                                 <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="You must be logged in to add items to your wish list">
                                                     <i class="fa-sharp fa-regular fa-bookmark"></i></button>
