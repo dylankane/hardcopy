@@ -16,7 +16,9 @@
     <h3>ARTISTS</h3>
     <ul class="p-0 sidebar-lists">
         {% for artist in artists %}
+        {% if artist %}
         <li class="m-2"><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
+        {% endif %}
         {% endfor %}
     </ul>
 </div>
