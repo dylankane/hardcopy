@@ -382,3 +382,9 @@ td p {
 .pagination {
     justify-content: center;
 }
+
+/* Newsletter */
+
+.newsletter-footer {
+    font-size: small;
+}

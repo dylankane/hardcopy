@@ -35,8 +35,8 @@ def index(request):
                 'product_id', flat=True))
         print(wish_item)
 
-    # else:
-    #     wishlist_products = []
+    else:
+        wish_item = []
 
     if request.GET:
         if 'sort' in request.GET:
