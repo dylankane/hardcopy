@@ -4,14 +4,29 @@
 
 
 {% block content %}
+<div class="container-fluid">
+    <div class="row mb-5 mt-5">
 
-<div class="row">
-    <div class="col">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+         <!-- review form -->
+         <div class="col-8 offset-2 col-md-4 offset-md-1 pt-5">
+            <h3>Leave a Review</h3>
+            <form method="post" action="">
+                {% csrf_token %}
+                {% if review_form %}
+                {{ review_form|crispy }}
+                {% else %}
+                <p>Review form is not provided to the template.</p>
+                {% endif %}
+                <button type="submit" class="btn btn-outline-success">SUBMIT</button>
+            </form>
+        </div>
+
+        <!-- product details -->
+        <div class="col-8 offset-2 col-md-4 offset-md-1">
             <div class="image-container my-5">
                 {% if product.image %}
-                <a href="{{ product.image.url }}" target="_blank">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                <a href="{{ product.image }}" target="_blank">
+                    <img class="card-img-top img-fluid" src="{{ product.image }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
                 <a href="">
@@ -19,9 +34,7 @@
                 </a>
                 {% endif %}
             </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <div class="product-details-container mb-5 mt-md-5 text-center">
+            <div class="product-details-container mb-5 mt-md-5 ">
                 <p class="mb-2">Album Title: <strong>{{ product.name }}</strong></p>
                 {% if product.artist %}
                 <p class="mb-2">Artist: <strong>{{ product.artist }}</strong></p>
@@ -38,20 +51,6 @@
             </div>
         </div>
     </div>
-    <div class="col">
-        <div class="col-6 p-5">
-            <h3>Leave a Review</h3>
-            <form method="post" action="">
-                {% csrf_token %}
-                {% if review_form %}
-                {{ review_form|crispy }}
-                {% else %}
-                <p>Review form is not provided to the template.</p>
-                {% endif %}
-                <button type="submit" class="btn btn-outline-success">SUBMIT</button>
-            </form>
-        </div>
-    </div>
 </div>
-<hr>
+
 {% endblock %}
