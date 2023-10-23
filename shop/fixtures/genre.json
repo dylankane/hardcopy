@@ -4,7 +4,7 @@
     "fields": {
       "name": "rock",
       "friendly_name": "Rock",
-      "image": "jazz-genre.jpg"
+      "image": "/media/rock-genre.png"
     }
   },
   {
@@ -14,7 +14,7 @@
       "name": "indie_alternative",
       "friendly_name": "Indie / Alternative",
       "image_url": "blob:chrome-untrusted://media-app/49caac96-89a7-4d6f-a740-2b7cbefdb164",
-      "image": "jazz-genre.jpg"
+      "image": "/media/indie-genre.png"
     }
   },
   {
@@ -23,7 +23,7 @@
     "fields": {
       "name": "metal_punk",
       "friendly_name": "Metal & Punk",
-      "image": "jazz-genre.jpg"
+      "image": "/media/metal-genre.png"
     }
   },
   {
@@ -32,7 +32,7 @@
     "fields": {
       "name": "folk_singer_songwriter",
       "friendly_name": "Folk & Singer-songwriter",
-      "image": "jazz-genre.jpg"
+      "image": "/media/folk-genre.png"
     }
   },
   {
@@ -41,7 +41,7 @@
     "fields": {
       "name": "electronic_dance",
       "friendly_name": "Electronic & Dance",
-      "image": "jazz-genre.jpg"
+      "image": "/media/electronic-genre.png"
     }
   },
   {
@@ -50,7 +50,7 @@
     "fields": {
       "name": "pop",
       "friendly_name": "Pop",
-      "image": "jazz-genre.jpg"
+      "image": "/media/pop-genre.png"
     }
   },
   {
@@ -59,7 +59,7 @@
     "fields": {
       "name": "country",
       "friendly_name": "Country",
-      "image": "jazz-genre.jpg"
+      "image": "/media/country-genre.png"
     }
   },
   {
@@ -68,8 +68,7 @@
     "fields": {
       "name": "jazz",
       "friendly_name": "Jazz",
-      "image_url": "blob:chrome-untrusted://media-app/49caac96-89a7-4d6f-a740-2b7cbefdb164",
-      "image": "jazz-genre.jpg"
+      "image": "/media/jazz-genre.jpg"
     }
   },
   {
@@ -78,7 +77,7 @@
     "fields": {
       "name": "funk_soul",
       "friendly_name": "Funk / Soul",
-      "image": "jazz-genre.jpg"
+      "image": "/media/funk-genre.png"
     }
   },
   {
@@ -87,7 +86,7 @@
     "fields": {
       "name": "classical",
       "friendly_name": "Classical",
-      "image": "jazz-genre.jpg"
+      "image": "/media/classical-genre.png"
     }
   },
   {
@@ -96,7 +95,7 @@
     "fields": {
       "name": "hip_hop",
       "friendly_name": "Hip Hop",
-      "image": "jazz-genre.jpg"
+      "image": "/media/hip-hop-genre.png"
     }
   },
   {
@@ -105,7 +104,7 @@
     "fields": {
       "name": "latin",
       "friendly_name": "Latin",
-      "image": "jazz-genre.jpg"
+      "image": "/media/latin-genre.png"
     }
   },
   {
@@ -114,7 +113,7 @@
     "fields": {
       "name": "stage_screen",
       "friendly_name": "Stage & Screen",
-      "image": "jazz-genre.jpg"
+      "image": "/media/stage-genre.png"
     }
   },
   {
@@ -123,7 +122,7 @@
     "fields": {
       "name": "reggae",
       "friendly_name": "Reggae",
-      "image": "jazz-genre.jpg"
+      "image": "/media/reggae-genre.png"
     }
   },
   {
@@ -132,7 +131,7 @@
     "fields": {
       "name": "blues",
       "friendly_name": "Blues",
-      "image": "jazz-genre.jpg"
+      "image": "/media/blues-genre.png"
     }
   },
   {
@@ -141,7 +140,7 @@
     "fields": {
       "name": "world",
       "friendly_name": "World",
-      "image": "jazz-genre.jpg"
+      "image": "/media/world-genre.png"
     }
   }
 ]
