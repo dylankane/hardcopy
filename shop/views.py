@@ -100,7 +100,7 @@ def index(request):
     context = {
         'user': user,
         'products': products,
-        # 'wished_list': wished_list,
+        'wish_item': wish_item,
         # 'product': product,
         # 'wished_for': wished_for,
         'artists': artists,
@@ -111,6 +111,7 @@ def index(request):
         'genre_list': genre_list,
         'current_sorting': current_sorting,
         'page_obj': page_obj,
+        'pagination': pagination
     }
     return render(request, 'shop/index.html', context)
 

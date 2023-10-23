@@ -136,6 +136,8 @@
                         {% endfor %}
                     </div>
                 </div>
+                <!-- pagination -->
+                {% if pagination %}
                 <div class="row w-100 mt-4 text-center">
                     <nav class="text-center m-5 w-100" aria-label="Page navigation">
                         <ul class="pagination">
@@ -166,6 +168,7 @@
                         </ul>
                     </nav>
                 </div>
+                {% endif %}
             </div>
         </div>
     </div>
