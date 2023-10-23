@@ -21,11 +21,11 @@
         <!-- Main Filtering -->
         {% include 'shop/includes/main-filters.html' %}
 
-        <div class="col">
+        <div class="col mt-5">
              <!-- Products Header -->
             <div class="row mb-4">
                 <div class="col text-center mt-3">
-                    <h2>PRODUCTS</h2>
+                    <h2 class="p-3">PRODUCTS</h2>
                     {% for c in current_categories %}
                     <a class="tags p-2" href="{% url 'shop' %}?category={{ c.name }}">
                         <i class="fa-solid fa-hashtag"></i>{{ c.friendly_name }}
@@ -36,6 +36,13 @@
                         <i class="fa-solid fa-hashtag"></i>{{ g.friendly_name }}
                     </a>
                     {% endfor %}
+                    <!-- {% for artist in artists %}
+                    {% if artist %}
+                    <a class="tags p-2" href="{% url 'shop' %}?genre={{ g.name }}">
+                        <i class="fa-solid fa-hashtag"></i>{{ artist }}
+                    </a>
+                    {% endif %}
+                    {% endfor %} -->
                     <hr class="w-50 mb-1">
                 </div>
             </div>
