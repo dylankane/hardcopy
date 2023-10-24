@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from .models import Contact
 from .forms import ContactForm
@@ -25,7 +25,7 @@ def contact_message(request):
                 contact.save()
                 messages.success(request, 'Successfully sent message')
 
-                return render(request, 'shop/index.html')
+                return redirect(reverse('shop'))
 
             else:
                 messages.error(
