@@ -76,6 +76,10 @@ a:hover {
     font-size: .9em;
 }
 
+.image-link:hover {
+    background-color: var(--background) !important;
+}
+
 
 #search-btn {
     background-color: var(--text);
