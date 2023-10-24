@@ -47,13 +47,11 @@
 				</p>
 
 				<div>
-					
-									<!-- <form method="post" action="{% url 'newsletter' %}">
-										{% csrf_token %}
-										{{ newsletter_form|crispy }}
-										<button type="submit" class="btn btn-outline-success">SUBMIT</button>
-									</form> -->
-						
+					<form method="POST" action="{% url 'newsletter' %}">
+						{% csrf_token %}
+						{{ newsletter_form|crispy }}
+						<button type="submit" class="btn btn-dark rounded-0">SUBMIT</button>
+					</form>
 				</div>
 			</div>
 			<p><small>Your data will not be used for anything other than our newsletter subscription.</small>

@@ -220,6 +220,7 @@ thead {
 .form-control {
     background-color: #f4f1e0;
     border: 1px solid var(--text);
+    border-radius: 0;
 }
 
 .qty_input {
@@ -387,4 +388,9 @@ td p {
 
 .newsletter-footer {
     font-size: small;
+}
+
+.modal-content {
+    background-color: var(--background);
+    color: var(--text)
 }

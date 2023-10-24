@@ -42,6 +42,24 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
 		integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
 	</script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js">
+	</script>
+	<script type="text/javascript">
+	 $(document).ready(function() {
+		 if ($.cookie('pop') == null) {
+			 $('#myModal').modal('show');
+			 $.cookie('pop',);
+		 }
+	 });
+	</script>
+	<!-- <script>$(window).on('load',function(){
+		var delayMs = 2000;
+		
+		setTimeout(function(){
+			$('#exampleModalCenter').modal('show');
+		}, delayMs);
+	});
+</script> -->
 	  <!-- Stripe -->
 	  <script src="https://js.stripe.com/v3/"></script>
 	{% endblock %}
@@ -172,7 +190,36 @@
 				</div>
 			</div>
 		</nav>
+		<!-- modal -->
+		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+						aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content rounded-0">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalLongTitle">HARD COPY NEWSLETTER</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<p class="text-muted mb-4">
+										Subscribe to our monthly newletter for up to date music news, new stock announcements, and
+										discounts!! Stay in
+										the know.
+									</p>
+									<form method="POST" action="{% url 'newsletter' %}">
+										{% csrf_token %}
+										{{ newsletter_form|crispy }}
+										<button type="submit" class="btn btn-dark rounded-0 w-100">SUBSCRIBE</button>
+									</form>
+									<p><small>Your data will not be used for anything other than our newsletter subscription.</small>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 	</header>
+
 
 	{% if messages %}
 	<div class="message-box">
