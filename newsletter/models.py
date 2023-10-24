@@ -4,7 +4,8 @@ from django.contrib.auth.models import User
 
 
 class Newsletter(models.Model):
-    email = models.EmailField(max_length=254, null=False, blank=False)
+    email = models.EmailField(
+        max_length=254, null=False, blank=False, unique=True)
     subscribed_on = models.DateTimeField(auto_now_add=True)
 
     class Meta:
