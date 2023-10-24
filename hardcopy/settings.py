@@ -30,8 +30,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = os.environ.get('DEBUG', False)
 
 ALLOWED_HOSTS = [
+    'hard-copy-dca8835ff546.herokuapp.com'
     '8000-dylankane-hardcopy-p6phh15kb9b.ws-eu105.gitpod.io',
-    'https://hard-copy-dca8835ff546.herokuapp.com/'
     ]
 
 

@@ -1,1 +1,1 @@
-web: gunicorn hardcopy.wsgi
+web: gunicorn hardcopy.wsgi:application
