@@ -1,338 +1,1282 @@
 [
  {
-   "pk": 1,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340155",
-   	"name": "Dark Side Of The Moon",
-   	"artist": "Pink Floyd",
-   	"description": "The Dark Side of the Moon is the eighth studio album by the English rock band Pink Floyd, released on 1 March 1973 by Harvest Records in the UK and Capitol Records in the US.",
-   	"release_date": 1973,
-   	"category": 1,
-   	"genre": 1,
-   	"price": 30.99,
-   	"image_url": "https://i.discogs.com/mMxJHZMv_EUMgDso6PMI1HKsHHntkdG2ULQ2KW-1vHc/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NzEw/NC0xNDcyNTcyOTMx/LTUxMDQuanBlZw.jpeg",
-   	"image": "/media/dark-side-of-the-moon.jpg"
+  "pk": 1,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340155",
+    "name": "Dark Side Of The Moon",
+    "artist": "Pink Floyd",
+    "description": "The Dark Side of the Moon is the eighth studio album by the English rock band Pink Floyd, released on 1 March 1973 by Harvest Records in the UK and Capitol Records in the US.",
+    "release_date": 1973,
+    "category": 1,
+    "genre": 1,
+    "price": 30.99,
+    "image_url": "https://i.discogs.com/mMxJHZMv_EUMgDso6PMI1HKsHHntkdG2ULQ2KW-1vHc/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NzEw/NC0xNDcyNTcyOTMx/LTUxMDQuanBlZw.jpeg",
+    "image": "/media/dark-side-of-the-moon.jpg"
    }
  },
  {
-   "pk": 2,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340156",
-   	"name": "Is This It",
-   	"artist": "The Strokes",
-   	"description": "Is This It is the debut studio album by American band the Strokes",
-   	"release_date": 2001,
-   	"category": 1,
-   	"genre": 2,
-   	"price": 24.99,
-   	"image_url": "https://i.discogs.com/UMLNSgraQ68YSUb0-5DF1P19vUxPZ36TWNL9ALRlG1Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTAz/NzQtMTQ1Njk0MTMz/My0zMDY2LmpwZWc.jpeg",
-   	"image": "/media/is-this-it.jpg"
+  "pk": 2,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340156",
+    "name": "Is This It",
+    "artist": "The Strokes",
+    "description": "Is This It is the debut studio album by American band the Strokes",
+    "release_date": 2001,
+    "category": 1,
+    "genre": 2,
+    "price": 24.99,
+    "image_url": "https://i.discogs.com/UMLNSgraQ68YSUb0-5DF1P19vUxPZ36TWNL9ALRlG1Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTAz/NzQtMTQ1Njk0MTMz/My0zMDY2LmpwZWc.jpeg",
+    "image": "/media/is-this-it.jpg"
    }
  },
  {
-   "pk": 3,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340157",
-   	"name": "The Clash",
-   	"artist": "The Clash",
-   	"description": "The Clash is the debut studio album by English punk rock band, The Clash. It was released on 8 April 1977 through CBS Records",
-   	"release_date": 1977,
-   	"category": 1,
-   	"genre": 3,
-   	"price": 28.99,
-   	"image_url": "https://i.discogs.com/btwyRchLnxlg0KHMq32rXSy6ci6uanqtiIu6pP5G6I4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDg4/NzY0LTE1NDc4NTAz/ODYtMjkxNC5qcGVn.jpeg",
-   	"image": "/media/the-clash.jpg"
+  "pk": 3,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340157",
+    "name": "The Clash",
+    "artist": "The Clash",
+    "description": "The Clash is the debut studio album by English punk rock band, The Clash. It was released on 8 April 1977 through CBS Records",
+    "release_date": "1977",
+    "category": 1,
+    "genre": "3",
+    "price": 28.99,
+    "image_url": "https://i.discogs.com/btwyRchLnxlg0KHMq32rXSy6ci6uanqtiIu6pP5G6I4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDg4/NzY0LTE1NDc4NTAz/ODYtMjkxNC5qcGVn.jpeg",
+    "image": "/media/the-clash.jpg"
    }
  },
  {
-   "pk": 4,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340158",
-   	"name": "Helplessness Blues",
-   	"artist": "Fleet Foxes",
-   	"description": "Helplessness Blues is the second studio album by American band Fleet Foxes, released on May 3, 2011, by Sub Pop and Bella Union. The album received universal acclaim from critics, going on to be nominated for Best Folk Album at the 54th Annual Grammy Awards.",
-   	"release_date": 2011,
-   	"category": 1,
-   	"genre": 4,
-   	"price": 25.99,
-   	"image_url": "https://i.discogs.com/hi_oDfICk-8urdkpUO1REGR-g6O-imk86lJ1jgs7nDc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTY2/NDUtMTMyMTg2Mzc2/MC5qcGVn.jpeg",
-   	"image": "/media/helplessness.jpg"
+  "pk": 4,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340158",
+    "name": "Helplessness Blues",
+    "artist": "Fleet Foxes",
+    "description": "Helplessness Blues is the second studio album by American band Fleet Foxes, released on May 3, 2011, by Sub Pop and Bella Union. The album received universal acclaim from critics, going on to be nominated for Best Folk Album at the 54th Annual Grammy Awards.",
+    "release_date": "2011",
+    "category": 1,
+    "genre": 4,
+    "price": 25.99,
+    "image_url": "https://i.discogs.com/hi_oDfICk-8urdkpUO1REGR-g6O-imk86lJ1jgs7nDc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTY2/NDUtMTMyMTg2Mzc2/MC5qcGVn.jpeg",
+    "image": "/media/helplessness.jpg"
+    }
+ },
+ {
+  "pk": 5,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340159",
+    "name": "Music For the Jilted generation",
+    "artist": "The Prodigy",
+    "description": "Music for the Jilted Generation is the second studio album by English electronic music group the Prodigy. It was first released in 4 July 1994 by XL Recordings in the United Kingdom and by Mute Records in the United States.",
+    "release_date": "1994",
+    "category": 1,
+    "genre": 5,
+    "price": 22.99,
+    "image_url": "https://i.discogs.com/r_KqzFE3mSa7xZR-Uz-UPMpkX_MB269nUUAAk21CNa4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MjYt/MTM3MDg2MjY3Ny0y/NjI3LmpwZWc.jpeg",
+    "image": "/media/music-for-the-jilted-generation.jpg"
+    }
+ },
+ {
+  "pk": 6,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340160",
+    "name": "Renaissance",
+    "artist": "Beyoncé",
+    "description": "Renaissance is the seventh studio album by American singer Beyoncé, released on July 29, 2022, by Parkwood Entertainment and Columbia Records.",
+    "release_date": 2022,
+    "category": 1,
+    "genre": 6,
+    "price": 32.99,
+    "image_url": "https://i.discogs.com/dI9opFrp7aL5bORSUJ6OQkC77YFSg649YOUOk7nUuMo/rs:fit/g:sm/q:90/h:534/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDM3/NjczLTE2OTIwODk3/ODgtNzUwNy5qcGVn.jpeg",
+    "image": "/media/renaissance.jpg"
+    }
+ },
+ {
+  "pk": 7,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340161",
+    "name": "Red Headed Stranger",
+    "artist": "Willie Nelson",
+    "description": "Red Headed Stranger is the eighteenth studio album by American outlaw country singer Willie Nelson, released in 1975.",
+    "release_date": 1975,
+    "category": 1,
+    "genre": 7,
+    "price": 29.99,
+    "image_url": "https://i.discogs.com/fhat5CADYWANhC1T0U-kY4l9dmgeU2VCB0HtMVVqWVQ/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjA0/NTAtMTUzOTgzNjE4/OC01OTMzLmpwZWc.jpeg",
+    "image": "/media/red-headed-stranger.jpg"
+    }
+ },
+ {
+  "pk": 8,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340162",
+    "name": "A love Supreme",
+    "artist": "John Coltrane",
+    "description": "A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964 at Van Gelder Studio in Englewood Cliffs, New Jersey, leading a quartet featuring pianist McCoy Tyner, bassist Jimmy Garrison and drummer Elvin Jones.",
+    "release_date": 1964,
+    "category": 1,
+    "genre": 8,
+    "price": 26.99,
+    "image_url": "https://i.discogs.com/fGpBfJZOBOXcombzBDMfneERKusKwmEO03qCaTid4sY/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4OTA3/NDctMTQyODg4ODc4/NC00ODEzLmpwZWc.jpeg",
+    "image": "/media/a-love-supreme.jpg"
+    }
+ },
+ {
+  "pk": 9,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340163",
+    "name": "Songs In The Key Of Life",
+    "artist": "Stevie Wonder",
+    "description": "Songs in the Key of Life is the eighteenth studio album by American singer, songwriter and musician Stevie Wonder. A double album, it was released on September 28, 1976, by Tamla Records, a division of Motown.",
+    "release_date": 1976,
+    "category": 1,
+    "genre": 9,
+    "price": 29.99,
+    "image_url": "https://i.discogs.com/YzhtLts7LkthVlFHqcaq5ZNZ59GEwslZA9KCw556CSc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NTIz/My0xNDI2MTY2MTc0/LTkwODYuanBlZw.jpeg",
+    "image": "/media/song-in-the-key-of-life.jpg"
    }
  },
  {
-   "pk": 5,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340159",
-   	"name": "Music For the Jilted generation",
-   	"artist": "The Prodigy",
-   	"description": "Music for the Jilted Generation is the second studio album by English electronic music group the Prodigy. It was first released in 4 July 1994 by XL Recordings in the United Kingdom and by Mute Records in the United States.",
-   	"release_date": 1994,
-   	"category": 1,
-   	"genre": 5,
-   	"price": 22.99,
-   	"image_url": "https://i.discogs.com/r_KqzFE3mSa7xZR-Uz-UPMpkX_MB269nUUAAk21CNa4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MjYt/MTM3MDg2MjY3Ny0y/NjI3LmpwZWc.jpeg",
-   	"image": "/media/music-for-the-jilted-generation.jpg"
+  "pk": 10,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340164",
+    "name": "Bach: The Goldberg Variations",
+    "artist": "Glenn Gould",
+    "description": "Bach: The Goldberg Variations is the debut album of Canadian classical pianist Glenn Gould. An interpretation of Johann Sebastian Bach's Goldberg Variations, the 1956 record launched Gould's career as a renowned international pianist, and became one of the most well-known piano recordings",
+    "release_date": 1956,
+    "category": 1,
+    "genre": 10,
+    "price": 42.99,
+    "image_url": "https://i.discogs.com/nm7HPC5MHJMa9pqt4ODA8i1qUVGhdeQg6krEBPRxulQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Nzk5/MTctMTYwODYyMTQz/MC04NTE3LmpwZWc.jpeg",
+    "image": "/media/the-golderg-variations.jpg"
+    }
+ },
+ {
+  "pk": 11,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340165",
+    "name": "Enter the Wu-Tang (36 Chambers)",
+    "artist": "Wu-Tang Clan",
+    "description": "Enter the Wu-Tang (36 Chambers) is the debut studio album by the American hip-hop group Wu-Tang Clan, released on November 9, 1993, by BMG, RCA Records and Loud Records. Recording sessions took place during late 1992 to early 1993 at Firehouse Studio in New York City.",
+    "release_date": 1993,
+    "category": 1,
+    "genre": 11,
+    "price": 25.99,
+    "image_url": "https://i.discogs.com/JVtYto3PpCrhttx7V3aR09GKcOlPw4SE8RYrdxaWPTk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Mzc0/OS0xMTg1MTM0MTM1/LmpwZWc.jpeg",
+    "image": "/media/enter-the-wu-tang.jpg"
+   }
+  },
+ {
+  "pk": 12,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340166",
+    "name": "Buena Vista Social Club",
+    "artist": "Buena Vista Social Club",
+    "description": "Buena Vista Social Club is the debut album by the Buena Vista Social Club, an ensemble of Cuban musicians directed by Juan de Marcos González",
+    "release_date": 1997,
+    "category": 1,
+    "genre": 12,
+    "price": 26.99,
+    "image_url": "https://i.discogs.com/ESuMEYQ9fu88_rndyHJP7SNx4Y1PjibOlKZ2oTBi_xQ/rs:fit/g:sm/q:90/h:520/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjE2/NDEtMTMyNTcwMzYy/MS5qcGVn.jpeg",
+    "image": "/media/buena-vista-social-club.jpg"
+   }
+  },
+ {
+  "pk": 13,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340167",
+    "name": "The West Side Story",
+    "artist": "The West Side Story",
+    "description": "West Side Story is the soundtrack album to the 1961 film West Side Story, featuring music by Leonard Bernstein and lyrics by Stephen Sondheim.",
+    "release_date": 1961,
+    "category": 1,
+    "genre": 13,
+    "price": 15.99,
+    "image_url": "https://i.discogs.com/QeEjP0d-L-rW6ycf5ms3bKRI5n7bjnjcLI9UUVDVFeM/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzM0/MDcxLTE0OTU1MDIz/ODktMzczNS5qcGVn.jpeg",
+    "image": "/media/the-west-side-story.jpg"
    }
  },
  {
-   "pk": 6,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340160",
-   	"name": "Renaissance",
-   	"artist": "Beyoncé",
-   	"description": "Renaissance is the seventh studio album by American singer Beyoncé, released on July 29, 2022, by Parkwood Entertainment and Columbia Records.",
-   	"release_date": 2022,
-   	"category": 1,
-   	"genre": 6,
-   	"price": 32.99,
-   	"image_url": "https://i.discogs.com/dI9opFrp7aL5bORSUJ6OQkC77YFSg649YOUOk7nUuMo/rs:fit/g:sm/q:90/h:534/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDM3/NjczLTE2OTIwODk3/ODgtNzUwNy5qcGVn.jpeg",
-   	"image": "/media/renaissance.jpg"
+  "pk": 14,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340168",
+    "name": "Catch A Fire",
+    "artist": "The Wailers",
+    "description": "Catch a Fire is the fifth studio album by the reggae band The Wailers, released in April 1973. It was their first album released by Island Records.",
+    "release_date": 1973,
+    "category": 1,
+    "genre": 14,
+    "price": 23.99,
+    "image_url": "https://i.discogs.com/OIfdx5gdoPvpNCOkEJJxGTo3BxdPvR21Ue4a8vZuRIE/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjcz/My0xNTQ5NTQyMjM3/LTk0NjMuanBlZw.jpeg",
+    "image": "/media/catch-a-fire.jpg"
    }
  },
  {
-   "pk": 7,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340161",
-   	"name": "Red Headed Stranger",
-   	"artist": "Willie Nelson",
-   	"description": "Red Headed Stranger is the eighteenth studio album by American outlaw country singer Willie Nelson, released in 1975.",
-   	"release_date": 1975,
-   	"category": 1,
-   	"genre": 7,
-   	"price": 29.99,
-   	"image_url": "https://i.discogs.com/fhat5CADYWANhC1T0U-kY4l9dmgeU2VCB0HtMVVqWVQ/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjA0/NTAtMTUzOTgzNjE4/OC01OTMzLmpwZWc.jpeg",
-   	"image": "/media/red-headed-stranger.jpg"
+  "pk": 15,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340169",
+    "name": "The Real Folk Blues",
+    "artist": "John Lee Hooker",
+    "description": "The Real Folk Blues is an album by blues musician John Lee Hooker that was recorded in Chicago in 1966 and released by the Chess label.",
+    "release_date": 1966,
+    "category": 1,
+    "genre": 15,
+    "price": 21.99,
+    "image_url": "https://i.discogs.com/OIfdx5gdoPvpNCOkEJJxGTo3BxdPvR21Ue4a8vZuRIE/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjcz/My0xNTQ5NTQyMjM3/LTk0NjMuanBlZw.jpeg",
+    "image": "/media/real-folk-blues.jpg"
    }
  },
  {
-   "pk": 8,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340162",
-   	"name": "A love Supreme",
-   	"artist": "John Coltrane",
-   	"description": "A Love Supreme is an album by American jazz saxophonist John Coltrane. He recorded it in one session on December 9, 1964 at Van Gelder Studio in Englewood Cliffs, New Jersey, leading a quartet featuring pianist McCoy Tyner, bassist Jimmy Garrison and drummer Elvin Jones.",
-   	"release_date": 1964,
-   	"category": 1,
-   	"genre": 8,
-   	"price": 26.99,
-   	"image_url": "https://i.discogs.com/fGpBfJZOBOXcombzBDMfneERKusKwmEO03qCaTid4sY/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4OTA3/NDctMTQyODg4ODc4/NC00ODEzLmpwZWc.jpeg",
-   	"image": "/media/a-love-supreme.jpg"
+  "pk": 16,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340170",
+    "name": "The Rising Of The Moon: Irish Songs of Rebellion",
+    "artist": "The Clancy Brothers",
+    "description": "The Rising of the Moon: Irish Songs of Rebellion is a collection of traditional Irish folk songs performed by The Clancy Brothers and Tommy Makem. It was the group's first album and was initially recorded in 1956",
+    "release_date": 1956,
+    "category": 1,
+    "genre": 16,
+    "price": 22.99,
+    "image_url": "https://i.discogs.com/N2hqtqx6BtrqknnCJdLGeno8Ox1o2A1JCaEyMGO5XK8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjMw/MDM1LTE1MzkzMDQx/OTItNDcxNC5qcGVn.jpeg",
+    "image": "/media/rising-of-the-moon.jpg"
+    }
+ },
+ {
+  "pk": 17,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340171",
+    "name": "DENON DP-29F Belt Drive Turntable - Silver",
+    "artist": null,
+    "description": "The Denon DP-29F Belt Drive Turntable makes playing analog records simple thanks to its fully automatic operation. With a touch of a button the music starts playing and when the record's over the tonearm returns to its original position and the turntable stops. This makes sure you don't accidentally scratch your record.This turntable has a built-in RIAA phono equalizer, which allows you to connect it straight to an amp that doesn't have an equalizer.",
+    "release_date": null,
+    "category": 2,
+    "genre": null,
+    "price": 199.99,
+    "image_url": "https://media.currys.biz/i/currysprod/10213568?$l-large$&fmt=auto",
+    "image": "/media/6.png"
    }
  },
  {
-   "pk": 9,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340163",
-   	"name": "Songs In The Key Of Life",
-   	"artist": "Stevie Wonder",
-   	"description": "Songs in the Key of Life is the eighteenth studio album by American singer, songwriter and musician Stevie Wonder. A double album, it was released on September 28, 1976, by Tamla Records, a division of Motown.",
-   	"release_date": 1976,
-   	"category": 1,
-   	"genre": 9,
-   	"price": 29.99,
-   	"image_url": "https://i.discogs.com/YzhtLts7LkthVlFHqcaq5ZNZ59GEwslZA9KCw556CSc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NTIz/My0xNDI2MTY2MTc0/LTkwODYuanBlZw.jpeg",
-   	"image": "/media/song-in-the-key-of-life.jpg"
+  "pk": 18,
+  "model": "shop.product",
+  "fields": {
+   "sku": "pp5001340172",
+   "name": "LENCO LS-100 Belt Drive Bluetooth Turntable - Brown Wood",
+   "artist": null,
+   "description": "Play your record collection with the Lenco LS-100 Belt Drive Bluetooth Turntable. There's a pair of full-sized speakers included in the package, so you can fill your room with high-quality audio.The record player is equipped with auto-stop function, so your records will stop turning when they're over. Also, the hinged plastic cover protects your records from dust.",
+   "release_date": null,
+   "category": 2,
+   "genre": null,
+   "price": 149.99,
+   "image_url": "https://media.currys.biz/i/currysprod/10229894?$l-large$&fmt=auto",
+   "image": "/media/5.png"
    }
  },
  {
-   "pk": 10,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340164",
-   	"name": "Bach: The Goldberg Variations",
-   	"artist": "Glenn Gould",
-   	"description": "Bach: The Goldberg Variations is the debut album of Canadian classical pianist Glenn Gould. An interpretation of Johann Sebastian Bach's Goldberg Variations, the 1956 record launched Gould's career as a renowned international pianist, and became one of the most well-known piano recordings",
-   	"release_date": 1956,
-   	"category": 1,
-   	"genre": 10,
-   	"price": 42.99,
-   	"image_url": "https://i.discogs.com/nm7HPC5MHJMa9pqt4ODA8i1qUVGhdeQg6krEBPRxulQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Nzk5/MTctMTYwODYyMTQz/MC04NTE3LmpwZWc.jpeg",
-   	"image": "/media/the-golderg-variations.jpg"
+  "pk": 19,
+  "model": "shop.product",
+  "fields": {
+    "sku": "pp5001340173",
+    "name": "Cup Pink Floyd - Prism",
+    "artist": null,
+    "description": "These mugs are not suitable for the microwave or dishwasher",
+    "release_date": null,
+    "category": 3,
+    "genre": null,
+    "price": 10.99,
+    "image_url": "https://cdn.europosters.eu/image/1300/mugs/pink-floyd-prism-i46900.jpg",
+    "image": "/media/pink-floyd-prism.jpg"
    }
  },
  {
-   "pk": 11,
-   "model": "shop.product",
-   "fields": {
-   	"sku": "pp5001340165",
-   	"name": "Enter the Wu-Tang (36 Chambers)",
-   	"artist": "Wu-Tang Clan",
-   	"description": "Enter the Wu-Tang (36 Chambers) is the debut studio album by the American hip-hop group Wu-Tang Clan, released on November 9, 1993, by BMG, RCA Records and Loud Records. Recording sessions took place during late 1992 to early 1993 at Firehouse Studio in New York City.",
-   	"release_date": 1993,
-   	"category": 1,
-   	"genre": 11,
-   	"price": 25.99,
-   	"image_url": "https://i.discogs.com/JVtYto3PpCrhttx7V3aR09GKcOlPw4SE8RYrdxaWPTk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Mzc0/OS0xMTg1MTM0MTM1/LmpwZWc.jpeg",
-   	"image": "/media/enter-the-wu-tang.jpg"
+  "pk": 20,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340174",
+   "name": "Whats It Gonna Take",
+   "artist": "Van Morrison",
+   "description": "What's It Gonna Take? is the 43rd studio album by Northern Irish singer-songwriter Van Morrison, released on 20 May 2022. ",
+   "release_date": 2022,
+   "category": 4,
+   "genre": 4,
+   "price": 8.99,
+   "image_url": "https://i.discogs.com/RIDZUSnZ2b3g2maZfMiAUwliNqqu2md61i1Dzfbt7l4/rs:fit/g:sm/q:90/h:540/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMjkz/NjMxLTE2NTg1NTc2/NjgtMjI5NC5qcGVn.jpeg",
+   "image": "/media/whats-it-gonna.jpg"
+  }
+ },
+ {
+  "pk": 21,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340175",
+   "name": "The Ballad Of Darren",
+   "artist": "Blur",
+   "description": "The Ballad of Darren, the ninth album from Britpop pioneers Blur, catches four friends reconvening in their 50s to tackle daunting adult problems — the end of romance and the onset of middle age",
+   "release_date": 2023,
+   "category": 5,
+   "genre": 2,
+   "price": 32.99,
+   "image_url": "https://i.discogs.com/qB9HFaesrp3LxJRE9xhzjZu93BwzSjT9ySXUu2YemQQ/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MzEz/NTE4LTE2OTAwMTky/MTgtMTA1My5qcGVn.jpeg",
+   "image": "/media/ballad-of-darren.jpg"
+  }
+ },
+ {
+  "pk": 22,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340176",
+   "name": "Raw Power",
+   "artist": "Iggy And The Stooges",
+   "description": "Raw Power is the third studio album by American rock band the Stooges, released on February 7, 1973 by Columbia Records.",
+   "release_date": 1973,
+   "category": 1,
+   "genre": 1,
+   "price": 29.99,
+   "image_url": "https://i.discogs.com/yIpr4e_Qx0Kfq8hLxregIFOOQTl4b7WdXine4dygU5M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4OTcx/Ny0xMjY4MTM2Njk0/LmpwZWc.jpeg",
+   "image": "/media/raw-power.jpg"
+  }
+ },
+ {
+  "pk": 23,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340177",
+   "name": "Folk Singer",
+   "artist": "Muddy Waters",
+   "description": "Folk Singer is the fourth studio album by Muddy Waters, released in January 1964 by Chess Records. The album features Waters on acoustic guitar, backed by Willie Dixon on string bass, Clifton James on drums, and Buddy Guy on acoustic guitar. It is Waters's only all-acoustic album.",
+   "release_date": 1964,
+   "category": 1,
+   "genre": 15,
+   "price": 25.99,
+   "image_url": "https://i.discogs.com/KlDrK5NK4b3ekFBaCe2G3jaIB79XL_U9RZeiaWrGP8E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0ODc0/NTYtMTM4NTQ3NzMx/Ny0yNDE0LmpwZWc.jpeg",
+   "image": "/media/folk-singer.jpg"
+  }
+ },
+ {
+  "pk": 24,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340178",
+   "name": "Astral Weeks",
+   "artist": "Van Morrison",
+   "description": "Astral Weeks is the second studio album by Northern Irish singer-songwriter Van Morrison. It was recorded at Century Sound Studios in New York during September and October 1968, and released in November of the same year by Warner Bros. Records",
+   "release_date": 1968,
+   "category": 1,
+   "genre": 1,
+   "price": 28.99,
+   "image_url": "https://i.discogs.com/ZKV0Y5P2J0MsmUA7UP2IeM8MDaweG1rmnCbV3sIZ1Wk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MzYy/ODktMTQ1NDk5MTkz/Ny0yMzUxLmpwZWc.jpeg",
+   "image": "/media/astral-weeks.jpg"
+  }
+ },
+ {
+  "pk": 25,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340179",
+   "name": "The Gilded Palace Of Sin",
+   "artist": "The Flying Burrito Bros",
+   "description": "The Gilded Palace of Sin is the first album by the country rock group the Flying Burrito Brothers, released on February 6, 1969.",
+   "release_date": 1969,
+   "category": 1,
+   "genre": 7,
+   "price": 28.99,
+   "image_url": "https://i.discogs.com/jcCIU8rRb1PWeVsXCOh0N9LQbVBB_zRRYPNKn_fpwCo/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDY2/OTAtMTMyOTM1MjAy/Ny5qcGVn.jpeg",
+   "image": "/media/the-gilded-palace.jpg"
+  }
+ },
+ {
+  "pk": 26,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340180",
+   "name": "Meddle",
+   "artist": "Pink Floyd",
+   "description": "Meddle is the sixth studio album by English rock band Pink Floyd, released by Harvest Records. The album was produced between the band's touring commitments, from January to August 1971 at a series of locations around London, including EMI Studios and Morgan Studios.",
+   "release_date": 1971,
+   "category": 1,
+   "genre": 1,
+   "price": 34.99,
+   "image_url": "https://i.discogs.com/nlcHURJ-xZgDIezGAne4lRoiOZJYbb-qHxf7NMfwTQw/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMzc0/OTMtMTUzNzIxNjkz/NS05NzUzLmpwZWc.jpeg",
+   "image": "/media/meddle.jpg"
+  }
+ },
+ {
+  "pk": 27,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340181",
+   "name": "Houses Of The Holy",
+   "artist": "Led Zeppelin",
+   "description": "Houses of the Holy is the fifth studio album by the English rock band Led Zeppelin, released on 28 March 1973 by Atlantic Records. The album benefited from two band members installing studios at home, which allowed them to develop more sophisticated songs and arrangements and expand their musical style.",
+   "release_date": 1973,
+   "category": 1,
+   "genre": 1,
+   "price": 32.99,
+   "image_url": "https://i.discogs.com/BLWVi0t0llSqJvIybHrSvPql-RfORCmZU1klNfV0si8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NTA3/Ny0xNTg4ODgwNzg4/LTIyMjYuanBlZw.jpeg",
+   "image": "/media/houses-of-the-holy.jpg"
+  }
+ },
+ {
+  "pk": 28,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340182",
+   "name": "Bad Brains",
+   "artist": "Bad Brains",
+   "description": "Bad Brains are an American band formed in Washington, D.C., in 1976. They are widely regarded as pioneers of hardcore punk, though the band's members have objected to the use of this term to describe their music.",
+   "release_date": 1982,
+   "category": 1,
+   "genre": 3,
+   "price": 19.99,
+   "image_url": "https://i.discogs.com/A5nJ8PE9lgo2L_yFb6m4KUZGVsBmtmq5RJoFpV4CMaA/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1Njc3/Ny0xMjMwNDIxOTE2/LmpwZWc.jpeg",
+   "image": "/media/bad-brains.jpg"
+  }
+ },
+ {
+  "pk": 29,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340183",
+   "name": "Kid A",
+   "artist": "Radiohead",
+   "description": "Kid A is the fourth studio album by the English rock band Radiohead, released on 2 October 2000 by Parlophone. It was recorded with their producer, Nigel Godrich, in Paris, Copenhagen, Gloucestershire and Oxfordshire.",
+   "release_date": 2000,
+   "category": 1,
+   "genre": 2,
+   "price": 21.99,
+   "image_url": "https://i.discogs.com/_zg0Us0N_anqCz9hJvFGeRK2v69eDDCxQnHkd7RcgTk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0NzQz/LTE1NDg5MDI2NDMt/Mzg2OS5qcGVn.jpeg",
+   "image": "/media/kid-a.jpg"
+  }
+ },
+ {
+  "pk": 30,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340184",
+   "name": "Bangerz",
+   "artist": "Miley Cyrus",
+   "description": "Bangerz is the fourth studio album by American singer Miley Cyrus, released on September 30, 2013, by RCA Records. It is her first body of original work since leaving Hollywood Records after her third studio album Can't Be Tamed and signing with RCA in early 2013",
+   "release_date": 2013,
+   "category": 1,
+   "genre": 6,
+   "price": 35.99,
+   "image_url": "https://i.discogs.com/2lg-T1Xxd2Xb3grvfzsznm7a-LvrNuSp9YSYA-t2JFU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDIz/MzgxLTE2OTc3NDU3/MzUtOTQxMS5qcGVn.jpeg",
+   "image": "/media/bangerz.jpg"
+  }
+ },
+ {
+  "pk": 31,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340185",
+   "name": "After Hours",
+   "artist": "The Weeknd",
+   "description": "After Hours is the fourth studio album by Canadian singer the Weeknd, released on March 20, 2020, by XO and Republic Records. Primarily produced by the Weeknd, it features a variety of producers, including DaHeala, Illangelo, Max Martin, Metro Boomin, and OPN, most of whom the Weeknd had worked with previously.",
+   "release_date": 2020,
+   "category": 1,
+   "genre": 11,
+   "price": 28.99,
+   "image_url": "https://i.discogs.com/DsEnUXx3ZCZ6y4Z3f-MVDxQYF6lzMEQzrVHKgOWazNQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTY4/MDA1LTE2OTcxMDQ3/MjktMjE0My5qcGVn.jpeg",
+   "image": "/media/after-hours.jpg"
+  }
+ },
+ {
+  "pk": 32,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340186",
+   "name": "Ephorize",
+   "artist": "Cupcake",
+   "description": "Ephorize is the third studio album by American rapper Cupcakke. It was self-released on January 5, 2018 via TuneCore",
+   "release_date": 2018,
+   "category": 1,
+   "genre": 11,
+   "price": 15.99,
+   "image_url": "https://i.discogs.com/2WSGwzHrs8h9B3tVoXYMH40Ldzo9eVYMADv19viDz1s/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDc1/NzIyLTE1MTY5OTk5/ODYtODkxOS5qcGVn.jpeg",
+   "image": "/media/ephorize.jpg"
+  }
+ },
+ {
+  "pk": 33,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340187",
+   "name": "Orquesta de Cámara Paul Kuentz",
+   "artist": "Nicanor Zabaleta",
+   "description": "Conductor: Paul Kuentz, Engineer: Hans-Peter Schweigmann, Harp: Nicanor Zabaleta, Orchestra: Orchestre de Chambre Paul Kuentz, Photography By: A. Soulet.",
+   "release_date": 1966,
+   "category": 1,
+   "genre": 10,
+   "price": 18.99,
+   "image_url": "https://i.discogs.com/ecAY_lKBCS2MwEA3gYWMFDb5wOTGseNjFkS5iOFqv9s/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDY2/Nzc2LTE2OTYxODMz/NzQtMTQ2MC5qcGVn.jpeg",
+   "image": "/media/orquesta-de-camara.jpg"
+  }
+ },
+ {
+  "pk": 34,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340188",
+   "name": "Yankee Hotel Foxtrot",
+   "artist": "Wilco",
+   "description": "An alternative rock album that features lush orchestration and experimental sounds.",
+   "release_date": 2002,
+   "category": 1,
+   "genre": 2,
+   "price": 16.99,
+   "image_url": "https://i.discogs.com/GZTjLOTPNerFOKOT3YDI5bLmBWX11ap0PiqDjgXf1Ec/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MjY1/MjUtMTQwOTMzODUz/NC05MDMyLmpwZWc.jpeg",
+   "image": "/media/yeankee-hotel.jpg"
+  }
+ },
+ {
+  "pk": 35,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340189",
+   "name": "Elephant",
+   "artist": "The White Stripes",
+   "description": "A garage rock album that features raw guitars and catchy melodies.",
+   "release_date": 2003,
+   "category": 1,
+   "genre": 1,
+   "price": 24.99,
+   "image_url": "https://i.discogs.com/cBFsRFEWUhOdn9ZLq77ZMCrHgzbLRIdcpZ6C9eZ7vjU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2NzMz/Ni0xMjQ5NTg2MjA1/LmpwZWc.jpeg",
+   "image": "/media/elephant.jpg"
+  }
+ },
+ {
+  "pk": 36,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340190",
+   "name": "My Beautiful Dark Twisted Fantasy",
+   "artist": "Kanye West",
+   "description": "A hip hop album that features complex beats, lush orchestration, and introspective lyrics.",
+   "release_date": 2010,
+   "category": 1,
+   "genre": 11,
+   "price": 21.99,
+   "image_url": "https://i.discogs.com/hFrpXP9sZ-LwVY-onr8HleH6Hg5GRzwm9KfSO0ZbmWA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDY5/NTItMTUyMTQ2ODE4/MC04NjMwLmpwZWc.jpeg",
+   "image": "/media/my-beautiful-dark.jpg"
+  }
+ },
+ {
+  "pk": 37,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340191",
+   "name": "To Pimp a Butterfly",
+   "artist": "Kendrick Lamar",
+   "description": "A hip hop album that explores themes of race, identity, and social justice.",
+   "release_date": 2015,
+   "category": 1,
+   "genre": 11,
+   "price": 31.99,
+   "image_url": "https://i.discogs.com/mzZN2JyPeiMrz8YnZd04bKifNZ36K5zMECcfHvnTzFk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1NTc5/NTctMTQ0Mzk4MjAy/NC01NTk2LmpwZWc.jpeg",
+   "image": "/media/pimp-a-butterfly.jpg"
+  }
+ },
+ {
+  "pk": 38,
+  "model": "shop.product",
+  "fields": {
+  "sku": "pp5001340192",
+   "name": "Melodrama",
+   "artist": "Lorde",
+   "description": "An electropop album that explores themes of heartbreak, grief, and self-discovery.",
+   "release_date": 2017,
+   "category": 1,
+   "genre": 6,
+   "price": 25.99,
+   "image_url": "https://i.discogs.com/_oRGPC-ojlOZdJVpVIsJ31PRRq822iha_Q8Z8s6MrTI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDM2/NTc2LTE0OTc2NjM2/NzUtNTMxNy5qcGVn.jpeg",
+   "image": "/media/melodrama.jpg"
    }
  },
  {
-   "pk": 12,
+   "pk": 39,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340166",
-   	"name": "Buena Vista Social Club",
-   	"artist": "Buena Vista Social Club",
-   	"description": "Buena Vista Social Club is the debut album by the Buena Vista Social Club, an ensemble of Cuban musicians directed by Juan de Marcos González",
-   	"release_date": 1997,
-   	"category": 1,
-   	"genre": 12,
-   	"price": 26.99,
-   	"image_url": "https://i.discogs.com/ESuMEYQ9fu88_rndyHJP7SNx4Y1PjibOlKZ2oTBi_xQ/rs:fit/g:sm/q:90/h:520/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjE2/NDEtMTMyNTcwMzYy/MS5qcGVn.jpeg",
-   	"image": "/media/buena-vista-social-club.jpg"
+   "sku": "pp5001340193",
+   "name": "Future Nostalgia",
+   "artist": "Dua Lipa",
+   "description": "A pop album that draws inspiration from 1980s disco and funk.",
+   "release_date": 2020,
+   "category": 1,
+   "genre": 6,
+   "price": 21.99,
+   "image_url": "https://i.discogs.com/Q9wRgXsGgV7WGq1xsATU5GWnxT7saVE76ZhX-u0vdiA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTk4/NjMyLTE1ODUzMTMy/OTgtMjU4My5wbmc.jpeg",
+   "image": "/media/future-nostolgia.jpg"
    }
  },
  {
-   "pk": 13,
+   "pk": 40,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340167",
-   	"name": "The West Side Story",
-   	"artist": "The West Side Story",
-   	"description": "West Side Story is the soundtrack album to the 1961 film West Side Story, featuring music by Leonard Bernstein and lyrics by Stephen Sondheim.",
-   	"release_date": 1961,
-   	"category": 1,
-   	"genre": 13,
-   	"price": 15.99,
-   	"image_url": "https://i.discogs.com/QeEjP0d-L-rW6ycf5ms3bKRI5n7bjnjcLI9UUVDVFeM/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzM0/MDcxLTE0OTU1MDIz/ODktMzczNS5qcGVn.jpeg",
-   	"image": "/media/the-west-side-story.jpg"
+   "sku": "pp5001340194",
+   "name": "A Seat at the Table",
+   "artist": "Solange",
+   "description": "An R&B album that explores themes of black womanhood and resilience.",
+   "release_date": 2016,
+   "category": 1,
+   "genre": 9,
+   "price": 18.99,
+   "image_url": "https://i.discogs.com/Sl-Kre7czPWV2D1fnnJiGB4bvOU21iPZNhWVqhXP13k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxMjU5/MzYtMTQ3NTIyMDIz/My0yNTMwLmpwZWc.jpeg",
+   "image": "/media/a-seat-at-the-table.jpg"
    }
  },
  {
-   "pk": 14,
+   "pk": 41,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340168",
-   	"name": "Catch A Fire",
-   	"artist": "The Wailers",
-   	"description": "Catch a Fire is the fifth studio album by the reggae band The Wailers, released in April 1973. It was their first album released by Island Records.",
-   	"release_date": 1973,
-   	"category": 1,
-   	"genre": 14,
-   	"price": 23.99,
-   	"image_url": "https://i.discogs.com/OIfdx5gdoPvpNCOkEJJxGTo3BxdPvR21Ue4a8vZuRIE/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjcz/My0xNTQ5NTQyMjM3/LTk0NjMuanBlZw.jpeg",
-   	"image": "/media/catch-a-fire.jpg"
+   "sku": "pp5001340195",
+   "name": "Homework",
+   "artist": "Daft Punk",
+   "description": "A groundbreaking album that helped to popularize French house music.",
+   "release_date": 1997,
+   "category": 1,
+   "genre": 5,
+   "price": 32.99,
+   "image_url": "https://i.discogs.com/TDewIv-a8M9cx0W8odZiKHXM6x4o9CCBE2rVuBUIpog/rs:fit/g:sm/q:90/h:574/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjYw/NS0xNDkyODUzODYy/LTI1MjguanBlZw.jpeg",
+   "image": "/media/homework.jpg"
    }
  },
  {
-   "pk": 15,
+   "pk": 42,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340169",
-   	"name": "The Real Folk Blues",
-   	"artist": "John Lee Hooker",
-   	"description": "The Real Folk Blues is an album by blues musician John Lee Hooker that was recorded in Chicago in 1966 and released by the Chess label.",
-   	"release_date": 1966,
-   	"category": 1,
-   	"genre": 15,
-   	"price": 21.99,
-   	"image_url": "https://i.discogs.com/OIfdx5gdoPvpNCOkEJJxGTo3BxdPvR21Ue4a8vZuRIE/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjcz/My0xNTQ5NTQyMjM3/LTk0NjMuanBlZw.jpeg",
-   	"image": "/media/real-folk-blues.jpg"
+   "sku": "pp5001340196",
+   "name": "Red",
+   "artist": "Taylor Swift",
+   "description": "Taylor Swift's fourth studio album, Red, is a country pop album that explores themes of love, loss, and anger. The album features hit singles such as \"I Knew You Were Trouble,\" \"22,\" and \"We Are Never Ever Getting Back Together.\"",
+   "release_date": 2012,
+   "category": 1,
+   "genre": 7,
+   "price": 15.99,
+   "image_url": "https://i.discogs.com/1lakKNZC0FG-cTluIt1A_dhXk7jJbKytuOM5OcLucbs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjY1/NjI1LTE1MTMwNDIy/MDctMjExOC5qcGVn.jpeg",
+   "image": "/media/red-taylor.jpg"
    }
  },
  {
-   "pk": 16,
+   "pk": 43,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340170",
-   	"name": "The Rising Of The Moon: Irish Songs of Rebellion",
-   	"artist": "The Clancy Brothers",
-   	"description": "The Rising of the Moon: Irish Songs of Rebellion is a collection of traditional Irish folk songs performed by The Clancy Brothers and Tommy Makem. It was the group's first album and was initially recorded in 1956",
-   	"release_date": null,
-   	"category": 1,
-   	"genre": 16,
-   	"price": 22.99,
-   	"image_url": "https://i.discogs.com/N2hqtqx6BtrqknnCJdLGeno8Ox1o2A1JCaEyMGO5XK8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjMw/MDM1LTE1MzkzMDQx/OTItNDcxNC5qcGVn.jpeg",
-   	"image": "/media/rising-of-the-moon.jpg"
+   "sku": "pp5001340197",
+   "name": "Exodus",
+   "artist": "Bob Marley & The Wailers",
+   "description": "Exodus is Bob Marley & The Wailers' fourth studio album and is considered to be one of the greatest reggae albums of all time. The album features classic songs such as \"One Love,\" \"No Woman, No Cry,\" and \"Jammin'.\"",
+   "release_date": 1977,
+   "category": 1,
+   "genre": 14,
+   "price": 24.99,
+   "image_url": "https://i.discogs.com/7euFMytBkAZGvAdKZv93lq2ilW6mzmuKckOYN6FSQ80/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyNTY4/OS0xNTQzNTc4Mzcz/LTM5ODAuanBlZw.jpeg",
+   "image": "/media/exodus.jpg"
    }
  },
  {
-   "pk": 17,
+   "pk": 44,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340171",
-   	"name": "DENON DP-29F Belt Drive Turntable - Silver",
-   	"artist": "",
-   	"description": "The Denon DP-29F Belt Drive Turntable makes playing analog records simple thanks to its fully automatic operation. With a touch of a button the music starts playing and when the record's over the tonearm returns to its original position and the turntable stops. This makes sure you don't accidentally scratch your record.This turntable has a built-in RIAA phono equalizer, which allows you to connect it straight to an amp that doesn't have an equalizer.",
-   	"release_date": null,
-   	"category": 2,
-   	"genre": null,
-   	"price": 199.99,
-   	"image_url": "https://media.currys.biz/i/currysprod/10213568?$l-large$&fmt=auto",
-   	"image": "/media/turntable1.webp"
+   "sku": "pp5001340198",
+   "name": "In Colour",
+   "artist": "Jamie xx",
+   "description": "A solo album from The xx member that features lush melodies and experimental sounds.",
+   "release_date": 2015,
+   "category": 1,
+   "genre": 5,
+   "price": 33.99,
+   "image_url": "https://i.discogs.com/JVdVvhN3bnxeaEG8eeiOHIfuG2oZqyvqGwPS--STy9E/rs:fit/g:sm/q:90/h:549/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwNjc5/MDktMTYwMzIwODQy/NC02Mjc5LmpwZWc.jpeg",
+   "image": "/media/in-colour.jpg"
    }
  },
  {
-   "pk": 18,
+   "pk": 45,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340172",
-   	"name": "LENCO LS-100 Belt Drive Bluetooth Turntable - Brown Wood",
-   	"artist": "",
-   	"description": "Play your record collection with the Lenco LS-100 Belt Drive Bluetooth Turntable. There's a pair of full-sized speakers included in the package, so you can fill your room with high-quality audio.The record player is equipped with auto-stop function, so your records will stop turning when they're over. Also, the hinged plastic cover protects your records from dust.",
-   	"release_date": null,
-   	"category": 2,
-   	"genre": null,
-   	"price": 149.99,
-   	"image_url": "https://media.currys.biz/i/currysprod/10229894?$l-large$&fmt=auto",
-   	"image": "/media/turntablesystem2.webp"
+   "sku": "pp5001340199",
+   "name": "Hamilton: An American Musical",
+   "artist": "Various Artists",
+   "description": "The original cast recording of the hit Broadway musical, combining hip-hop, R&B, and traditional show tunes to tell the story of Alexander Hamilton.",
+   "release_date": 2015,
+   "category": 1,
+   "genre": 13,
+   "price": 35.99,
+   "image_url": "https://i.discogs.com/GcowOewGy7VOPJ8tQ4dP4_SRkZdA1w3UDHUUCzDrQZw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2NDA5/ODMtMTQ0NTczNDI4/OC05MDIwLmpwZWc.jpeg",
+   "image": "/media/hamilton.jpg"
    }
  },
  {
-   "pk": 19,
+   "pk": 46,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340173",
-   	"name": "Cup Pink Floyd - Prism",
-   	"artist": "",
-   	"description": "These mugs are not suitable for the microwave or dishwasher",
-   	"release_date": null,
-   	"category": 3,
-   	"genre": null,
-   	"price": 10.99,
-   	"image_url": "https://cdn.europosters.eu/image/1300/mugs/pink-floyd-prism-i46900.jpg",
-   	"image": "/media/pink-floyd-prism.jpg"
+   "sku": "pp5001340200",
+   "name": "The Weight of These Wings",
+   "artist": "Miranda Lambert",
+   "description": "Miranda Lambert's sixth studio album, The Weight of These Wings, is a country album that deals with the themes of divorce and heartbreak. The album features hit singles such as \"Vice,\" \"Tin Man,\" and \"Keeper of the Flame.\"",
+   "release_date": 2016,
+   "category": 1,
+   "genre": 7,
+   "price": 17.99,
+   "image_url": "https://i.discogs.com/rkjTX4R-VDjeyTqDyIZ8e9TuDNq6zN4obaMiQM3YVac/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzODg3/MTItMTQ4NzQ0MDQ1/MS03MTA0LmpwZWc.jpeg",
+   "image": "/media/weight-of-these-wings.jpg"
    }
  },
  {
-   "pk": 20,
+   "pk": 47,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340174",
-   	"name": "Folklore",
-   	"artist": "Taylor Swift",
-   	"description": "Folklore is the eighth studio album by American singer-songwriter Taylor Swift. It was a surprise album, released on July 24, 2020, via Republic Records",
-   	"release_date": null,
-   	"category": 4,
-   	"genre": 6,
-   	"price": 5.99,
-   	"image_url": "https://i.discogs.com/xUFPuI083LKQbtPq8Ma4bG-uBLso17JrBTKrvQsOaNo/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Njcw/OTMwLTE1OTU2MjYw/MDMtNjUxOC5qcGVn.jpeg",
-   	"image": "/media/folklore.jpg"
+   "sku": "pp5001340201",
+   "name": "Parliament",
+   "artist": "Mothership Connection",
+   "description": "A funk/soul masterpiece known for its funky grooves and imaginative lyrics, influencing generations of musicians.",
+   "release_date": 1975,
+   "category": 1,
+   "genre": 9,
+   "price": 21.99,
+   "image_url": "https://i.discogs.com/d0gal3CpBHAdq73hzqhIge16bdiJp0THPwZJteHOdso/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMDA3/MjgtMTMxMTExOTM1/My5qcGVn.jpeg",
+   "image": "/media/parliment.jpg"
    }
  },
  {
-   "pk": 21,
+   "pk": 48,
    "model": "shop.product",
    "fields": {
-   	"sku": "pp5001340175",
-   	"name": "The Ballad Of Darren",
-   	"artist": "Blur",
-   	"description": "The Ballad of Darren, the ninth album from Britpop pioneers Blur, catches four friends reconvening in their 50s to tackle daunting adult problems — the end of romance and the onset of middle age",
-   	"release_date": null,
-   	"category": 5,
-   	"genre": 2,
-   	"price": 32.99,
-   	"image_url": "https://i.discogs.com/qB9HFaesrp3LxJRE9xhzjZu93BwzSjT9ySXUu2YemQQ/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MzEz/NTE4LTE2OTAwMTky/MTgtMTA1My5qcGVn.jpeg",
-   	"image": "/media/ballad-of-darren.jpg"
+   "sku": "pp5001340202",
+   "name": "The Nutcracker",
+   "artist": "Pyotr Tchaikovsky",
+   "description": "A classical ballet composed by Tchaikovsky, featuring enchanting melodies and captivating orchestration.",
+   "release_date": 1892,
+   "category": 1,
+   "genre": 10,
+   "price": 18.99,
+   "image_url": "https://i.discogs.com/wWHcOj3RFhdLFAQm7GHNF6md334RtgAWR_vZhXsQKR4/rs:fit/g:sm/q:90/h:599/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDU5/ODAyLTE2OTU2Nzg0/NDctMzU1Ny5qcGVn.jpeg",
+   "image": "/media/the-nutcracker.jpg"
+   }
+ },
+ {
+   "pk": 49,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340203",
+   "name": "Random Access Memories",
+   "artist": "Daft Punk",
+   "description": "A Grammy Award-winning album that features collaborations with Giorgio Moroder, Nile Rodgers, and Pharrell Williams.",
+   "release_date": 2013,
+   "category": 1,
+   "genre": 5,
+   "price": 27.99,
+   "image_url": "https://i.discogs.com/zFVZE4s0zSXUIM7OMl2UDckSq0zlopdHBHRz23zqMJk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NzAz/NjYtMTUzOTI5NTA5/Mi02MDg3LnBuZw.jpeg",
+   "image": "/media/random-access.jpg"
+   }
+ },
+ {
+   "pk": 50,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340204",
+   "name": "Back to Black",
+   "artist": "Amy Winehouse",
+   "description": "A soul album inspired by 1960s Motown sound, featuring Winehouse's powerful vocals and heartfelt lyrics.",
+   "release_date": 2006,
+   "category": 1,
+   "genre": 9,
+   "price": 29.99,
+   "image_url": "https://i.discogs.com/syRCX8NaLwK2SMk8X6TVU_DWc8RRqE4b-tebAQ6kVH4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyNTQz/OC0xNjE3ODE0NDI2/LTU1MjUuanBlZw.jpeg",
+   "image": "/media/back-to-black.jpg"
+   }
+ },
+ {
+   "pk": 51,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340205",
+   "name": "No Fences",
+   "artist": "Gareth Brooks",
+   "description": "No Fences is the second studio album by the American country music artist Garth Brooks. It was released on August 27, 1990, and reached No. 1 on Billboard's Top Country Albums chart.",
+   "release_date": 1990,
+   "category": 1,
+   "genre": 7,
+   "price": 18.99,
+   "image_url": "https://i.discogs.com/zQtlqA2Wa0nSfh8dkLSozldLHwNyTUScPbioD92AOQ0/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1MjAy/OTYtMTM4NzI4MDI5/NS0zOTM4LmpwZWc.jpeg",
+   "image": "/media/fences.jpg"
+   }
+ },
+ {
+   "pk": 52,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340206",
+   "name": "Golden Hour",
+   "artist": "Kacey Musgraves",
+   "description": "Kacey Musgraves' fourth studio album, Golden Hour, is a country pop album that explores themes of love, marriage, and happiness. The album features hit singles such as \"Space Cowboy,\" \"Slow Burn,\" and \"Me!\"",
+   "release_date": 2018,
+   "category": 1,
+   "genre": 7,
+   "price": 16.99,
+   "image_url": "https://i.discogs.com/nMxmczpNhAeNlFAkcpO4UdTdXFDVhcct-EukGh6Hb9E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzc2/NjgyLTE1NDYwMjg3/MTktODk0MC5qcGVn.jpeg",
+   "image": "/media/golden-hour.jpg"
+   }
+ },
+ {
+   "pk": 53,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340207",
+   "name": "Uprising",
+   "artist": "Bob Marley & The Wailers",
+   "description": "Uprising is Bob Marley & The Wailers' ninth and final studio album. It was released just two months before Marley's death in 1981. The album features songs such as \"Could You Be Loved,\" \"Redemption Song,\" and \"Zion Train.\"",
+   "release_date": 1980,
+   "category": 1,
+   "genre": 14,
+   "price": 17.99,
+   "image_url": "https://i.discogs.com/qfJ7l3Y8buCKFSGh5PLzsOiLU66ji8k_7xGXggZ53UM/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwOTEz/Ny0xNTg0NDI2ODk1/LTQ5NzUuanBlZw.jpeg",
+   "image": "/media/uprising.jpg"
+   }
+ },
+ {
+   "pk": 54,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340208",
+   "name": "1989",
+   "artist": "Taylor Swift",
+   "description": "A pop album known for its catchy melodies and relatable lyrics, showcasing Swift's transition from country to pop music.",
+   "release_date": 2014,
+   "category": 1,
+   "genre": 6,
+   "price": 26.99,
+   "image_url": "https://i.discogs.com/P5sv32IczQ5xAgjvQusxAru1ddYWDMIXx_H9lDRRPDs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwODk2/NjktMTQ1OTU4MzY2/MS0xMjk1LmpwZWc.jpeg",
+   "image": "/media/1989-taylor.jpg"
+   }
+ },
+ {
+   "pk": 55,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340209",
+   "name": "Discovery",
+   "artist": "Daft Punk",
+   "description": "A concept album that explores themes of space travel and technology.",
+   "release_date": 2001,
+   "category": 1,
+   "genre": 5,
+   "price": 14.99,
+   "image_url": "https://i.discogs.com/Rbs8BipLPmDbqYAI2a1IEsy-8E88pBDW5ho3r-ugKZ8/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDM4/MzgwLTE1NTQyOTg4/MTctMTQwNS5qcGVn.jpeg",
+   "image": "/media/discovery.jpg"
+   }
+ },
+ {
+   "pk": 56,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340210",
+   "name": "25",
+   "artist": "Adele",
+   "description": "A soulful pop album with emotionally charged ballads like 'Hello' and 'Someone Like You,' demonstrating Adele's powerful vocals",
+   "release_date": 2015,
+   "category": 1,
+   "genre": 6,
+   "price": 29.99,
+   "image_url": "https://i.discogs.com/8Q90AEv3raXlfTkfbVMMeQOGrEEwC5Cq8rB9-jUapkI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3NDgw/NTgtMTUwMDYzNjk4/Mi04Mjc5LmpwZWc.jpeg",
+   "image": "/media/25-adele.jpg"
+   }
+ },
+ {
+   "pk": 57,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340211",
+   "name": "Singin' The Blues",
+   "artist": "B.B. King",
+   "description": "Singin' the Blues is the first LP album by American bluesman B.B. King, released in 1957 by the Bihari brothers on their Crown budget label. It is a compilation album whose songs were issued between 1951 and 1956 on singles by RPM Records and most had reached the Top 10 on Billboard's Race/R&B singles charts",
+   "release_date": 1957,
+   "category": 1,
+   "genre": 15,
+   "price": 19.99,
+   "image_url": "https://i.discogs.com/auDehEcWcP3amtmrjpQJaM5qrDceQDdXdHTvmprGWrs/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5Njkw/ODUtMTUyNzI4NDkz/Ny00MjQ1LmpwZWc.jpeg",
+   "image": "/media/singin-the-blues.jpg"
+   }
+ },
+ {
+   "pk": 58,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340212",
+   "name": "Ya Mizole",
+   "artist": "Les Mamans Du Congo",
+   "description": "vinyl of the latest Les Mamans du Congo & Rrobin album : Ya Mizolé.",
+   "release_date": 2022,
+   "category": 1,
+   "genre": 16,
+   "price": 27.99,
+   "image_url": "https://i.discogs.com/NePxeJ0GT7XmLCMFtJxJ34QEyToCJkkLltNoHv6RnMw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTYz/NDIxLTE2OTcwNDIz/MTMtMjEzMC5qcGVn.jpeg",
+   "image": "/media/les-mamans.jpg"
+   }
+ },
+ {
+   "pk": 59,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340213",
+   "name": "The Chieftans 4",
+   "artist": "The Chieftains",
+   "description": "The Chieftains 4 is an album by The Chieftains. It is the first album to feature Derek Bell on the harp. This album is where The Chieftains' modern sound began.",
+   "release_date": 1973,
+   "category": 1,
+   "genre": 16,
+   "price": 31.99,
+   "image_url": "https://i.discogs.com/oA18Rjc65dNBBWJQnJefoS-QIESZa2oAXUGXuQAmlV0/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1Mzk2/MzgtMTQ0MzU3MTY4/My0zOTM2LmpwZWc.jpeg",
+   "image": "/media/the-chieftans-4.jpg"
+   }
+ },
+ {
+   "pk": 60,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340214",
+   "name": "Texas Flood",
+   "artist": "Stevie Ray Vaughan",
+   "description": "A blues album that revitalized blues rock in the 1980s, showcasing Stevie Ray Vaughan's exceptional guitar skills and powerful vocals.",
+   "release_date": 1983,
+   "category": 1,
+   "genre": 15,
+   "price": 12.99,
+   "image_url": "https://i.discogs.com/gYP7kJzGyYwL4hVysOQkAKXfV_DMIPcsOlVqShrFEuM/rs:fit/g:sm/q:90/h:584/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4ODAz/NDItMTQ1MDgyNjc3/Ni0zMDI3LmpwZWc.jpeg",
+   "image": "/media/texas-flood.jpg"
+   }
+ },
+ {
+   "pk": 61,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340215",
+   "name": "Soy Incondicional",
+   "artist": "Luis Miguel",
+   "description": "A popular Latin pop album by Mexican singer Luis Miguel, known for its romantic ballads and powerful vocals, showcasing Miguel's musical versatility.",
+   "release_date": 1990,
+   "category": 1,
+   "genre": 12,
+   "price": 11.99,
+   "image_url": "https://i.discogs.com/2XxfKanu4pnNHTI8U63BpAR_PhuyMWEk1T0kqVweLZQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1ODMy/NDU1LTE2NzQyNjAx/NTktNzkzNS5qcGVn.jpeg",
+   "image": "/media/soy-incondicional.jpg"
+   }
+ },
+ {
+   "pk": 62,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340216",
+   "name": "Supernatural",
+   "artist": "Santana",
+   "description": "A Grammy-winning Latin rock album by Santana, featuring collaborations with various artists and blending Latin rhythms with rock and pop elements.",
+   "release_date": 1999,
+   "category": 1,
+   "genre": 12,
+   "price": 18.99,
+   "image_url": "https://i.discogs.com/_MoJX9ipnOHEkTp1ETEtXX0WO31RiAC2QdYwQ1r4QA8/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTY0/NDg1LTE1NjUwNDA3/OTAtODE5NC5qcGVn.jpeg",
+   "image": "/media/supernatural.jpg"
+   }
+ },
+ {
+   "pk": 63,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340217",
+   "name": "Planxty",
+   "artist": "Planxty",
+   "description": "A self-titled album by Planxty, a folk band considered one of the most influential groups in the revival of Irish traditional music, featuring traditional tunes and original compositions",
+   "release_date": 1973,
+   "category": 1,
+   "genre": 16,
+   "price": 24.99,
+   "image_url": "https://i.discogs.com/ynQup1rfPt4YKPRAynw6heA_mgN5ze1CrL21-UrfuQM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjgw/NTctMTI2MjExNzcz/MS5qcGVn.jpeg",
+   "image": "/media/planxty-planxty.jpg"
+   }
+ },
+ {
+   "pk": 64,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340218",
+   "name": "Funeral",
+   "artist": "Arcade Fire",
+   "description": "A critically acclaimed indie rock album known for its emotional depth, complex arrangements, and anthemic sound, establishing Arcade Fire as a prominent indie band.",
+   "release_date": 2004,
+   "category": 1,
+   "genre": 2,
+   "price": 21.99,
+   "image_url": "https://i.discogs.com/rcc6N5KItuTqyLkaOjGjsyvb02miEjmB21AJxZz061s/rs:fit/g:sm/q:90/h:543/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMjkz/Mi0xNDI3MDEyMDk1/LTE4MDguanBlZw.jpeg",
+   "image": "/media/funeral-arcade.jpg"
+   }
+ },
+ {
+   "pk": 65,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340219",
+   "name": "Master of Puppets",
+   "artist": "Metallica",
+   "description": "A classic metal album that defined the thrash metal genre, known for its intricate guitar work and powerful lyrics.",
+   "release_date": 1986,
+   "category": 1,
+   "genre": 3,
+   "price": 26.99,
+   "image_url": "https://i.discogs.com/WIcmVaAsfOwxgaKApPMciVitogXJEkSAl1TyIhxTNRw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDk2/MzYtMTI2NTk0ODA5/NC5qcGVn.jpeg",
+   "image": "/media/master-of-puppets.jpg"
+   }
+ },
+ {
+   "pk": 66,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340220",
+   "name": "Merriweather Post Pavilion",
+   "artist": "Animal Collective",
+   "description": "A groundbreaking indie electronic album known for its experimental sound, intricate production, and psychedelic textures, receiving widespread critical acclaim.",
+   "release_date": 2009,
+   "category": 1,
+   "genre": 2,
+   "price": 18.99,
+   "image_url": "https://i.discogs.com/7PO58jL3ee8ev8st01DxesiJ41FeFkDXyZyR0R3ghdE/rs:fit/g:sm/q:90/h:450/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTIx/MTgtMTIzMDc5OTk5/Ny5qcGVn.jpeg",
+   "image": "/media/merriweather.jpg"
+   }
+ },
+ {
+   "pk": 67,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340221",
+   "name": "Master of Reality",
+   "artist": "Black Sabbath",
+   "description": "A classic metal album featuring heavy riffs, influential guitar work, and iconic tracks like 'Sweet Leaf' and 'Children of the Grave,' solidifying Black Sabbath's legacy in metal history",
+   "release_date": 1971,
+   "category": 1,
+   "genre": 3,
+   "price": 22.99,
+   "image_url": "https://i.discogs.com/rR0i5yvI5ticjbJtydcL_xlGku8dFLcZHETE31XPyAw/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5MDc3/My0xMzMwNTY4MTU2/LmpwZWc.jpeg",
+   "image": "/media/masters-of-reality.jpg"
+   }
+ },
+ {
+   "pk": 68,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340222",
+   "name": "Rust in Peace",
+   "artist": "Megadeth",
+   "description": "A thrash metal masterpiece known for its technical prowess, intricate guitar solos, and politically charged lyrics, showcasing Megadeth's musical talent and songwriting skills.",
+   "release_date": 1990,
+   "category": 1,
+   "genre": 3,
+   "price": 24.99,
+   "image_url": "https://i.discogs.com/fnQf2n614D92F0jLoAZagkyzG_8WgFYCuV81S6qrLUU/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTg3/MTAtMTIwNzU1NzY0/NS5qcGVn.jpeg",
+   "image": "/media/rust-in-peace.jpg"
+   }
+ },
+ {
+   "pk": 69,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340223",
+   "name": "JVC XS-D629BM 2.0 Bluetooth Bookshelf Speakers - Walnut",
+   "artist": null,
+   "description": "Experience the powerful, balanced sound of the JVC XS-D629BM 2.0 Bluetooth Bookshelf Speakers. With an elegant walnut finish, the speakers are a perfect addition for your living room or office.",
+   "release_date": null,
+   "category": 2,
+   "genre": null,
+   "price": 119,
+   "image_url": "https://media.currys.biz/i/currysprod/10189179?$l-large$&fmt=auto",
+   "image": "/media/4.png"
+   }
+ },
+ {
+   "pk": 70,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340224",
+   "name": "AUDIO PRO SW-5 Subwoofer - Black",
+   "artist": null,
+   "description": "Give your musc a deeper sound with the elegant Audio Pro SW-5 Subwoofer. Its simple and neat design makes it very discreet, so you can place it anywhere you like and it won't disturb your interior look.",
+   "release_date": null,
+   "category": 2,
+   "genre": null,
+   "price": 300,
+   "image_url": "https://media.currys.biz/i/currysprod/10228464?$l-large$&fmt=auto",
+   "image": "/media/3.png"
+   }
+ },
+ {
+   "pk": 71,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340225",
+   "name": "Bush Classic Retro Portable Case Record Player - Brown",
+   "artist": null,
+   "description": "You'll have your record collection playing in no time with this brown retro styled Bush turntable. Stand-out with the unique suitcase design, featuring a carry handle, so you can pack it up and take it with you. ",
+   "release_date": null,
+   "category": 2,
+   "genre": null,
+   "price": 40,
+   "image_url": "https://media.4rgos.it/i/Argos/4369431_R_Z001A?w=1500&h=880&qlt=70&fmt=webp",
+   "image": "/media/bush.png"
+   }
+ },
+ {
+   "pk": 72,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340226",
+   "name": "Led Zeppelin Mug",
+   "artist": null,
+   "description": "Led Zeppelin Mug, classic rock mug, music gift, gift for her, gift for him",
+   "release_date": null,
+   "category": 3,
+   "genre": null,
+   "price": 15.99,
+   "image_url": "https://i.etsystatic.com/8914537/r/il/ccf23e/2896969262/il_1588xN.2896969262_bhpp.jpg",
+   "image": "/media/1.png"
+   }
+ },
+ {
+   "pk": 73,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340227",
+   "name": "ACDC Badge",
+   "artist": null,
+   "description": "AC/DC Angus Official Licensed Sew On Patch Classic Rock N' Roll Band Badge New",
+   "release_date": null,
+   "category": 3,
+   "genre": null,
+   "price": 4.99,
+   "image_url": "https://i.etsystatic.com/26951936/r/il/f0ae26/3795182564/il_1588xN.3795182564_p2c2.jpg",
+   "image": "/media/8.png"
+   }
+ },
+ {
+   "pk": 74,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340228",
+   "name": "Britpop band Pin Badge",
+   "artist": null,
+   "description": "Britpop band Pin Badges | Music Buttons | 90s Band Merch",
+   "release_date": null,
+   "category": 3,
+   "genre": null,
+   "price": 9.99,
+   "image_url": "https://i.etsystatic.com/38492251/r/il/b6f508/4481046372/il_1588xN.4481046372_f2pi.jpg",
+   "image": "/media/2.png"
+   }
+ },
+ {
+   "pk": 75,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340229",
+   "name": "Vinyl record shelf adhesive",
+   "artist": null,
+   "description": "Wall mount formwork panels without drilling Album display | Record shelf | Album wall mount",
+   "release_date": null,
+   "category": 3,
+   "genre": null,
+   "price": 4.99,
+   "image_url": "https://i.etsystatic.com/33434270/r/il/9f26a9/3696045493/il_1588xN.3696045493_7u7d.jpg",
+   "image": "/media/7.png"
+   }
+ },
+ {
+   "pk": 76,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340230",
+   "name": "Hackney Diamonds",
+   "artist": "Rolling Stones",
+   "description": "Hackney Diamonds is the 24th British and 26th American studio album by British rock band the Rolling Stones, released on 20 October 2023 on Polydor",
+   "release_date": "2023",
+   "category": 5,
+   "genre": 1,
+   "price": 35.99,
+   "image_url": "https://i.discogs.com/o-G5UBtnV4FwvG3OSukXPzhuNGcnzOh4xYolilL2rpY/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTE4/ODA4LTE2OTc4NzM0/MzgtOTgzMy5qcGVn.jpeg",
+   "image": "/media/hackney-diamonds.jpg"
+   }
+ },
+ {
+   "pk": 77,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340231",
+   "name": "Pearlies",
+   "artist": "Emma Anderson",
+   "description": "The debut full-length solo release from Lush's Emma Anderson was produced and mixed by Maps' James Chapman.",
+   "release_date": 2023,
+   "category": 5,
+   "genre": 6,
+   "price": 22.99,
+   "image_url": "https://i.discogs.com/jh0lO-IUIkDYNsLoYbxWAo9lHH7BCEak9TssEDA3Erg/rs:fit/g:sm/q:90/h:600/w:580/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NjMw/NTg4LTE2OTc2Mzkw/NTEtMTQ1NS5qcGVn.jpeg",
+   "image": "/media/pearlies.jpg"
+   }
+ },
+ {
+   "pk": 78,
+   "model": "shop.product",
+   "fields": {
+   "sku": "pp5001340232",
+   "name": "She Said",
+   "artist": "Starcrawler",
+   "description": "She Said is the third album from Los Angeles Rock band, Starcrawler, Starcrawler have morphed into a modern day take on LA legends X, with a sprinkle of The Go-Go’s, a smattering of The Distillers and some Rolling Stones sleaze thrown in for good measure.",
+   "release_date": 2022,
+   "category": 4,
+   "genre": 2,
+   "price": 7.99,
+   "image_url": "https://i.discogs.com/MpC_U1A4T5sSjnOU7kmZBs73j7RlOrGnDui6XBFUX7g/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NzI4/NTIyLTE2NjQ5ODQy/NDgtNDE1Mi5qcGVn.jpeg",
+   "image": "/media/she-said.jpg"
+   }
+ },
+ {
+  "pk": 79,
+  "model": "shop.product",
+  "fields": {
+   "sku": "pp5001340233",
+   "name": "Rum Sodomy And The Lash",
+   "artist": "The Pogues",
+   "description": "Rum Sodomy & the Lash is the second studio album by the London-based folk punk band The Pogues, released on 5 August 1985. The album reached number 13 on the UK charts. The track \"A Pair of Brown Eyes\", based on an older Irish tune, reached number 72 on the UK singles chart.",
+   "release_date": 1985,
+   "category": 1,
+   "genre": 3,
+   "price": 14.99,
+   "image_url": "https://i.discogs.com/lUvQ1ZXVh7Z86CTbbgZLR7j0i6hSxkSr4KxsvjfSQyc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2Njc0/MzktMTMzOTU5Mzg4/My02NjE3LmpwZWc.jpeg",
+   "image": "/media/rum-sodomy.jpg"
+  }
+ },
+ {
+   "pk": 80,
+   "model": "shop.product",
+   "fields": {
+    "sku": "pp5001340234",
+    "name": "Nevermind",
+    "artist": "Nirvana",
+    "description": "Nevermind is the second studio album by the American rock band Nirvana, released on September 24, 1991, by DGC Records. It was Nirvana's first release on a major label and the first to feature drummer Dave Grohl.",
+    "release_date": 1991,
+    "category": 1,
+    "genre": 1,
+    "price": 25.99,
+    "image_url": "https://i.discogs.com/XoAXkLe03Vk0Kt-oQqw7V9uW5nBzQdNvZd0zar5mOiQ/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NzA4/NC0xMjYzMDk1NTUz/LmpwZWc.jpeg",
+    "image": "/media/nevermind.jpg"
    }
  }
 ]
