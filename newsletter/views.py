@@ -6,6 +6,10 @@ from .forms import NewsletterForm
 
 
 def newsletter(request):
+    '''
+    Function to handle the logic of aving the form to
+    subscibe to a newsletter.
+    '''
     if request.method == 'POST':
         newsletter_form = NewsletterForm(data=request.POST)
 

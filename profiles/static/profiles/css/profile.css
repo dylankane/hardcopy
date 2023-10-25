@@ -2,3 +2,7 @@
     max-height: 416px;
     overflow-y: auto;
 }
+
+.order-history  {
+    background-color: var(--background-secondary);
+}

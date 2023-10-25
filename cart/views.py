@@ -6,7 +6,7 @@ from shop.models import Product
 
 
 def view_cart(request):
-    """ A view to return a cart page """
+    """ A view to display a cart page """
 
     return render(request, 'cart/cart.html')
 
@@ -17,7 +17,6 @@ def add_to_cart(request, item_id):
     product = get_object_or_404(Product, pk=item_id)
     source = request.GET.get('source')
     quantity = int(request.POST.get('quantity'))
-    # redirect_url = request.GET.get('redirect_url')
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
 
@@ -50,8 +49,6 @@ def add_to_cart(request, item_id):
     else:
         return redirect(reverse('shop'))
 
-    # return redirect(redirect_url)
-
 
 def adjust_cart(request, item_id):
     """ Adjust the cart quantity """
@@ -83,7 +80,6 @@ def remove_from_cart(request, item_id):
     try:
         product = get_object_or_404(Product, pk=item_id)
         cart = request.session.get('cart', {})
-        # if item_id in cart:
         cart.pop(item_id)
         messages.success(
             request, f'<strong>{product.name.upper()}</strong> has been\

@@ -7,6 +7,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 mt-5 mb-5">
+            <!-- Title -->
             <hr class="w-75">
             <div class="row">
                 <div class="col text-center mt-3">
@@ -14,10 +15,12 @@
                     <hr class="w-50">
                 </div>
             </div>
+            <!-- List of products -->
             <div class="row">
                 <div class="container">
                     <div class="row">
                         {% for product in products %}
+                        <!-- Each products card -->
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
                             <div class="card h-100 border-0">
                                 {% if product.product.image %}
@@ -33,7 +36,7 @@
                                 {% endif %}
                                 <div class="card-body p-0 w-100">
                                     <span class="float-right">
-                                        <form class="wish_form" action="{% url 'wish_list' product.product.id %}"method="POST">
+                                        <form class="wish_form" action="{% url 'wish_list' product.product.id %}?source=list_of_wishes"method="POST">
                                             {% csrf_token %}
                                             <button class="wish-list-remove" type="submit" name="wish_list_id"
                                                 value="{{product.id}}" title="Remove from wish list"><i class="fa-regular fa-trash-can fa-lg"></i></button>
@@ -83,6 +86,7 @@
                             </div>
                         </div>
                         {% empty %}
+                        <!-- When list is empty -->
                         <div class="row-12 text-center w-100 pt-5">
                             <p class="pb-4">
                                 You dont have anything in your wish list yet, browse all our products here:

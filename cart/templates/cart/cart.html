@@ -15,7 +15,6 @@
             <hr>
         </div>
     </div>
-
     <div class="row">
         <div class="col">
             {% if cart_items %}
@@ -69,7 +68,6 @@
                                             <input class="form-control qty_input text-center" type="number"
                                                 name="quantity" value="{{ item.quantity }}" min="1" max="99"
                                                 data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
-
                                             <div class="input-group-append">
                                                 <button class="increment-qty btn btn-dark rounded-0"
                                                     data-item_id="{{ item.item_id }}"
@@ -79,8 +77,6 @@
                                                     </span>
                                                 </button>
                                             </div>
-
-
                                         </div>
                                     </div>
                                 </form>
@@ -89,13 +85,11 @@
                                 <a class="remove-item text-danger p-2" id="remove_{{ item.item_id }}">
                                     <i class="fa-solid fa-circle-xmark fa-lg"></i>
                                 </a>
-
                             </td>
                             <td class="align-middle text-center">
                                 <p>€{{ item.product.price | calc_subtotal:item.quantity }}</p>
                             </td>
                             <td class="align-middle text-center">
-
                             </td>
                         </tr>
                         {% endfor %}
@@ -142,7 +136,6 @@
                 </div>
             </div>
             {% endif %}
-
         </div>
     </div>
 </div>

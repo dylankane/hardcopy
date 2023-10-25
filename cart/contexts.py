@@ -5,6 +5,10 @@ from shop.models import Product
 
 
 def cart_contents(request):
+    '''
+    A context proccessor function to control the logic of the shopping cart
+    and making it availible to all templates of the site.
+    '''
 
     cart_items = []
     total = 0

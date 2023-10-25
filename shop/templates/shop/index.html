@@ -5,7 +5,7 @@
 <!-- Hero Image and banner -->
 <div class="jumbotron  rounded-0 m-0 ">
     <p class="text-right mx-4">
-        <img src="{{ MEDIA_URL }}/Hard-Copy-logo-modified-small.png" alt="Large banner image of room with musical intruments and vinyl records">
+        <img src="{{ MEDIA_URL }}Hard-Copy-logo-modified-small.png" alt="Logo image with company name">
     </p>
 </div>
 <div class="m-0 p-0 w-100"></div>
@@ -36,13 +36,6 @@
                         <i class="fa-solid fa-hashtag"></i>{{ g.friendly_name }}
                     </a>
                     {% endfor %}
-                    <!-- {% for artist in artists %}
-                    {% if artist %}
-                    <a class="tags p-2" href="{% url 'shop' %}?genre={{ g.name }}">
-                        <i class="fa-solid fa-hashtag"></i>{{ artist }}
-                    </a>
-                    {% endif %}
-                    {% endfor %} -->
                     <hr class="w-50 mb-1">
                 </div>
             </div>
@@ -66,7 +59,7 @@
                                 {% endif %}
                                 <div class="card-body p-0 w-100">
                                     <div class="float-right">
-                                        <form class="wish_form" action="{% url 'wish_list' product.id %}" method="POST">
+                                        <form class="wish_form" action="{% url 'wish_list' product.id %}?source=shop" method="POST">
                                             {% csrf_token %}
                                             {% if user.is_authenticated %}
                                             
@@ -182,7 +175,6 @@
         </div>
     </div>
 </div>
-
 
 {% endblock %}
 

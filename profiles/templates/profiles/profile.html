@@ -10,21 +10,20 @@
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">My Profile</h2>
+                <h2 class="logo-font mb-4">MY PROFILE</h2>
                 <hr>
             </div>  
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
-                <h3>Delivery Info</h3>
+                <h3>DELIVERY INFO</h3>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <button class="btn-dark rounded-0">UPDATE</button>
                 </form>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 mt-5 mb-5 order-history">
                 <h3>YOUR ORDER HISTORY</h3>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless">

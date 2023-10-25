@@ -11,12 +11,12 @@ from django.db.models import Avg
 from django.core.paginator import Paginator, Page
 
 
-# Funtcion to display the home page, displaying all products.
-# Also holding all the sorting and filtering logic.
-# displaying the filtered product lists on the home page
 def index(request):
-    """ A view to return main page with products,
-    including sorting and search criteria"""
+    """
+    A view to return main page with products,
+    including sorting and search criteria, ability to
+    add product to wish list and add to cart.
+    """
     user = request.user
     products = Product.objects.all()
     genre_list = Genre.objects.all()
@@ -99,8 +99,6 @@ def index(request):
         'user': user,
         'products': products,
         'wish_item': wish_item,
-        # 'product': product,
-        # 'wished_for': wished_for,
         'artists': artists,
         'current_artist': current_artist,
         'search_term': query,
@@ -115,8 +113,12 @@ def index(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product and its details \
-        and manage if a item is in the users wishlist """
+    """
+    A view to show individual products and its details.
+    Also manage if an item is in the users wishlist and
+    add to cart with a quantity control. Also displaying
+    cuctomer reviews for this product
+    """
     user = request.user
     product = get_object_or_404(Product, pk=product_id)
     reviews = CustomerReviews.objects.filter(product=product)
@@ -150,6 +152,9 @@ def product_detail(request, product_id):
 
 
 def genre_view(request):
+    """
+    A view to render a page to display all the genre options
+    """
     genres = Genre.objects.all()
     context = {
         'genres': genres
@@ -160,7 +165,9 @@ def genre_view(request):
 
 @login_required
 def add_product(request):
-    """For adding products to store """
+    """
+    A view for superusers to add products to store
+    """
 
     if not request.user.is_superuser:
         messgae.error(request, 'Sorry only staff members have access to that')
@@ -188,7 +195,9 @@ def add_product(request):
 
 @login_required
 def edit_product(request, product_id):
-    """For editing products"""
+    """
+    A view for superusers to edit products in the store
+    """
     if not request.user.is_superuser:
         messgae.error(request, 'Sorry only staff members have access to that')
         return redirect(reverse('index'))
@@ -232,6 +241,9 @@ def delete_product(request, product_id):
 
 
 def review_list(request, product_id):
+    """
+    A view to display the reviews of products by customers.
+    """
     product = get_object_or_404(Product, pk=product_id)
     reviews = CustomerReviews.filter(product=product)
     review_count = reviews.count()
@@ -244,8 +256,13 @@ def review_list(request, product_id):
 
 
 def wish_list(request, product_id):
+    """
+    A view to control the logic of adding and removing products from a users
+    wishlist.
+    """
     product = get_object_or_404(Product, pk=product_id)
     user = request.user
+    source = request.GET.get('source')
 
     if not request.user.is_authenticated:
         messages.error(
@@ -272,10 +289,23 @@ def wish_list(request, product_id):
                     successfully added to your wish list'
                 )
 
-        return redirect('product_detail', product_id=product_id)
+        if source == 'product_detail':
+            return redirect(reverse('product_detail', args=[product_id]))
+
+        elif source == 'shop':
+            return redirect(reverse('shop'))
+
+        elif source == 'list_of_wishes':
+            return redirect(reverse('list_of_wishes'))
+
+        else:
+            return redirect(reverse('shop'))
 
 
 def list_of_wishes(request):
+    """
+    A view to display a page of all the products in a users wish list
+    """
 
     user = request.user
     products = WishList.objects.filter(user=user)
@@ -287,5 +317,8 @@ def list_of_wishes(request):
 
 
 def about(request):
+    """
+    A view to display an about page
+    """
 
     return render(request, "shop/about.html")

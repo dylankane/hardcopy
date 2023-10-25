@@ -15,8 +15,9 @@
                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
                 </a>
                 {% else %}
-                <a href="">
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                <a href="{% url 'product_detail' product.id %}" class="image-link">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image2.jpg"
+                        alt="No image available">
                 </a>
                 {% endif %}
             </div>
@@ -50,7 +51,7 @@
                     </p>
                 {% endif %}
                 <!-- Wish list button -->
-                <form class="wish_form" action="{% url 'wish_list' product.id %}" method="POST">
+                <form class="wish_form" action="{% url 'wish_list' product.id %}?source=product_detail" method="POST">
                     {% csrf_token %}
                     {% if user.is_authenticated %}
                         {% if wished_for %}
@@ -65,7 +66,7 @@
                                 class="fa-sharp fa-regular fa-bookmark"></i></button>
                     {% endif %}
                 </form>
-                <!-- Add to Cart form with quantity selector -->
+                <!-- Add To Cart form with quantity selector -->
                 <form class="form" action="{% url 'add_to_cart' product.id %}?source=product_detail" method="POST">
                     {% csrf_token %}
                     <div class="form-row">

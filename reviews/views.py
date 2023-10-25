@@ -8,6 +8,9 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def add_review(request, product_id):
+    '''
+    Function to handle the data of the customer review form.
+    '''
     product = get_object_or_404(Product, pk=product_id)
 
     if request.method == 'POST':

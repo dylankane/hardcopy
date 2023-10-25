@@ -1,5 +1,6 @@
 <div class="col-12">
     <div class="row mt-3 d-lg-none">
+        <!-- Sort By Section -->
         <div class="col-4 dropdown position-static w-100">
             <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SORT BY
@@ -21,13 +22,14 @@
                 </div>
             </div>
         </div>
+        <!-- Genre Section -->
         <div class="col-4 text-center dropdown position-static w-100">
             <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GENRES
             </button>
             <div class="dropdown-menu drop-menu-filter w-100 rounded-o p-0" aria-labelledby="dropdownMenuButton">
                 <div class="row w-100 m-0 sort-dropdown">
-                    <div class="col-12 p-3 m-0 sort-inner">`
+                    <div class="col-12 p-3 m-0 sort-inner">
                         <h3>Genres</h3>
                             <ul class="p-0 sidebar-lists">
                                 {% for genre in genre_list %}
@@ -39,6 +41,7 @@
                 </div>
             </div>
         </div>
+        <!-- Artist Section -->
         <div class="col-4 text-right dropdown position-static w-100">
             <button class="btn btn-dark rounded-0 border-0 w-100 dropdown-toggle" 
                 type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ARTISTS

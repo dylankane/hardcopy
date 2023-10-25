@@ -8,18 +8,16 @@
 
 
 {% block content %}
-<div class="container">
+<div class="container mt-5 mb-5">
     <div class="row">
-        <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Checkout</h2>
+        <div class="col text-center">
+            <h2 class="logo-font mb-4">CHECKOUT</h2>
             <hr>
         </div>
     </div>
-
     <div class="row">
-        <div class="col-12 col-lg-6 order-lg-last mb-5">
-            <p class="text-muted">Order Summary ({{ product_count }})</p>
+        <div class="col-12 col-lg-6 order-lg-last mb-5 order-summary p-2">
+            <p>ORDER SUMMARY [{{ product_count }}]</p>
             <div class="row">
                 <div class="col-7 offset-2">
                     <p class="mb-1 mt-0 small text-muted">Item</p>
@@ -105,15 +103,13 @@
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
 
-                <div class="submit-button text-right mt-5 mb-2">
-                    <a href="{% url 'view_cart' %}" class="btn btn-outline-black rounded-0">
-                        <span class="icon">
-                            <i class="fas fa-chevron-left"></i>
-                        </span>
-                        <span class="font-weight-bold">Adjust Cart</span>
+                <div class="submit-button text-center mt-5 mb-2">
+                    <a href="{% url 'view_cart' %}" class="btn btn-dark rounded-0">
+                        <span class="icon"><i class="fa-regular fa-hand-point-left"></i>
+                        <span class="font-weight-bold">ADJUST CART</span>
                     </a>
-                    <button id="submit-button" class="btn btn-black rounded-0">
-                        <span class="font-weight-bold">Complete Order</span>
+                    <button id="submit-button" class="btn btn-dark rounded-0">
+                        <span class="font-weight-bold">SECURE PAYMENT</span>
                         <span class="icon">
                             <i class="fas fa-lock"></i>
                         </span>
