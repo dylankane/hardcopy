@@ -12,7 +12,7 @@
     "genre": 1,
     "price": 30.99,
     "image_url": "https://i.discogs.com/mMxJHZMv_EUMgDso6PMI1HKsHHntkdG2ULQ2KW-1vHc/rs:fit/g:sm/q:90/h:576/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NzEw/NC0xNDcyNTcyOTMx/LTUxMDQuanBlZw.jpeg",
-    "image": "/media/dark-side-of-the-moon.jpg"
+    "image": "dark-side-of-the-moon.jpg"
    }
  },
  {
@@ -28,7 +28,7 @@
     "genre": 2,
     "price": 24.99,
     "image_url": "https://i.discogs.com/UMLNSgraQ68YSUb0-5DF1P19vUxPZ36TWNL9ALRlG1Q/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMTAz/NzQtMTQ1Njk0MTMz/My0zMDY2LmpwZWc.jpeg",
-    "image": "/media/is-this-it.jpg"
+    "image": "is-this-it.jpg"
    }
  },
  {
@@ -44,7 +44,7 @@
     "genre": "3",
     "price": 28.99,
     "image_url": "https://i.discogs.com/btwyRchLnxlg0KHMq32rXSy6ci6uanqtiIu6pP5G6I4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzMDg4/NzY0LTE1NDc4NTAz/ODYtMjkxNC5qcGVn.jpeg",
-    "image": "/media/the-clash.jpg"
+    "image": "the-clash.jpg"
    }
  },
  {
@@ -60,7 +60,7 @@
     "genre": 4,
     "price": 25.99,
     "image_url": "https://i.discogs.com/hi_oDfICk-8urdkpUO1REGR-g6O-imk86lJ1jgs7nDc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTY2/NDUtMTMyMTg2Mzc2/MC5qcGVn.jpeg",
-    "image": "/media/helplessness.jpg"
+    "image": "helplessness.jpg"
     }
  },
  {
@@ -76,7 +76,7 @@
     "genre": 5,
     "price": 22.99,
     "image_url": "https://i.discogs.com/r_KqzFE3mSa7xZR-Uz-UPMpkX_MB269nUUAAk21CNa4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY1MjYt/MTM3MDg2MjY3Ny0y/NjI3LmpwZWc.jpeg",
-    "image": "/media/music-for-the-jilted-generation.jpg"
+    "image": "music-for-the-jilted-generation.jpg"
     }
  },
  {
@@ -92,7 +92,7 @@
     "genre": 6,
     "price": 32.99,
     "image_url": "https://i.discogs.com/dI9opFrp7aL5bORSUJ6OQkC77YFSg649YOUOk7nUuMo/rs:fit/g:sm/q:90/h:534/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0MDM3/NjczLTE2OTIwODk3/ODgtNzUwNy5qcGVn.jpeg",
-    "image": "/media/renaissance.jpg"
+    "image": "renaissance.jpg"
     }
  },
  {
@@ -108,7 +108,7 @@
     "genre": 7,
     "price": 29.99,
     "image_url": "https://i.discogs.com/fhat5CADYWANhC1T0U-kY4l9dmgeU2VCB0HtMVVqWVQ/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NjA0/NTAtMTUzOTgzNjE4/OC01OTMzLmpwZWc.jpeg",
-    "image": "/media/red-headed-stranger.jpg"
+    "image": "red-headed-stranger.jpg"
     }
  },
  {
@@ -124,7 +124,7 @@
     "genre": 8,
     "price": 26.99,
     "image_url": "https://i.discogs.com/fGpBfJZOBOXcombzBDMfneERKusKwmEO03qCaTid4sY/rs:fit/g:sm/q:90/h:598/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTY4OTA3/NDctMTQyODg4ODc4/NC00ODEzLmpwZWc.jpeg",
-    "image": "/media/a-love-supreme.jpg"
+    "image": "a-love-supreme.jpg"
     }
  },
  {
@@ -140,7 +140,7 @@
     "genre": 9,
     "price": 29.99,
     "image_url": "https://i.discogs.com/YzhtLts7LkthVlFHqcaq5ZNZ59GEwslZA9KCw556CSc/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1NTIz/My0xNDI2MTY2MTc0/LTkwODYuanBlZw.jpeg",
-    "image": "/media/song-in-the-key-of-life.jpg"
+    "image": "song-in-the-key-of-life.jpg"
    }
  },
  {
@@ -156,7 +156,7 @@
     "genre": 10,
     "price": 42.99,
     "image_url": "https://i.discogs.com/nm7HPC5MHJMa9pqt4ODA8i1qUVGhdeQg6krEBPRxulQ/rs:fit/g:sm/q:90/h:596/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1Nzk5/MTctMTYwODYyMTQz/MC04NTE3LmpwZWc.jpeg",
-    "image": "/media/the-golderg-variations.jpg"
+    "image": "the-golderg-variations.jpg"
     }
  },
  {
@@ -172,7 +172,7 @@
     "genre": 11,
     "price": 25.99,
     "image_url": "https://i.discogs.com/JVtYto3PpCrhttx7V3aR09GKcOlPw4SE8RYrdxaWPTk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1Mzc0/OS0xMTg1MTM0MTM1/LmpwZWc.jpeg",
-    "image": "/media/enter-the-wu-tang.jpg"
+    "image": "enter-the-wu-tang.jpg"
    }
   },
  {
@@ -188,7 +188,7 @@
     "genre": 12,
     "price": 26.99,
     "image_url": "https://i.discogs.com/ESuMEYQ9fu88_rndyHJP7SNx4Y1PjibOlKZ2oTBi_xQ/rs:fit/g:sm/q:90/h:520/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMzMjE2/NDEtMTMyNTcwMzYy/MS5qcGVn.jpeg",
-    "image": "/media/buena-vista-social-club.jpg"
+    "image": "buena-vista-social-club.jpg"
    }
   },
  {
@@ -204,7 +204,7 @@
     "genre": 13,
     "price": 15.99,
     "image_url": "https://i.discogs.com/QeEjP0d-L-rW6ycf5ms3bKRI5n7bjnjcLI9UUVDVFeM/rs:fit/g:sm/q:90/h:599/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwMzM0/MDcxLTE0OTU1MDIz/ODktMzczNS5qcGVn.jpeg",
-    "image": "/media/the-west-side-story.jpg"
+    "image": "the-west-side-story.jpg"
    }
  },
  {
@@ -220,7 +220,7 @@
     "genre": 14,
     "price": 23.99,
     "image_url": "https://i.discogs.com/OIfdx5gdoPvpNCOkEJJxGTo3BxdPvR21Ue4a8vZuRIE/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjcz/My0xNTQ5NTQyMjM3/LTk0NjMuanBlZw.jpeg",
-    "image": "/media/catch-a-fire.jpg"
+    "image": "catch-a-fire.jpg"
    }
  },
  {
@@ -236,7 +236,7 @@
     "genre": 15,
     "price": 21.99,
     "image_url": "https://i.discogs.com/OIfdx5gdoPvpNCOkEJJxGTo3BxdPvR21Ue4a8vZuRIE/rs:fit/g:sm/q:90/h:577/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxNjcz/My0xNTQ5NTQyMjM3/LTk0NjMuanBlZw.jpeg",
-    "image": "/media/real-folk-blues.jpg"
+    "image": "real-folk-blues.jpg"
    }
  },
  {
@@ -252,7 +252,7 @@
     "genre": 16,
     "price": 22.99,
     "image_url": "https://i.discogs.com/N2hqtqx6BtrqknnCJdLGeno8Ox1o2A1JCaEyMGO5XK8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNjMw/MDM1LTE1MzkzMDQx/OTItNDcxNC5qcGVn.jpeg",
-    "image": "/media/rising-of-the-moon.jpg"
+    "image": "rising-of-the-moon.jpg"
     }
  },
  {
@@ -268,7 +268,7 @@
     "genre": null,
     "price": 199.99,
     "image_url": "https://media.currys.biz/i/currysprod/10213568?$l-large$&fmt=auto",
-    "image": "/media/6.png"
+    "image": "6.png"
    }
  },
  {
@@ -284,7 +284,7 @@
    "genre": null,
    "price": 149.99,
    "image_url": "https://media.currys.biz/i/currysprod/10229894?$l-large$&fmt=auto",
-   "image": "/media/5.png"
+   "image": "5.png"
    }
  },
  {
@@ -300,7 +300,7 @@
     "genre": null,
     "price": 10.99,
     "image_url": "https://cdn.europosters.eu/image/1300/mugs/pink-floyd-prism-i46900.jpg",
-    "image": "/media/pink-floyd-prism.jpg"
+    "image": "pink-floyd-prism.jpg"
    }
  },
  {
@@ -316,7 +316,7 @@
    "genre": 4,
    "price": 8.99,
    "image_url": "https://i.discogs.com/RIDZUSnZ2b3g2maZfMiAUwliNqqu2md61i1Dzfbt7l4/rs:fit/g:sm/q:90/h:540/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzMjkz/NjMxLTE2NTg1NTc2/NjgtMjI5NC5qcGVn.jpeg",
-   "image": "/media/whats-it-gonna.jpg"
+   "image": "whats-it-gonna.jpg"
   }
  },
  {
@@ -332,7 +332,7 @@
    "genre": 2,
    "price": 32.99,
    "image_url": "https://i.discogs.com/qB9HFaesrp3LxJRE9xhzjZu93BwzSjT9ySXUu2YemQQ/rs:fit/g:sm/q:90/h:591/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI3MzEz/NTE4LTE2OTAwMTky/MTgtMTA1My5qcGVn.jpeg",
-   "image": "/media/ballad-of-darren.jpg"
+   "image": "ballad-of-darren.jpg"
   }
  },
  {
@@ -348,7 +348,7 @@
    "genre": 1,
    "price": 29.99,
    "image_url": "https://i.discogs.com/yIpr4e_Qx0Kfq8hLxregIFOOQTl4b7WdXine4dygU5M/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ4OTcx/Ny0xMjY4MTM2Njk0/LmpwZWc.jpeg",
-   "image": "/media/raw-power.jpg"
+   "image": "raw-power.jpg"
   }
  },
  {
@@ -364,7 +364,7 @@
    "genre": 15,
    "price": 25.99,
    "image_url": "https://i.discogs.com/KlDrK5NK4b3ekFBaCe2G3jaIB79XL_U9RZeiaWrGP8E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0ODc0/NTYtMTM4NTQ3NzMx/Ny0yNDE0LmpwZWc.jpeg",
-   "image": "/media/folk-singer.jpg"
+   "image": "folk-singer.jpg"
   }
  },
  {
@@ -380,7 +380,7 @@
    "genre": 1,
    "price": 28.99,
    "image_url": "https://i.discogs.com/ZKV0Y5P2J0MsmUA7UP2IeM8MDaweG1rmnCbV3sIZ1Wk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM1MzYy/ODktMTQ1NDk5MTkz/Ny0yMzUxLmpwZWc.jpeg",
-   "image": "/media/astral-weeks.jpg"
+   "image": "astral-weeks.jpg"
   }
  },
  {
@@ -396,7 +396,7 @@
    "genre": 7,
    "price": 28.99,
    "image_url": "https://i.discogs.com/jcCIU8rRb1PWeVsXCOh0N9LQbVBB_zRRYPNKn_fpwCo/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyNDY2/OTAtMTMyOTM1MjAy/Ny5qcGVn.jpeg",
-   "image": "/media/the-gilded-palace.jpg"
+   "image": "the-gilded-palace.jpg"
   }
  },
  {
@@ -412,7 +412,7 @@
    "genre": 1,
    "price": 34.99,
    "image_url": "https://i.discogs.com/nlcHURJ-xZgDIezGAne4lRoiOZJYbb-qHxf7NMfwTQw/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQxMzc0/OTMtMTUzNzIxNjkz/NS05NzUzLmpwZWc.jpeg",
-   "image": "/media/meddle.jpg"
+   "image": "meddle.jpg"
   }
  },
  {
@@ -428,7 +428,7 @@
    "genre": 1,
    "price": 32.99,
    "image_url": "https://i.discogs.com/BLWVi0t0llSqJvIybHrSvPql-RfORCmZU1klNfV0si8/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NTA3/Ny0xNTg4ODgwNzg4/LTIyMjYuanBlZw.jpeg",
-   "image": "/media/houses-of-the-holy.jpg"
+   "image": "houses-of-the-holy.jpg"
   }
  },
  {
@@ -444,7 +444,7 @@
    "genre": 3,
    "price": 19.99,
    "image_url": "https://i.discogs.com/A5nJ8PE9lgo2L_yFb6m4KUZGVsBmtmq5RJoFpV4CMaA/rs:fit/g:sm/q:90/h:588/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTk1Njc3/Ny0xMjMwNDIxOTE2/LmpwZWc.jpeg",
-   "image": "/media/bad-brains.jpg"
+   "image": "bad-brains.jpg"
   }
  },
  {
@@ -460,7 +460,7 @@
    "genre": 2,
    "price": 21.99,
    "image_url": "https://i.discogs.com/_zg0Us0N_anqCz9hJvFGeRK2v69eDDCxQnHkd7RcgTk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc0NzQz/LTE1NDg5MDI2NDMt/Mzg2OS5qcGVn.jpeg",
-   "image": "/media/kid-a.jpg"
+   "image": "kid-a.jpg"
   }
  },
  {
@@ -476,7 +476,7 @@
    "genre": 6,
    "price": 35.99,
    "image_url": "https://i.discogs.com/2lg-T1Xxd2Xb3grvfzsznm7a-LvrNuSp9YSYA-t2JFU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDIz/MzgxLTE2OTc3NDU3/MzUtOTQxMS5qcGVn.jpeg",
-   "image": "/media/bangerz.jpg"
+   "image": "bangerz.jpg"
   }
  },
  {
@@ -492,7 +492,7 @@
    "genre": 11,
    "price": 28.99,
    "image_url": "https://i.discogs.com/DsEnUXx3ZCZ6y4Z3f-MVDxQYF6lzMEQzrVHKgOWazNQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTY4/MDA1LTE2OTcxMDQ3/MjktMjE0My5qcGVn.jpeg",
-   "image": "/media/after-hours.jpg"
+   "image": "after-hours.jpg"
   }
  },
  {
@@ -508,7 +508,7 @@
    "genre": 11,
    "price": 15.99,
    "image_url": "https://i.discogs.com/2WSGwzHrs8h9B3tVoXYMH40Ldzo9eVYMADv19viDz1s/rs:fit/g:sm/q:90/h:600/w:589/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNDc1/NzIyLTE1MTY5OTk5/ODYtODkxOS5qcGVn.jpeg",
-   "image": "/media/ephorize.jpg"
+   "image": "ephorize.jpg"
   }
  },
  {
@@ -524,7 +524,7 @@
    "genre": 10,
    "price": 18.99,
    "image_url": "https://i.discogs.com/ecAY_lKBCS2MwEA3gYWMFDb5wOTGseNjFkS5iOFqv9s/rs:fit/g:sm/q:90/h:587/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NDY2/Nzc2LTE2OTYxODMz/NzQtMTQ2MC5qcGVn.jpeg",
-   "image": "/media/orquesta-de-camara.jpg"
+   "image": "orquesta-de-camara.jpg"
   }
  },
  {
@@ -540,7 +540,7 @@
    "genre": 2,
    "price": 16.99,
    "image_url": "https://i.discogs.com/GZTjLOTPNerFOKOT3YDI5bLmBWX11ap0PiqDjgXf1Ec/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ0MjY1/MjUtMTQwOTMzODUz/NC05MDMyLmpwZWc.jpeg",
-   "image": "/media/yeankee-hotel.jpg"
+   "image": "yeankee-hotel.jpg"
   }
  },
  {
@@ -556,7 +556,7 @@
    "genre": 1,
    "price": 24.99,
    "image_url": "https://i.discogs.com/cBFsRFEWUhOdn9ZLq77ZMCrHgzbLRIdcpZ6C9eZ7vjU/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU2NzMz/Ni0xMjQ5NTg2MjA1/LmpwZWc.jpeg",
-   "image": "/media/elephant.jpg"
+   "image": "elephant.jpg"
   }
  },
  {
@@ -572,7 +572,7 @@
    "genre": 11,
    "price": 21.99,
    "image_url": "https://i.discogs.com/hFrpXP9sZ-LwVY-onr8HleH6Hg5GRzwm9KfSO0ZbmWA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI2MDY5/NTItMTUyMTQ2ODE4/MC04NjMwLmpwZWc.jpeg",
-   "image": "/media/my-beautiful-dark.jpg"
+   "image": "my-beautiful-dark.jpg"
   }
  },
  {
@@ -588,7 +588,7 @@
    "genre": 11,
    "price": 31.99,
    "image_url": "https://i.discogs.com/mzZN2JyPeiMrz8YnZd04bKifNZ36K5zMECcfHvnTzFk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1NTc5/NTctMTQ0Mzk4MjAy/NC01NTk2LmpwZWc.jpeg",
-   "image": "/media/pimp-a-butterfly.jpg"
+   "image": "pimp-a-butterfly.jpg"
   }
  },
  {
@@ -604,7 +604,7 @@
    "genre": 6,
    "price": 25.99,
    "image_url": "https://i.discogs.com/_oRGPC-ojlOZdJVpVIsJ31PRRq822iha_Q8Z8s6MrTI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDM2/NTc2LTE0OTc2NjM2/NzUtNTMxNy5qcGVn.jpeg",
-   "image": "/media/melodrama.jpg"
+   "image": "melodrama.jpg"
    }
  },
  {
@@ -620,7 +620,7 @@
    "genre": 6,
    "price": 21.99,
    "image_url": "https://i.discogs.com/Q9wRgXsGgV7WGq1xsATU5GWnxT7saVE76ZhX-u0vdiA/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE0OTk4/NjMyLTE1ODUzMTMy/OTgtMjU4My5wbmc.jpeg",
-   "image": "/media/future-nostolgia.jpg"
+   "image": "future-nostolgia.jpg"
    }
  },
  {
@@ -636,7 +636,7 @@
    "genre": 9,
    "price": 18.99,
    "image_url": "https://i.discogs.com/Sl-Kre7czPWV2D1fnnJiGB4bvOU21iPZNhWVqhXP13k/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkxMjU5/MzYtMTQ3NTIyMDIz/My0yNTMwLmpwZWc.jpeg",
-   "image": "/media/a-seat-at-the-table.jpg"
+   "image": "a-seat-at-the-table.jpg"
    }
  },
  {
@@ -652,7 +652,7 @@
    "genre": 5,
    "price": 32.99,
    "image_url": "https://i.discogs.com/TDewIv-a8M9cx0W8odZiKHXM6x4o9CCBE2rVuBUIpog/rs:fit/g:sm/q:90/h:574/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIzNjYw/NS0xNDkyODUzODYy/LTI1MjguanBlZw.jpeg",
-   "image": "/media/homework.jpg"
+   "image": "homework.jpg"
    }
  },
  {
@@ -668,7 +668,7 @@
    "genre": 7,
    "price": 15.99,
    "image_url": "https://i.discogs.com/1lakKNZC0FG-cTluIt1A_dhXk7jJbKytuOM5OcLucbs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExMjY1/NjI1LTE1MTMwNDIy/MDctMjExOC5qcGVn.jpeg",
-   "image": "/media/red-taylor.jpg"
+   "image": "red-taylor.jpg"
    }
  },
  {
@@ -684,7 +684,7 @@
    "genre": 14,
    "price": 24.99,
    "image_url": "https://i.discogs.com/7euFMytBkAZGvAdKZv93lq2ilW6mzmuKckOYN6FSQ80/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUyNTY4/OS0xNTQzNTc4Mzcz/LTM5ODAuanBlZw.jpeg",
-   "image": "/media/exodus.jpg"
+   "image": "exodus.jpg"
    }
  },
  {
@@ -700,7 +700,7 @@
    "genre": 5,
    "price": 33.99,
    "image_url": "https://i.discogs.com/JVdVvhN3bnxeaEG8eeiOHIfuG2oZqyvqGwPS--STy9E/rs:fit/g:sm/q:90/h:549/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwNjc5/MDktMTYwMzIwODQy/NC02Mjc5LmpwZWc.jpeg",
-   "image": "/media/in-colour.jpg"
+   "image": "in-colour.jpg"
    }
  },
  {
@@ -716,7 +716,7 @@
    "genre": 13,
    "price": 35.99,
    "image_url": "https://i.discogs.com/GcowOewGy7VOPJ8tQ4dP4_SRkZdA1w3UDHUUCzDrQZw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc2NDA5/ODMtMTQ0NTczNDI4/OC05MDIwLmpwZWc.jpeg",
-   "image": "/media/hamilton.jpg"
+   "image": "hamilton.jpg"
    }
  },
  {
@@ -732,7 +732,7 @@
    "genre": 7,
    "price": 17.99,
    "image_url": "https://i.discogs.com/rkjTX4R-VDjeyTqDyIZ8e9TuDNq6zN4obaMiQM3YVac/rs:fit/g:sm/q:90/h:578/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTkzODg3/MTItMTQ4NzQ0MDQ1/MS03MTA0LmpwZWc.jpeg",
-   "image": "/media/weight-of-these-wings.jpg"
+   "image": "weight-of-these-wings.jpg"
    }
  },
  {
@@ -748,7 +748,7 @@
    "genre": 9,
    "price": 21.99,
    "image_url": "https://i.discogs.com/d0gal3CpBHAdq73hzqhIge16bdiJp0THPwZJteHOdso/rs:fit/g:sm/q:90/h:600/w:599/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTMwMDA3/MjgtMTMxMTExOTM1/My5qcGVn.jpeg",
-   "image": "/media/parliment.jpg"
+   "image": "parliment.jpg"
    }
  },
  {
@@ -764,7 +764,7 @@
    "genre": 10,
    "price": 18.99,
    "image_url": "https://i.discogs.com/wWHcOj3RFhdLFAQm7GHNF6md334RtgAWR_vZhXsQKR4/rs:fit/g:sm/q:90/h:599/w:596/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEwNDU5/ODAyLTE2OTU2Nzg0/NDctMzU1Ny5qcGVn.jpeg",
-   "image": "/media/the-nutcracker.jpg"
+   "image": "the-nutcracker.jpg"
    }
  },
  {
@@ -780,7 +780,7 @@
    "genre": 5,
    "price": 27.99,
    "image_url": "https://i.discogs.com/zFVZE4s0zSXUIM7OMl2UDckSq0zlopdHBHRz23zqMJk/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1NzAz/NjYtMTUzOTI5NTA5/Mi02MDg3LnBuZw.jpeg",
-   "image": "/media/random-access.jpg"
+   "image": "random-access.jpg"
    }
  },
  {
@@ -796,7 +796,7 @@
    "genre": 9,
    "price": 29.99,
    "image_url": "https://i.discogs.com/syRCX8NaLwK2SMk8X6TVU_DWc8RRqE4b-tebAQ6kVH4/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTgyNTQz/OC0xNjE3ODE0NDI2/LTU1MjUuanBlZw.jpeg",
-   "image": "/media/back-to-black.jpg"
+   "image": "back-to-black.jpg"
    }
  },
  {
@@ -812,7 +812,7 @@
    "genre": 7,
    "price": 18.99,
    "image_url": "https://i.discogs.com/zQtlqA2Wa0nSfh8dkLSozldLHwNyTUScPbioD92AOQ0/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQ1MjAy/OTYtMTM4NzI4MDI5/NS0zOTM4LmpwZWc.jpeg",
-   "image": "/media/fences.jpg"
+   "image": "fences.jpg"
    }
  },
  {
@@ -828,7 +828,7 @@
    "genre": 7,
    "price": 16.99,
    "image_url": "https://i.discogs.com/nMxmczpNhAeNlFAkcpO4UdTdXFDVhcct-EukGh6Hb9E/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTExNzc2/NjgyLTE1NDYwMjg3/MTktODk0MC5qcGVn.jpeg",
-   "image": "/media/golden-hour.jpg"
+   "image": "golden-hour.jpg"
    }
  },
  {
@@ -844,7 +844,7 @@
    "genre": 14,
    "price": 17.99,
    "image_url": "https://i.discogs.com/qfJ7l3Y8buCKFSGh5PLzsOiLU66ji8k_7xGXggZ53UM/rs:fit/g:sm/q:90/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTUwOTEz/Ny0xNTg0NDI2ODk1/LTQ5NzUuanBlZw.jpeg",
-   "image": "/media/uprising.jpg"
+   "image": "uprising.jpg"
    }
  },
  {
@@ -860,7 +860,7 @@
    "genre": 6,
    "price": 26.99,
    "image_url": "https://i.discogs.com/P5sv32IczQ5xAgjvQusxAru1ddYWDMIXx_H9lDRRPDs/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTcwODk2/NjktMTQ1OTU4MzY2/MS0xMjk1LmpwZWc.jpeg",
-   "image": "/media/1989-taylor.jpg"
+   "image": "1989-taylor.jpg"
    }
  },
  {
@@ -876,7 +876,7 @@
    "genre": 5,
    "price": 14.99,
    "image_url": "https://i.discogs.com/Rbs8BipLPmDbqYAI2a1IEsy-8E88pBDW5ho3r-ugKZ8/rs:fit/g:sm/q:90/h:600/w:592/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzNDM4/MzgwLTE1NTQyOTg4/MTctMTQwNS5qcGVn.jpeg",
-   "image": "/media/discovery.jpg"
+   "image": "discovery.jpg"
    }
  },
  {
@@ -892,7 +892,7 @@
    "genre": 6,
    "price": 29.99,
    "image_url": "https://i.discogs.com/8Q90AEv3raXlfTkfbVMMeQOGrEEwC5Cq8rB9-jUapkI/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc3NDgw/NTgtMTUwMDYzNjk4/Mi04Mjc5LmpwZWc.jpeg",
-   "image": "/media/25-adele.jpg"
+   "image": "25-adele.jpg"
    }
  },
  {
@@ -908,7 +908,7 @@
    "genre": 15,
    "price": 19.99,
    "image_url": "https://i.discogs.com/auDehEcWcP3amtmrjpQJaM5qrDceQDdXdHTvmprGWrs/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM5Njkw/ODUtMTUyNzI4NDkz/Ny00MjQ1LmpwZWc.jpeg",
-   "image": "/media/singin-the-blues.jpg"
+   "image": "singin-the-blues.jpg"
    }
  },
  {
@@ -924,7 +924,7 @@
    "genre": 16,
    "price": 27.99,
    "image_url": "https://i.discogs.com/NePxeJ0GT7XmLCMFtJxJ34QEyToCJkkLltNoHv6RnMw/rs:fit/g:sm/q:90/h:593/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTYz/NDIxLTE2OTcwNDIz/MTMtMjEzMC5qcGVn.jpeg",
-   "image": "/media/les-mamans.jpg"
+   "image": "les-mamans.jpg"
    }
  },
  {
@@ -940,7 +940,7 @@
    "genre": 16,
    "price": 31.99,
    "image_url": "https://i.discogs.com/oA18Rjc65dNBBWJQnJefoS-QIESZa2oAXUGXuQAmlV0/rs:fit/g:sm/q:90/h:600/w:594/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc1Mzk2/MzgtMTQ0MzU3MTY4/My0zOTM2LmpwZWc.jpeg",
-   "image": "/media/the-chieftans-4.jpg"
+   "image": "the-chieftans-4.jpg"
    }
  },
  {
@@ -956,7 +956,7 @@
    "genre": 15,
    "price": 12.99,
    "image_url": "https://i.discogs.com/gYP7kJzGyYwL4hVysOQkAKXfV_DMIPcsOlVqShrFEuM/rs:fit/g:sm/q:90/h:584/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTc4ODAz/NDItMTQ1MDgyNjc3/Ni0zMDI3LmpwZWc.jpeg",
-   "image": "/media/texas-flood.jpg"
+   "image": "texas-flood.jpg"
    }
  },
  {
@@ -972,7 +972,7 @@
    "genre": 12,
    "price": 11.99,
    "image_url": "https://i.discogs.com/2XxfKanu4pnNHTI8U63BpAR_PhuyMWEk1T0kqVweLZQ/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI1ODMy/NDU1LTE2NzQyNjAx/NTktNzkzNS5qcGVn.jpeg",
-   "image": "/media/soy-incondicional.jpg"
+   "image": "soy-incondicional.jpg"
    }
  },
  {
@@ -988,7 +988,7 @@
    "genre": 12,
    "price": 18.99,
    "image_url": "https://i.discogs.com/_MoJX9ipnOHEkTp1ETEtXX0WO31RiAC2QdYwQ1r4QA8/rs:fit/g:sm/q:90/h:597/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEzOTY0/NDg1LTE1NjUwNDA3/OTAtODE5NC5qcGVn.jpeg",
-   "image": "/media/supernatural.jpg"
+   "image": "supernatural.jpg"
    }
  },
  {
@@ -1004,7 +1004,7 @@
    "genre": 16,
    "price": 24.99,
    "image_url": "https://i.discogs.com/ynQup1rfPt4YKPRAynw6heA_mgN5ze1CrL21-UrfuQM/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTIwNjgw/NTctMTI2MjExNzcz/MS5qcGVn.jpeg",
-   "image": "/media/planxty-planxty.jpg"
+   "image": "planxty-planxty.jpg"
    }
  },
  {
@@ -1020,7 +1020,7 @@
    "genre": 2,
    "price": 21.99,
    "image_url": "https://i.discogs.com/rcc6N5KItuTqyLkaOjGjsyvb02miEjmB21AJxZz061s/rs:fit/g:sm/q:90/h:543/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTQzMjkz/Mi0xNDI3MDEyMDk1/LTE4MDguanBlZw.jpeg",
-   "image": "/media/funeral-arcade.jpg"
+   "image": "funeral-arcade.jpg"
    }
  },
  {
@@ -1036,7 +1036,7 @@
    "genre": 3,
    "price": 26.99,
    "image_url": "https://i.discogs.com/WIcmVaAsfOwxgaKApPMciVitogXJEkSAl1TyIhxTNRw/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDk2/MzYtMTI2NTk0ODA5/NC5qcGVn.jpeg",
-   "image": "/media/master-of-puppets.jpg"
+   "image": "master-of-puppets.jpg"
    }
  },
  {
@@ -1052,7 +1052,7 @@
    "genre": 2,
    "price": 18.99,
    "image_url": "https://i.discogs.com/7PO58jL3ee8ev8st01DxesiJ41FeFkDXyZyR0R3ghdE/rs:fit/g:sm/q:90/h:450/w:450/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1OTIx/MTgtMTIzMDc5OTk5/Ny5qcGVn.jpeg",
-   "image": "/media/merriweather.jpg"
+   "image": "merriweather.jpg"
    }
  },
  {
@@ -1068,7 +1068,7 @@
    "genre": 3,
    "price": 22.99,
    "image_url": "https://i.discogs.com/rR0i5yvI5ticjbJtydcL_xlGku8dFLcZHETE31XPyAw/rs:fit/g:sm/q:90/h:600/w:597/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTU5MDc3/My0xMzMwNTY4MTU2/LmpwZWc.jpeg",
-   "image": "/media/masters-of-reality.jpg"
+   "image": "masters-of-reality.jpg"
    }
  },
  {
@@ -1084,7 +1084,7 @@
    "genre": 3,
    "price": 24.99,
    "image_url": "https://i.discogs.com/fnQf2n614D92F0jLoAZagkyzG_8WgFYCuV81S6qrLUU/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTEyOTg3/MTAtMTIwNzU1NzY0/NS5qcGVn.jpeg",
-   "image": "/media/rust-in-peace.jpg"
+   "image": "rust-in-peace.jpg"
    }
  },
  {
@@ -1100,7 +1100,7 @@
    "genre": null,
    "price": 119,
    "image_url": "https://media.currys.biz/i/currysprod/10189179?$l-large$&fmt=auto",
-   "image": "/media/4.png"
+   "image": "4.png"
    }
  },
  {
@@ -1116,7 +1116,7 @@
    "genre": null,
    "price": 300,
    "image_url": "https://media.currys.biz/i/currysprod/10228464?$l-large$&fmt=auto",
-   "image": "/media/3.png"
+   "image": "3.png"
    }
  },
  {
@@ -1132,7 +1132,7 @@
    "genre": null,
    "price": 40,
    "image_url": "https://media.4rgos.it/i/Argos/4369431_R_Z001A?w=1500&h=880&qlt=70&fmt=webp",
-   "image": "/media/bush.png"
+   "image": "bush.png"
    }
  },
  {
@@ -1148,7 +1148,7 @@
    "genre": null,
    "price": 15.99,
    "image_url": "https://i.etsystatic.com/8914537/r/il/ccf23e/2896969262/il_1588xN.2896969262_bhpp.jpg",
-   "image": "/media/1.png"
+   "image": "1.png"
    }
  },
  {
@@ -1164,7 +1164,7 @@
    "genre": null,
    "price": 4.99,
    "image_url": "https://i.etsystatic.com/26951936/r/il/f0ae26/3795182564/il_1588xN.3795182564_p2c2.jpg",
-   "image": "/media/8.png"
+   "image": "8.png"
    }
  },
  {
@@ -1180,7 +1180,7 @@
    "genre": null,
    "price": 9.99,
    "image_url": "https://i.etsystatic.com/38492251/r/il/b6f508/4481046372/il_1588xN.4481046372_f2pi.jpg",
-   "image": "/media/2.png"
+   "image": "2.png"
    }
  },
  {
@@ -1196,7 +1196,7 @@
    "genre": null,
    "price": 4.99,
    "image_url": "https://i.etsystatic.com/33434270/r/il/9f26a9/3696045493/il_1588xN.3696045493_7u7d.jpg",
-   "image": "/media/7.png"
+   "image": "7.png"
    }
  },
  {
@@ -1212,7 +1212,7 @@
    "genre": 1,
    "price": 35.99,
    "image_url": "https://i.discogs.com/o-G5UBtnV4FwvG3OSukXPzhuNGcnzOh4xYolilL2rpY/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NTE4/ODA4LTE2OTc4NzM0/MzgtOTgzMy5qcGVn.jpeg",
-   "image": "/media/hackney-diamonds.jpg"
+   "image": "hackney-diamonds.jpg"
    }
  },
  {
@@ -1228,7 +1228,7 @@
    "genre": 6,
    "price": 22.99,
    "image_url": "https://i.discogs.com/jh0lO-IUIkDYNsLoYbxWAo9lHH7BCEak9TssEDA3Erg/rs:fit/g:sm/q:90/h:600/w:580/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI4NjMw/NTg4LTE2OTc2Mzkw/NTEtMTQ1NS5qcGVn.jpeg",
-   "image": "/media/pearlies.jpg"
+   "image": "pearlies.jpg"
    }
  },
  {
@@ -1244,7 +1244,7 @@
    "genre": 2,
    "price": 7.99,
    "image_url": "https://i.discogs.com/MpC_U1A4T5sSjnOU7kmZBs73j7RlOrGnDui6XBFUX7g/rs:fit/g:sm/q:90/h:600/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTI0NzI4/NTIyLTE2NjQ5ODQy/NDgtNDE1Mi5qcGVn.jpeg",
-   "image": "/media/she-said.jpg"
+   "image": "she-said.jpg"
    }
  },
  {
@@ -1260,7 +1260,7 @@
    "genre": 3,
    "price": 14.99,
    "image_url": "https://i.discogs.com/lUvQ1ZXVh7Z86CTbbgZLR7j0i6hSxkSr4KxsvjfSQyc/rs:fit/g:sm/q:90/h:600/w:598/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2Njc0/MzktMTMzOTU5Mzg4/My02NjE3LmpwZWc.jpeg",
-   "image": "/media/rum-sodomy.jpg"
+   "image": "rum-sodomy.jpg"
   }
  },
  {
@@ -1276,7 +1276,7 @@
     "genre": 1,
     "price": 25.99,
     "image_url": "https://i.discogs.com/XoAXkLe03Vk0Kt-oQqw7V9uW5nBzQdNvZd0zar5mOiQ/rs:fit/g:sm/q:90/h:592/w:600/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTM2NzA4/NC0xMjYzMDk1NTUz/LmpwZWc.jpeg",
-    "image": "/media/nevermind.jpg"
+    "image": "nevermind.jpg"
    }
  }
 ]
