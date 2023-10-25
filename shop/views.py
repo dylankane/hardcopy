@@ -161,6 +161,7 @@ def genre_view(request):
 @login_required
 def add_product(request):
     """For adding products to store """
+
     if not request.user.is_superuser:
         messgae.error(request, 'Sorry only staff members have access to that')
         return redirect(reverse('index'))
@@ -168,7 +169,7 @@ def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            product = form.save()
             messages.success(request, 'Successfully added product')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
@@ -222,12 +223,12 @@ def delete_product(request, product_id):
     """To delete a product"""
     if not request.user.is_superuser:
         messgae.error(request, 'Sorry only staff members have access to that')
-        return redirect(reverse('index'))
+        return redirect(reverse('shop'))
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'You have successfully deleted the product!')
-    return redirect(reverse('index'))
+    return redirect(reverse('shop'))
 
 
 def review_list(request, product_id):

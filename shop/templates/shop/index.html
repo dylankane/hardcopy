@@ -5,7 +5,7 @@
 <!-- Hero Image and banner -->
 <div class="jumbotron  rounded-0 m-0 ">
     <p class="text-right mx-4">
-        <img src="{{MEDIA_URL}}/Hard-Copy-logo-modified-small.png" alt="Large banner image of room with musical intruments and vinyl records">
+        <img src="{{ MEDIA_URL }}/Hard-Copy-logo-modified-small.png" alt="Large banner image of room with musical intruments and vinyl records">
     </p>
 </div>
 <div class="m-0 p-0 w-100"></div>
@@ -114,7 +114,7 @@
                                             </span>
                                         
                                             <form class="form text-center"
-                                                action="{% url 'add_to_cart' product.id %}?source=list_of_wishes"
+                                                action="{% url 'add_to_cart' product.id %}"
                                                 method="POST">
                                                 {% csrf_token %}
                                                 <input class="hidden-qty" type="number" name="quantity" value="1"
