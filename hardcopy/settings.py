@@ -181,7 +181,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'), )
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if 'USE_AWS' in os environ:
+if 'USE_AWS' in os.environ:
     # bucket configuration
     AWS_STORAGE_BUCKET_NAME = 'hard-copy'
     AWS_S3_REGION_NAME = 'eu-west-1'
