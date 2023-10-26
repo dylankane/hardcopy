@@ -35,13 +35,11 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body p-0 w-100">
-                                    <span class="float-right">
-                                        <form class="wish_form" action="{% url 'wish_list' product.product.id %}?source=list_of_wishes"method="POST">
-                                            {% csrf_token %}
-                                            <button class="wish-list-remove" type="submit" name="wish_list_id"
-                                                value="{{product.id}}" title="Remove from wish list"><i class="fa-regular fa-trash-can fa-lg"></i></button>
-                                        </form>
-                                    </span>
+                                    <form class="wish_form" action="{% url 'wish_list' product.product.id %}?source=list_of_wishes" method="POST">
+                                        {% csrf_token %}
+                                        <button class="wish-list-remove" type="submit" name="wish_list_id"
+                                            value="{{product.id}}" title="Remove from wish list"><i class="fa-regular fa-trash-can fa-lg"></i></button>
+                                    </form>
                                     <p class="lead mb-0 text-left font-weight-bold">€{{ product.product.price }}</p>
                                     <p class="mb-0">
                                         <a class="p-1" href="{% url 'product_detail' product.product.id %}">{{ product.product.name }}</a>
@@ -55,24 +53,18 @@
                                 <div class="card-footer p-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col mt-2">
-                                                <span class="float-left ml-4">
-                                                    <p class="small tags">
+                                                <span class="float-left small tags ml-4">
                                                         <a class="p-1" href="{% url 'shop' %}?category={{ product.product.category.name }}">
                                                             <i class="fa-solid fa-hashtag"></i>{{ product.product.category.friendly_name }}
                                                         </a>
-                                                    </p>
                                                 </span>
-                                                <span class="float-right mr-4">
-                                                    <p class="small tags">
+                                                <span class="float-right small tags mr-4">
                                                         <a class="p-1" href="{% url 'shop' %}?genre={{ product.product.genre.name }}">
                                                             <i class="fa-solid fa-hashtag"></i>{{ product.product.genre.friendly_name }}
                                                         </a>
-                                                    </p>
                                                 </span>
-                                            
                                             <form class="form text-center"
-                                                action="{% url 'add_to_cart' product.product.id %}?source=list_of_wishes"
-                                                method="POST">
+                                                action="{% url 'add_to_cart' product.product.id %}?source=list_of_wishes" method="POST">
                                                 {% csrf_token %}
                                                 <input class="hidden-qty" type="number" name="quantity" value="1"
                                                     min="1" max="99" data-item_id="{{ product.product.id }}"

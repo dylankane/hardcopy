@@ -79,7 +79,6 @@ li {
 }
 
 .d-flex {
-    display: -ms-flexbox!important;
     display: flex!important;
     align-items: flex-end;
 }
@@ -129,7 +128,7 @@ li {
 
 .card, .card-footer{
     background-color: var(--background);
-    font-family: Noto Sans;
+    font-family: "Noto Sans";
     font-size: .9em;
 }
 
@@ -140,11 +139,11 @@ li {
 /* product detail page */
 
 #product-detail-description {
-    font-family:  Noto Sans;
+    font-family:  "Noto Sans";
 }
 
 .review-board {
-    font-size: Noto Sans;
+    font-family: "Noto Sans";
 }
 
 
@@ -249,7 +248,7 @@ thead {
 .sort-inner {
     background-color: var(--background-secondary) !important;
     font-size: medium;
-    font-family: Noto Sans;
+    font-family: "Noto Sans";
     font-size: .8em;
     line-height: 200%;
     right: 0;
@@ -309,7 +308,7 @@ td p {
 .toast-body,
 .toast-header {
     color: var(--text);
-    font-family: Noto Sans;
+    font-family: "Noto Sans";
 }
 
 .cart-notification-wrapper {
@@ -347,14 +346,14 @@ td p {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #dc3545;
-    border-color: #dc3545;
+    border-color: #b90d1e;
     border-radius: 0;
 }
 
 /* Reviews */
 
 .reviews {
-    background-color: #321e1e24;
+    background-color: var(--background-secondary);
 }
 
 /* Wish List */
@@ -395,14 +394,14 @@ td p {
 /* About Page */
 
 #about-container p {
-    font-family: Noto Sans;
+    font-family: "Noto Sans";
 }
 
 
 /* Stock Management */
 
 #stock-container p {
-    font-family: Noto Sans;
+    font-family: "Noto Sans";
 }
 
 

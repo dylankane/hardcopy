@@ -10,13 +10,13 @@
          <!-- review form -->
          <div class="col-8 offset-2 col-md-4 offset-md-1 pt-5">
             <h3>Leave a Review</h3>
-            <form method="post" action="">
+            <form method="post">
                 {% csrf_token %}
-                {% if review_form %}
+                <!-- {% if review_form %} -->
                 {{ review_form|crispy }}
-                {% else %}
-                <p>Review form is not provided to the template.</p>
-                {% endif %}
+                <!-- {% else %}
+                <p>Review form is not provided to the template.</p> -->
+                <!-- {% endif %} -->
                 <button type="submit" class="btn btn-dark rounded-0">SUBMIT</button>
             </form>
         </div>

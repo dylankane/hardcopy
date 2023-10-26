@@ -122,15 +122,15 @@
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a>
                                             </span>
                                             <span class="float-right mr-5 mt-2 small">
-                                                <a href="#deleteProductModal" data-toggle="modal">Delete</a>
+                                                <a href="#delete{{ product.id }}Modal" data-toggle="modal">Delete</a>
                                             </span>
                                                 <!-- Delete product modal -->
-                                                <div class="modal fade" id="deleteProductModal" tabindex="-1" role="dialog"
-                                                    aria-labelledby="deleteProductModalTitle" aria-hidden="true">
+                                                <div class="modal fade" id="delete{{ product.id }}Modal" tabindex="-1" role="dialog"
+                                                    aria-labelledby="delete{{ product.id }}Modal" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                                         <div class="modal-content rounded-0">
                                                             <div class="modal-header">
-                                                                <h5 class="modal-title" id="deleteModalLongTitle">DELETE PRODUCT</h5>
+                                                                <h5 class="modal-title" id="delete{{ product.id }}ModalLongTitle">DELETE PRODUCT</h5>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
