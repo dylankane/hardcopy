@@ -3,7 +3,7 @@
 
 
 {% block content %}
-    <div class="container" id="stock-container">
+    <div class="container mb-5" id="stock-container">
         <div class="row mb-5">
             <div class="col-8 offset-2 text-center">
                 <hr>
@@ -31,8 +31,9 @@
                         {% endif %}
                     {% endfor %}
                     <div class="text-right">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'shop' %}">CANCEL</a>
-                        <button class="btn btn-black rounded-0" type="submit">ADD PRODUCT</button>
+                        <hr>
+                        <a class="btn btn-dark rounded-0" href="{% url 'shop' %}">CANCEL</a>
+                        <button class="btn btn-dark rounded-0" type="submit">ADD PRODUCT</button>
                     </div>
                 </form>
             </div>            
