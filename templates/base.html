@@ -44,14 +44,14 @@
 	</script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
 	<script src="https://js.stripe.com/v3/"></script>
-	<!-- <script type="text/javascript">
+	<script type="text/javascript">
 	 $(document).ready(function() {
 		 if ($.cookie('pop') == null) {
-			 $('#myModal').modal('show');
+			 $('#newsletterModal').modal('show');
 			 $.cookie('pop',);
 		 }
 	 });
-	</script> -->
+	</script>
 	<!-- <script>$(window).on('load',function(){
 		var delayMs = 2000;
 		
@@ -68,7 +68,7 @@
 	{% endblock %}
 
 	<title>Hard Copy {% block extra_title %}{% endblock %}</title>
-	<link rel="icon" type="image/x-icon" href="/media/favicon(1).ico">
+	<link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}favicon(1).ico">
 </head>
 <body>
 	<header>
@@ -186,8 +186,8 @@
 				</div>
 			</div>
 		</nav>
-		<!-- modal -->
-		<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+		<!-- Newsletter modal -->
+		<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog"
 			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content rounded-0">
