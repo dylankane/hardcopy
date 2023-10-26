@@ -44,7 +44,7 @@
 	</script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
 	<script src="https://js.stripe.com/v3/"></script>
-	<script type="text/javascript">
+	<script>
 	 $(document).ready(function() {
 		 if ($.cookie('pop') == null) {
 			 $('#newsletterModal').modal('show');
@@ -56,7 +56,7 @@
 		var delayMs = 2000;
 		
 		setTimeout(function(){
-			$('#exampleModalCenter').modal('show');
+			$('#newsletterModal').modal('show');
 		}, delayMs);
 	});
 </script> -->
@@ -113,14 +113,14 @@
 									{% if request.user.is_authenticated %}
 										{% if request.user.is_superuser %}
 											<a href="{% url 'add_product' %}" class="dropdown-item">Stock Management</a>
-											<div class="dropdown-divider"></div>
+											<p class="dropdown-divider"></p>
 										{% endif %}
 										<a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-										<div class="dropdown-divider"></div>
+										<p class="dropdown-divider"></p>
 										<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
 									{% else %}
 										<a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
-										<div class="dropdown-divider"></div>
+										<p class="dropdown-divider"></p>
 										<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
 									{% endif %}
 								</div>
@@ -144,7 +144,7 @@
 						<form class="d-flex input-group" method="GET" action="{% url 'shop' %}">
 							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label="Search">
 							<div class="input-group-append">
-								<button class="form-control btn rounded-0" id="search-btn" type="submit">
+								<button class="form-control btn rounded-0" id="search-btn-2" type="submit">
 									<span class="icon">
 										<i class="fa-solid fa-magnifying-glass"></i>
 									</span>
@@ -188,11 +188,11 @@
 		</nav>
 		<!-- Newsletter modal -->
 		<div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog"
-			aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			aria-labelledby="newsletterModalTitle" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content rounded-0">
 					<div class="modal-header">
-						<h5 class="modal-title" id="exampleModalLongTitle">HARD COPY NEWSLETTER</h5>
+						<h5 class="modal-title" id="newsletterModalTitle">HARD COPY NEWSLETTER</h5>
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>

@@ -88,6 +88,10 @@ li {
     background-color: var(--text);
 }
 
+#search-btn-2 {
+    background-color: var(--text);
+}
+
 .fa-magnifying-glass {
     color: var(--background);
 }
