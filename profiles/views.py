@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
@@ -52,3 +52,14 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def delete_user(request):
+    if request.method == 'POST':
+        request.user.delete()
+        messages.success(
+            request, 'Your account has been successfully deleted.')
+        return redirect('shop')
+    return redirect(reverse('shop'))
+    # return render(request, 'shop')

@@ -24,5 +24,6 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black rounded-0'
 
         self.fields['genre'].choices = genre_friendly_names
+        self.fields['genre'].empty_label = "Null"
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
