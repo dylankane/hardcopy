@@ -2,245 +2,99 @@
 
 Return back to the [README.md](README.md) file.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you need to convince the assessors that you have conducted enough testing to legitimately believe that the site works well.
-Essentially, in this part, you should go over all of your project's features, and ensure that they all work as intended,
-with the project providing an easy and straightforward way for the users to achieve their goals.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+Below I have outlined the different tests I have undertaken on this project to prove its robustness. 
 
 ## Code Validation
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use the space to discuss code validation for any of your own code files (where applicable).
-You are not required to validate external libraries/frameworks, such as imported Bootstrap, Materialize, Font Awesome, etc.
-
-**IMPORTANT**: You must provide a screenshot for each file you validate.
-
-**PRO TIP**: Always validate the live site pages, not your local code. There could be subtle/hidden differences.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### HTML
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-- If you are copying/pasting your HTML code, use this link: https://validator.w3.org/#validate_by_input
-- (*recommended*) If you are using the live deployed site pages, use this link: https://validator.w3.org/#validate_by_uri
-
-It's recommended to validate the live pages (each of them) using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to a page to validate it again in the future.
-The URL will look something like this:
-
-- https://validator.w3.org/nu/?doc=https%3A%2F%2Fdylankane.github.io%2Fhardcopy%2Findex.html
-
-Sample HTML code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Page | W3C URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdylankane.github.io%2Fhardcopy%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
-| Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdylankane.github.io%2Fhardcopy%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdylankane.github.io%2Fhardcopy%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
-| Add Blog | n/a | ![screenshot](documentation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
-| Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining HTML files |
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT**: Python/Jinja syntax in HTML
-
-Python projects that use Jinja syntax, such as `{% for loops %}`, `{% url 'home' %}`, and `{{ variable|filter }}`
-will not validate properly if you're copying/pasting into the HTML validator.
-
-In order to properly validate these types of files, it's recommended to
-[validate by uri](https://validator.w3.org/#validate_by_uri) from the deployed Heroku pages.
-
-Unfortunately, pages that require a user to be logged-in and authenticated (CRUD functionality),
-will not work using this method, due to the fact that the HTML Validator (W3C) doesn't have
-access to login to your pages.
-In order to properly validate HTML pages with Jinja syntax for authenticated pages, follow these steps:
-
-- Navigate to the deployed pages which require authentication
-- Right-click anywhere on the page, and select **View Page Source** (usually `CTRL+U` or `⌘+U` on Mac).
-- This will display the entire "compiled" code, without any Jinja syntax.
-- Copy everything, and use the [validate by input](https://validator.w3.org/#validate_by_input) method.
-- Repeat this process for every page that requires a user to be logged-in/authenticated.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Page | Screenshot | Notes |
+| --- | --- | --- |
+| index.html | ![screenshot](documentation) |  |
+| product_detail.html | ![screenshot](documentation) |  |
+| list_of_wishes.html | ![screenshot](documentation) |  |
+| profile.html | ![screenshot](documentation) |  |
+| genre_view.html | ![screenshot](documentation) |  |
+| about.html | ![screenshot](documentation) |  |
+| add_product.html | ![screenshot](documentation) |  |
+| edit_product.html | ![screenshot](documentation) |  |
+| cart.html | ![screenshot](documentation) |  |
+| checkout.html | ![screenshot](documentation) |  |
+| checkout_success.html | ![screenshot](documentation) |  |
+| contact_message.html | ![screenshot](documentation) |  |
+| add_review.html | ![screenshot](documentation) |  |
 
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-- If you are copying/pasting your HTML code, use this link: https://jigsaw.w3.org/css-validator/#validate_by_input
-- (*recommended*) If you are using the live deployed site, use this link: https://jigsaw.w3.org/css-validator/#validate_by_uri
-
-It's recommended to validate the live site if you only have a single CSS file using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to the page to validate it again in the future.
-The URL will look something like this:
-
-- https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdylankane.github.io%2Fhardcopy
-
-If you have multiple CSS files, then individual [validation by input](https://jigsaw.w3.org/css-validator/#validate_by_input)
-is recommended for the additional CSS files.
-
-**IMPORTANT**: Third-Party tools
-
-If you're using extras like Bootstrap, Materialize, Font Awesome, then sometimes the validator
-will attempt to also validate this code, even if it's not part of your own actual code.
-You are not required to validate the external libraries or frameworks!
-
-Sample CSS code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| File | Jigsaw URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdylankane.github.io%2Fhardcopy) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining CSS files |
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| base.css | ![screenshot](documentation/testing/base-css.png) | Pass: No Errors |
+| checkout.css | ![screenshot](documentation/testing/checkout-css.png) | Pass: No Errors |
+| profiles.css | ![screenshot](documentation/testing/profile-css.png) | Pass: No Errors |
 
 ### JavaScript
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-If using modern JavaScript (ES6) methods, then make sure to include the following
-line at the very top of every single JavaScript file (this should remain in your files for submission):
-
-    /* jshint esversion: 11 */
-
-If you are also including jQuery (`$`), then the updated format will be:
-
-    /* jshint esversion: 11, jquery: true */
-
-This allows the JShint validator to recognize modern ES6 methods, such as:
-`let`, `const`, `template literals`, `arrow functions (=>)`, etc.
-
-**IMPORTANT**: External resources
-
-Sometimes we'll write JavaScript that imports variables from other files, such as an array of questions
-from `questions.js`, which are used within the main `script.js` file elsewhere.
-If that's the case, the JShint validation tool doesn't know how to recognize unused variables
-that would normally be imported locally in your code.
-These warnings are acceptable to showcase on your screenshots.
-
-The same thing applies when using external libraries such as Stripe, Leaflet, Bootstrap, Materialize, etc..
-To instantiate these components, we need to use their respective declarator.
-Again, the JShint validation tool would flag these as undefined/unused variables.
-These warnings are acceptable to showcase on your screenshots.
-
-Sample JS code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| script.js | ![screenshot](documentation/js-validation-script.png) | Unused variables from external files |
-| questions.js | ![screenshot](documentation/js-validation-questions.png) | Pass: No Errors |
-| quiz.js | ![screenshot](documentation/js-validation-quiz.png) | Unused variables from external files |
-| stripe_elements.js | ![screenshot](documentation/js-validation-stripe.png) | Undefined Stripe variable |
-| x | x | x | repeat for all remaining JavaScript files |
+| quantity_input_script.html | ![screenshot](documentation/testing/jshint-quantity-input-script.png) | Pass: No Errors |
+| stripe_element.js | ![screenshot](documentation/testing/jshint-stripe-elements.png) | Undefined Stripe variable |
+| cart.html | ![screenshot](documentation/testing/jshint-cart-html.png) | Pass: No Errors |
+| base.html | ![screenshot](documentation/testing/jshint-modal-newsletter.png) | Pass: No Errors|
 
 ### Python
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
-
-**IMPORTANT**: `E501 line too long` errors
-
-You must strive to fix any Python lines that are too long ( >80 characters ).
-In rare cases where you cannot break the lines [without breaking the functionality],
-then by adding `# noqa` to the end of those lines will ignore linting validation.
-
-`# noqa` = **NO Quality Assurance**
-
-**NOTE**: You must include 2 *spaces* before the `#`, and 1 *space* after the `#`.
-
-Do not use `# noqa` all over your project just to clear down validation errors!
-This can still cause a project to fail, for failing to fix actual PEP8 validation errors.
-
-Sometimes strings or variables get too long, or long `if` conditional statements.
-These are acceptable instances to use the `# noqa`.
-
-When trying to fix "line too long" errors, try to avoid using `/` to split lines.
-A better approach would be to use any type of opening bracket, and hit Enter just after that.
-
-Any opening bracket type will work: `(`, `[`, `{`.
-
-By using an opening bracket, Python knows where to appropriately indent the next line of code,
-without having to "guess" yourself and attempt to tab to the correct indentation level.
-
-Sample Python code validation documentation below (tables are extremely helpful!).
-
-**Note**: This gives examples of PP3 (Python-only), and Flask/Django files, so eliminate the ones not applicable to your own project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| run.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dylankane/hardcopy/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dylankane/hardcopy/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| Blog views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dylankane/hardcopy/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dylankane/hardcopy/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/dylankane/hardcopy/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining Python files |
+| File | Screenshot | Notes |
+| --- | --- | --- |
+| cart/context.py | ![screenshot](documentation/testing/cart-contexts-py.png) | Pass: No Errors |
+| cart/views.py | ![screenshot](documentation/testing/cart-views-py.png) | Pass: No Errors |
+| checkout/admin.py | ![screenshot](documentation/testing/checkout-form-py.png) | Pass: No Errors |
+| checkout/forms.py | ![screenshot](documentation/testing/checkout-form-py.png) | Pass: No Errors |
+| checkout/models.py | ![screenshot](documentation/testing/checkout-models-py.png) | Pass: No Errors |
+| checkout/signals.py | ![screenshot](documentation/testing/checkout-signals-py.png) | Pass: No Errors |
+| checkout.urls.py | ![screenshot](documentation/testing/checkout-urls-py.png) | Pass: No Errors |
+| checkout.views.py | ![screenshot](documentation/testing/checkout-views-py.png) | Pass: No Errors |
+| checkout/webhook_handler.py | ![screenshot](documentation/testing/checkout-webhook-handler-py.png) | Pass: No Errors |
+| checkout/webhooks.py | ![screenshot](documentation/testing/checkout-webhooks-py.png) | Pass: No Errors |
+| contact.admin.py | ![screenshot](documentation/testing/contact-admin-py.png) | Pass: No Errors |
+| contact/forms.py | ![screenshot](documentation/testing/contact-forms-py.png) | Pass: No Errors |
+| contact/models.py | ![screenshot](documentation/testing/contact-models-py.png) | Pass: No Errors |
+| contact/urls.py | ![screenshot](documentation/testing/contact-urls-py.png) | Pass: No Errors |
+| contact/views.py | ![screenshot](documentation/testing/contact-views-py.png) | Pass: No Errors |
+| hardcopy/context_proccessor.py | ![screenshot](documentation/testing/harcopy-context-processor-py.png) | Pass: No Errors |
+| hardcopy/settings.py | ![screenshot](documentation/testing/hardcopy-settings-py.png) | Pass: No Errors |
+| hardcopy.urls.py | ![screenshot](documentation/testing/hardcopy-urls-py.png) | Pass: No Errors |
+| hardcopy/views.py | ![screenshot](documentation/testing/hardcopy-views-py.png) | Pass: No Errors |
+| newsletter/admin.py | ![screenshot](documentation/testing/newsletter-admin-py.png) | Pass: No Errors |
+| newsletter/forms.py | ![screenshot](documentation/testing/newsletter-forms-py.png) | Pass: No Errors |
+| newsletter/models.py | ![screenshot](documentation/testing/newsletter-models-py.png) | Pass: No Errors |
+| newsletter/urls.py | ![screenshot](documentation/testing/newsletter-urls-py.png) | Pass: No Errors |
+| newsletter/views.py | ![screenshot](documentation/testing/newsletter-views-py.png) | Pass: No Errors |
+| profiles/forms.py | ![screenshot](documentation/testing/profiles-forms-py.png) | Pass: No Errors |
+| profiles/models.py | ![screenshot](documentation/testing/profiles-models-py.png) | Pass: No Errors |
+| profiles/urls.py | ![screenshot](documentation/testing/profiles-urls-py.png) | Pass: No Errors |
+| profiles/views.py | ![screenshot](documentation/testing/profiles-views-py.png) | Pass: No Errors |
+| reviews/admin.py | ![screenshot](documentation/testing/reviews-admin-py.png) | Pass: No Errors |
+| review/forms.py | ![screenshot](documentation/testing/reviews-forms-py.png) | Pass: No Errors |
+| reviews/models.py | ![screenshot](documentation/testing/reviews-models-py.png) | Pass: No Errors |
+| reviews/urls.py | ![screenshot](documentation/testing/reviews-urls-py.png) | Pass: No Errors |
+| reviews/views.py | ![screenshot](documentation/testing/reviews-views-py.png) | Pass: No Errors |
+| shop/admin.py | ![screenshot](documentation/testing/shop-admin-py.png) | Pass: No Errors |
+| shop/forms.py | ![screenshot](documentation/testing/shop-form-py.png) | Pass: No Errors |
+| shop/models.py | ![screenshot](documentation/testing/shop-models-py.png) | Pass: No Errors |
+| shop/urls.py | ![screenshot](documentation/testing/shop-urls-py.png) | Pass: No Errors |
+| shop/views | ![screenshot](documentation/testing/shop-views-py.png) | Pass: No Errors |
+| shop/widgets.py | ![screenshot](documentation/testing/shop-widget-py.png) | Pass: No Errors |
+| custom_storage.py | ![screenshot](documentation/testing/root-custom-storages-py.png) | Pass: No Errors |
 
-**IMPORTANT**: Django settings.py
 
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
-
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
-**IMPORTANT**: migration and pycache files
-
-You do not have to ever validate files from the `migrations/` or `pycache/` folders!
-Ignore these `.py` files, and validate just the files that you've created or modified.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Browser Compatibility
 
