@@ -1,185 +1,111 @@
 # HARDCOPY
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
+Overview of your project.
+"sales pitch".
 
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
 
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://hard-copy-dca8835ff546.herokuapp.com
 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
+What the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
 
-![screenshot](documentation/mockup.png)
+![screenshot](documentation/features/mockup.png)
 
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## UX
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+The design process for this project
 
 ### Colour Scheme
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
 Explain your colours and the colour scheme.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-- `#000000` used for primary text.
-- `#E84610` used for primary highlights.
-- `#4A4A4F` used for secondary text.
-- `#009FE3` used for secondary highlights.
+- `#f4f1e0` Background colour used throughout the site.
+- `#321e1e24` Secondary background colour used to highlight particular areas of pages (Same as text colour but with low opacity).
+- `#321e1e;` Main Text.
+- `#f4f1e0` Secondary text used for dark backgrounds.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+Black and white have also been used for traditional style banners and logo on the hero image
 
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
-
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
 
-![screenshot](documentation/coolors.png)
+![screenshot](documentation/features/hardcopy-coolors.png)
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
 
 ```css
 :root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
+    --background: #f4f1e0;
+    --background-secondary: #321e1e24;
+    --text: #321e1e;
+    --text-faded: #9a9a9a;
+    --wished: red;
 }
 ```
 
 ### Typography
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
 Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
 
 Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
 
-Example:
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- [Oswald](https://fonts.google.com/specimen/Oswald) was used for the primary headers and titles.
 
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
+- [Noto Sans](https://fonts.google.com/noto/specimen/Noto+Sans) was used for all other secondary text.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
 ## User Stories
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+Explain user stories proccess
 
-In this section, list all of your user stories for the project.
+![screenshot](documentation/general/hardcopy-agile-sheet.png)
+![screenshot](documentation/general/hardcopy-agile-sheet-2.png)
+![screenshot](documentation/general/hardcopy-agile-sheet-3.png)
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-### New Site Users
-
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-
-### Returning Site Users
-
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-
-### Site Admin
-
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
 
 ## Wireframes
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
+To follow best practice, wireframes were developed for mobile, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 ### Home Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-home.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-home.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-home.png) |
+| Mobile | ![screenshot](documentation/general/wireframe-home-mobile.png) |
+| Desktop | ![screenshot](documentation/general/wireframe-home-desk.png) |
+| Desktop 2 | ![screenshot](documentation/general/wireframe-home-desk-2.png) |
 
-### About Page Wireframes
-
-| Size | Screenshot |
-| --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-about.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-about.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-about.png) |
-
-### Contact Page Wireframes
+### Poduct Deails Page Wireframes
 
 | Size | Screenshot |
 | --- | --- |
-| Mobile | ![screenshot](documentation/wireframes/mobile-contact.png) |
-| Tablet | ![screenshot](documentation/wireframes/tablet-contact.png) |
-| Desktop | ![screenshot](documentation/wireframes/desktop-contact.png) |
+| Mobile | ![screenshot](documentation/general/wireframe-mobile-product-detail.png) |
+| Desktop | ![screenshot](documentation/general/wireframe-product-detail-home.png) |
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Review Section Wireframes
 
-Repeat for any addition wireframe pages you have.
+| Size | Screenshot |
+| --- | --- |
+| Mobile | ![screenshot](documentation/general/wireframe-review-mobile.png) |
+| Desktop | ![screenshot](documentation/general/wireframe-review-home.png) |
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+### Product Card Wireframes
+
+| Size | Screenshot |
+| --- | --- |
+| Mobile & Desktop | ![screenshot](documentation/general/wireframe-product-card.png) |
 
 ## Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
 In this section, you should go over the different parts of your project,
 and describe each in a sentence or so.
@@ -188,21 +114,17 @@ You will need to explain what value each of the features provides for the user,
 focusing on who this website is for, what it is that they want to achieve,
 and how your project is the best way to help them achieve these things.
 
-For some/all of your features, you may choose to reference the specific project files that implement them.
 
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ### Existing Features
 
-- **Title for feature #1**
+- **Nav Bar**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature01.png)
 
-- **Title for feature #2**
+- ****
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
@@ -343,13 +265,8 @@ It isn't a specialized tool, but with the right tags and project creation/issue 
 
 Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-![screenshot](documentation/gh-projects.png)
+![screenshot](documentation/general/github-projects.png)
 
 ### GitHub Issues
 
@@ -357,20 +274,6 @@ Consider adding a basic screenshot of your Projects Board.
 There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Open Issues](https://github.com/dylankane/hardcopy/issues)
-
-    ![screenshot](documentation/gh-issues-open.png)
-
-- [Closed Issues](https://github.com/dylankane/hardcopy/issues?q=is%3Aissue+is%3Aclosed)
-
-    ![screenshot](documentation/gh-issues-closed.png)
 
 ### MoSCoW Prioritization
 
