@@ -14,9 +14,6 @@
 	{% block extra_meta %}
 	{% endblock %}
 
-
-
-
 	{% block corecss %}
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
@@ -44,14 +41,14 @@
 	</script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.0/jquery.cookie.min.js"></script>
 	<script src="https://js.stripe.com/v3/"></script>
-	<script>
+	<!-- <script>
 	 $(document).ready(function() {
 		 if ($.cookie('pop') == null) {
 			 $('#newsletterModal').modal('show');
 			 $.cookie('pop',);
 		 }
 	 });
-	</script>
+	</script> -->
 	<!-- <script>$(window).on('load',function(){
 		var delayMs = 2000;
 		
@@ -59,15 +56,15 @@
 			$('#newsletterModal').modal('show');
 		}, delayMs);
 	});
-</script> -->
-	  <!-- Stripe -->
-	
+	</script> -->
 	{% endblock %}
 
 	{% block extra_js %}
 	{% endblock %}
 
-	<title>Hard Copy {% block extra_title %}{% endblock %}</title>
+	<title>Hard Copy Vinyl Records</title>
+	<meta name="description" content="Online vinyl record store, in Ireland and the EU, selling music records equipment and merchandise">
+	<meta name="keywords" content="vinyl, records, online music store, music, turntable, record player, music genres, lp, vinyl collections, music gifts">
 	<link rel="icon" type="image/x-icon" href="{{ MEDIA_URL }}favicon(1).ico">
 </head>
 <body>
@@ -83,15 +80,15 @@
 				<div class="row d-flex w-100">
 					<!-- Logo -->
 					<div class="col-6 col-lg-3  d-none d-sm-block p-0 text-left">
-						<h1 class="m-0"><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h1>
+						<h1 class="m-0"><a href="{% url 'shop' %}" class="p-2" title="Homepage" aria-label="logo home page link">HARD COPY</a></h1>
 					</div>
 					<div class="col-6 d-sm-none p-0 text-left">
-						<h2 class="m-0" id="small-logo"><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h2>
+						<h2 class="m-0" id="small-logo"><a href="{% url 'shop' %}" class="p-2" title="Homepage" aria-label="Home page logo link">HARD COPY</a></h2>
 					</div>
 					<!-- Small serch bar -->
 					<div class="col-6 d-none d-lg-block">
 						<form class="d-flex input-group" method="GET" action="{% url 'shop' %}">
-							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label="Search">
+							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label=" Submit search">
 							<div class="input-group-append">
 								<button class="form-control btn rounded-0" id="search-btn" type="submit">
 									<span class="icon">
@@ -106,13 +103,13 @@
 						<ul class="list-inline list-unstyled text-right m-0">
 							{% if request.user.is_authenticated %}
 							<li class="list-inline-item">
-								<a href="{% url 'list_of_wishes' %}" class="p-2">
+								<a href="{% url 'list_of_wishes' %}" class="p-2" title="Wish List" aria-label="Link to wish list">
 									<i class="fa-sharp fa-solid fa-bookmark"></i>
 								</a>
 							</li>
 							{% endif %}
 							<li class="list-inline-item dropleft">
-								<a class="p-2" href="#" role="button" data-toggle="dropdown"   aria-haspopup="true" aria-expanded="false">
+								<a class="p-2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Dropdown link foe account options">
 									<i class="fa-solid fa-user"></i>
 								</a>
 								<div class="dropdown-menu rounded-0 mt-3" id="user-options" aria-labelledby="user-options" >
@@ -132,7 +129,7 @@
 								</div>
 							</li>
 							<li class="list-inline-item">
-								<a href="{% url 'view_cart' %}" class="p-2">
+								<a href="{% url 'view_cart' %}" class="p-2" title="Shopping Cart" aria-label="Link to shopping cart page">
 									<i class="fa-solid fa-cart-shopping"></i>
 									[{% if product_count %}
 									{{ product_count }}
@@ -148,7 +145,7 @@
 				<div class="row w-100">
 					<div class="col-12 d-lg-none mt-3">
 						<form class="d-flex input-group" method="GET" action="{% url 'shop' %}">
-							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label="Search">
+							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label=" Submit search">
 							<div class="input-group-append">
 								<button class="form-control btn rounded-0" id="search-btn-2" type="submit">
 									<span class="icon">
@@ -164,7 +161,7 @@
 				<div class="row text-center w-100">
 					<div class="col dropright show">
 						<a class="dropdown-toggle p-2" href="#" role="button" data-toggle="dropdown" id="dropdownMenuLink" 
-							aria-haspopup="true" aria-expanded="false">
+							aria-haspopup="true" aria-expanded="false" aria-label="Dropdown link to vinyl categories">
 							VINYLS
 						</a>
 						<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">

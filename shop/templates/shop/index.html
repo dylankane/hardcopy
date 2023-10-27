@@ -46,31 +46,35 @@
                         <div class="col-6 col-md-4 col-xl-3 mb-4">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}" class="image-link">
+                                <a href="{% url 'product_detail' product.id %}" class="image-link" title="{{ product.name }}" aria-label="link to products detail page">
                                     <img class="card-img-top img-fluid mb-2" src="{{ product.image.url }}"
                                         alt="Image of {{ product.name }}">
                                 </a>
                                 {% else %}
-                                <a href="{% url 'product_detail' product.id %}" class="image-link">
+                                <a href="{% url 'product_detail' product.id %}" class="image-link" title="{{ product.name }}" aria-label="link to products detail page">
                                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}no-image2.jpg"
                                         alt="No image available">
                                 </a>
                                 {% endif %}
                                 <div class="card-body p-0 w-100">
+                                    <!-- wishlist -->
                                     <div class="float-right">
                                         <form class="wish_form" action="{% url 'wish_list' product.id %}?source=shop" method="POST">
                                             {% csrf_token %}
                                             {% if user.is_authenticated %}
                                                 {% if product.id in wish_item %}
-                                                    <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Remove from wish list">
+                                                    <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Remove from wish list"
+                                                    aria-label="button to remove item from wishlist">
                                                         <i class="fa-sharp fa-solid fa-bookmark fa-beat"></i></button>
                                                 {% else %}
-                                                    <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Add this product to your wish list">
+                                                    <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="Add this product to your wish list"
+                                                    aria-label="button to add item to wishlist">
                                                         <i class="fa-sharp fa-regular fa-bookmark"></i></button>
                                                 {% endif %}
                                                
                                             {% else %}
-                                                <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="You must be logged in to add items to your wish list">
+                                                <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" title="You must be logged in to add items to your wish list"
+                                                aria-label="button to add or remove item to wishlist if logged in">
                                                     <i class="fa-sharp fa-regular fa-bookmark"></i></button>
                                             {% endif %}
                                         </form>
