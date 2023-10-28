@@ -99,72 +99,146 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ## Features
 
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-
+In this section the main current features of the application will be outlined, with a brief explanation, and corresponding images.
 
 ### Existing Features
 
 - **Nav Bar**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - At the head of every page a navigation bar is present, simple and effective. With a logo link to the homepage and a search bar to filter products by keywords. On the far right of the nav bar is a section of icons. If logged in there will be a bookmarks icon, and then for all users a profile icon and a shopping cart icon. The Profile icon is a dropdown menu, again displaying different options depending on the users logged in status. If logged-in it will have log out and profile page links, if logged-out in will have log-in or sign up options, and finally if a super user / staff memeber is logged-in, an additional stock management link will be present. The layout of the nav bar changes at different screen sizes. On small screens the seach box is under the rest of the content, if larger screen, the search bar is inline with the rest of the navbar content
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation)
 
-- ****
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- **Banners**
 
-![screenshot](documentation/feature02.png)
+    - At the top of the page and under the hero image, black and white banners are present, diplaying text for free delivery threshold and general info letting the user know imediately what the sites purpose is.
 
-- **Title for feature #3**
+![screenshot](documentation)
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+- **Category Navigation**
 
-![screenshot](documentation/feature03.png)
+    - Under the the main nav bar section is a cotegory navigation bar. An inline row of links to pages displaying products of that category. The "vinyls" link is a drop down menu with more links to refine down into the vinyl products, including a link to a page displaying all the genres.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+![screenshot](documentation)
 
-Repeat as necessary for as many features as your site contains.
+- **Hero Image**
 
-Hint: the more, the merrier!
+    - On the home page only under all the navigation bars, a large full width hero image is present. An image of a stack of vinyl records with a pair of headphones. Overlayed on this is a logo image. A black circle with the sites name and subtitle, in black and white, matching the banners.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+![screenshot](documentation)
+
+- **Footer**
+
+    - At the foot of every page is a footer section. (good place for it ;) Where the user will find some more navigation links, social media links, company descrption and an area to subscribe to the monthly newsletter. Styled with the secondary background colour to stand out as adifferent section.
+
+![screenshot](documentation)
+
+- **Product List**
+
+    - The main section of the homepage, an area where all the products are displayed.Each product is displayed on its own card, with some essential info about the item. Including a button to add or remove from the wishlist, an add to cart button, tags for the category and genre the item belongs to (each a link to filter by that particular category or grnre). The artist name is also a filtering link. If the user is a superuser an edit and delete link will be present for the staff to manage stock. The product list will be populated with all products at first, and can be filtered from this page, only changing the items being shown, the rest of the template stays the same. The list shows 12 items and is paginated for anthing more than that. The list area takes up the majority of the screen width, with a sorting / filtering column to the left on large screen, but it takes up full width on smaller screens.
+
+![screenshot](documentation)
+
+- **Filters**
+
+    - Most of the filtering can be done from a column on the left of the product list. With a sort-by section organising all the stock by price hi-low / low-hi, or year hi-low / low-hi. below is a genres list, which can be scrolled through. Each genre a link to populate the page with stock from that genre, and below that and artist filter list, working the same as the genre list. On smaller screen, this functionallity is moved to 3 drop down buttons at the top od the product list, working the same way. 
+
+![screenshot](documentation)
+
+- **Product Detail Page**
+
+    - The product detail page is found by clicking the image or title of any item. This page shows the image of the item, on one side with the info to the right. On smaller screens this moves to on top of each other. The info section has all the same featues as the product card on the list, with wishist button, and an add to cart button. It also has a quantity selector to decide a quatity to be added to the cart. It also has a description of the item. Below the image is a keep shopping button bringing the user back to the product list page. Below the detail section is the customer review section
+
+![screenshot](documentation)
+
+- **Reviews Section**
+
+    - Here all previous reviews of the current product left by other users are displayed. One on top of another. these are displayed in the secondary bacground colour creating a border from other content. The user name and when it ws created is displayed at the top of each review. Below this is the rating they left for the item. displayed as a integer out of 5, and displayed as a corresponding emoticon. A different face depending on the rating left by the user. Under the rating, the main body of the review. On the to of the review section, a counter for the number of reviews and a avg ratings counter. Above that again is a link where a logged in user can get to the page to leave a review.
+
+![screenshot](documentation)
+
+- **Review Form**
+
+    - On this page a very simple form with a text field for the body of the review and a dropdown list to pick their rating, 1 to 5. To the left of the form an image of the item and some info on it. 
+
+![screenshot](documentation)
+
+- **Wishlist Controls**
+
+    - On the product card in the product list page and on the product detail page, a wishlist / bookmark button is displayed. If the user is logged it the button will add the item to thier wishlist. if it already exists in their wishlist it will display with a beat efect, and be coloured in solid. if clicked when beating it will remove it from their list.
+
+![screenshot](documentation)
+
+- **Wishlist Page**
+
+    - The wishlist page accessible from the bookmark icon in the navigation bar, all the items in the logged-in user's wishlist willl be displayed. In a similar format to that of the product list page. However each item card also displays a trash can icon, which will delete the item from the list. The page itself does not have any other features, no filterig or hero image.
+
+![screenshot](documentation)
+
+- **Genre Page**
+
+    - From the vinyl dropdown in the category nav bar, an option for genres is diplayed. This link will bring the user to a page of all the different music genres. These are displayed as a grid of images, each image represents a genre. With the name printed over the image. Each image / genre is a link to the products list page where all the vinyl records of that genre will be listed.
+
+![screenshot](documentation)
+
+- **Profile**
+
+    - The profile page consists of a form where the users shipping  details are displayed, if they have saved them when checking out from a previous order. The details can be edited from this from. Or entered, if not already saved. To the left of the form is a section displaying all the current users previous orders, with details of each, order number, date, items and order total. The order number itself is a link to the original success page after that order was purcheased with more info on that order.
+
+![screenshot](documentation)
+
+- **Cart**
+
+    - The cart page, displays all the items the current user has added to their cart ready to purchase. They are displayed in a table. With the ability to change quantity or remove from cart for each item in the cart. Below that, a box with total cost of items in the cart, total cost of delivery, and a grand total. If the total is over the delivery thereshold, the delivery will be set to 0, if not, the delivery cost will be displayed and added to grand total. And message showing how much more to spend to get free delivery. From here the user can return to the store or head to the checkout to make a purchase.
+
+![screenshot](documentation)
+
+- **Checkout**
+
+    - In the checkout page a list of the items in the cart is displayed, with the same total, delivery and grand totals shown as the order summary. To the left of that, a form for their details. If their details are saved from previous order or the profile page, the fields of the form will be pre-populated, if not they must be filled in. Below this form, is the stripe card payment widget. Asking for a card number, cvc code and a expiry date for the card. Once details are entered, a secure payment button can be clicked sending the appropriate info to stripe. The page will be overlayed with a opaque layer and a spinning vinyl record, once payment and backend work is finished the checkout success page will appear, or an error message if payment was not completed.
+
+![screenshot](documentation)
+
+- **About Page**
+
+    - From the footer on any page their is a list of links, contact us, about us, shipping, and T&C's. Each link will bring the user to the same about page, but depending on which link is clicked, it will send them to the appropriate section within that page. The first section is the contact us. From here the user can find all teh details for the different ways to contact the complany, phone number, social icons, email, and a button to send a direct message through the site. This is only available to logged it users. The about section below the contact us section has a few paragraphs about the site and company, below that is the shipping info section, explaining their policy on shipping and returns. And finally the T&C's section is below that. This outlines the terms and condition to the site. Although all these sections are on one page they are easliy accessed through their own links. But once on it, the user can quickly and effortlessly move to the others. Users quite often find themselves in one and realise they need the other.
+
+![screenshot](documentation)
+
+- **Contact Messaging**
+
+    - In the contact us section of the about us page, there is a link to send a direct message to the company. This link if logged -in will direct the user to a form where they can send a message. this message is stored directly in the sites database and is accessible from the admin panel.
+
+![screenshot](documentation)
+
+- **Newsletter Subscription**
+
+    - In the footer section of each page, there is a form to subscribe to the monthly newsletter. This ia a simple single email input field, where the user enters their email address and hits submit. If its valid and not already in the database, the user will be notified, and the email saved to the newsletter mailing list.
+
+![screenshot](documentation)
+
+**Toast Messages**
+
+    - Stored in the base html file is a pop up message box. This appears in the top right of any page, when something on the backend happens where the user has to be notified. For example a form like a review was completed and saved a success message appears, if it wasnt saved, an error message will appear. These are in place site wide for all types of actions. When the user adds something to their cart, a success message is displayed. This will also display an summary of their shopping cart. showing a list of items and totals. They can be triggered for successes, error, alerts and information. A very important part of the application. keeping the user informed of what is happening.
+
+![screenshot](documentation)
+
+
 
 ### Future Features
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+While the site is functioning well and hitting the user stories criteria. A good application is never finished. Future development is needed to increase its robustness, and to offer the customers a better service. I will outline some future feature ideas I have
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Blog
+    - A site owner currated blog, sharing other resources to their customers, like top 10 lists of albums, how to clean your turntables needle etc. If these are from good sources, it will also help SEO.
+- Increased genre filtering, (sub-genres)
+    - A wider range of genres, or a deeper level of genres, e.g within blues, could be bluegrass, delta blues, jump blues etc 
+- The reviews
+    - The reviews section could be expanded, with more CRUD functionallity from the users end. And make it a more of a comments section.
 
 ## Tools & Technologies Used
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
