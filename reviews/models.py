@@ -5,7 +5,9 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 
 class CustomerReviews(models.Model):
-    verbose_name_plural = 'Reviews'
+
+    class Meta:
+        verbose_name_plural = 'customer reviews'
 
     RATING_CHOICES = (
         (1, '1'),

@@ -18,12 +18,25 @@ class ProductForm(forms.ModelForm):
         friendly_names = [(c.id, c.get_friendly_name()) for c in categories]
         genres = Genre.objects.all()
         genre_friendly_names = [(g.id, g.get_friendly_name()) for g in genres]
+        print(genre_friendly_names)
+        genre_friendly_names.append((None, "----"))
+        print(genre_friendly_names)
+
+        # genre_friendly_names.append((17, "null"))
+        # for item in genre_friendly_names:
+        # print(self.fields[Genre].choices)
 
         self.fields['category'].choices = friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
 
-        self.fields['genre'].choices = genre_friendly_names
-        self.fields['genre'].empty_label = "Null"
+        # print(self.fields['genre'].choices)
+
+        choices = self.fields['genre'].choices = genre_friendly_names
+        choices.append((17, "Null"))
+        # choices.append((17, "null"))
+        # print(choices)
+        # self.fields['genre'].choices = "Null"
+
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'border-black rounded-0'
