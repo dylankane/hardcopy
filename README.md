@@ -13,28 +13,22 @@ The live site can be found here:[HARD COPY](https://hard-copy-dca8835ff546.herok
 
 
 
-## UX
+## UX / UI
 
-The design process for this project
-
+The HARD COPY design has been inspired by the old side street record shops, with bins of dusty records, not an all white phone shop. Not aiming to be ultra minimalist or modern in style, but still offering the modern interface features users have come to expect. It is still a clean design without un-needed clutter. The idea is to have easy to find products with intuitive filtering systems. Features like product customer reviews, user currated wishlists, and frictionless payment steps with coherent and consistent style. A style that stands out, a classic / retro feel, dull colours with a 70's feel. The colours and style features are not overpowering , but subtle in their application. A soft backfround colour letting the product images be center of attention. Elements are styled with square corners and well contrasted colours.
 ### Colour Scheme
 
+The colour scheme is made up of a soft yellow toned off white background colour, paired with a dark brown / red text and element colour, that alone creates the desired design / style. These two colours alternate from background to text where contrast is needed e.g buttons. The other colour used is a variation of the text colour. By lowering its opacity and having it layered over the off white background, it creates a nice colour tone, used to highlight areas, like order detail sections in the cart page.
 
-Explain your colours and the colour scheme.
-
+Other colours used are standard black and white for logo and banners on the hero image, used as a contrast to the rest of the site to stand out, and also a throw back to old black and white price tags. Accent colours are used for special features like delete buttons or pop up message.
 
 - `#f4f1e0` Background colour used throughout the site.
 - `#321e1e24` Secondary background colour used to highlight particular areas of pages (Same as text colour but with low opacity).
 - `#321e1e;` Main Text.
-- `#f4f1e0` Secondary text used for dark backgrounds.
-
-Black and white have also been used for traditional style banners and logo on the hero image
-
 
 I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
 
 ![screenshot](documentation/features/hardcopy-coolors.png)
-
 
 I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
 
@@ -50,10 +44,9 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 
 ### Typography
 
+I have used google fints to choose and implement the text fonts. Using Oswald as the main headers / titles font. Its a block letter looking really well when used in uppercase words, stands out and suits the style. The secondary font is Noto Sans, an easy on the eye font, and still has that boxy look that compliments the main font.
 
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
+FontAwesome was used for all the icons accross the site. Most of which are standard icons that users are used to, making site navigation intuitive, and  keeping text to a minimum. The one icon worth pointing out, that is a bit different, is the hand pointing left or right, for navigating. A slightly unusual choice that helps keep a bit of consistency in the style.
 
 
 - [Oswald](https://fonts.google.com/specimen/Oswald) was used for the primary headers and titles.
