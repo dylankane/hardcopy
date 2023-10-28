@@ -57,7 +57,8 @@ FontAwesome was used for all the icons accross the site. Most of which are stand
 
 ## User Stories
 
-Explain user stories proccess
+For the development proccess, I used user stories to guide the design in the right direction, keeping the customer and site staffs needs front and center.
+Before development began a number of user stories, were outlined, and ducumented with agile tools. This meant it was easier to stay on track and keep focus.
 
 ![screenshot](documentation/general/hardcopy-agile-sheet.png)
 ![screenshot](documentation/general/hardcopy-agile-sheet-2.png)
@@ -243,8 +244,6 @@ While the site is functioning well and hitting the user stories criteria. A good
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for an enhanced responsive layout.
-- [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -252,15 +251,10 @@ While the site is functioning well and hitting the user stories criteria. A good
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
 - [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
 
@@ -570,20 +564,54 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 - **Could Have**: has small impact if left out (*20% of stories*)
 - **Won't Have**: not a priority for this iteration
 
-## Ecommerce Business Model
+## Ecommerce Business Model (HARD COPY)
 
-This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
-It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
-such as monthly/annual subscriptions.
+HARD COPY is a new online vinyl record store that will sell vinyl records of all musical genres, related audio equipment, and some music themed merchandise. The business will be a business-to-customer (B2C) model, and will target music enthusiasts of all ages and backgrounds. Customers with a long history with the vinyl format or new-comers to the format, which is not only still popular but growing as a market.
 
-It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
+HARD COPY will be differentiated from other online vinyl record stores by its focus on customer service, its wide selection of records, and its competitive prices. The market place itself will be its biggest differentiating feature. As an online store only the website is its interface with its customers. Its store is built and designed to attract customers, and keep them coming back with an easy-to-use and eye pleasing UI. Based around a classic looking and worm aesthic. Rather than aiming to be modern and sleek the inspiration is the notalgic memories of rumaging throuhgh dusty record bins in side street record shops.
 
-Social media can potentially build a community of users around the business, and boost site visitor numbers,
-especially when using larger platforms such a Facebook.
+### Products and Services
 
-A newsletter list can be used by the business to send regular messages to site users.
-For example, what items are on special offer, new items in stock,
-updates to business hours, notifications of events, and much more!
+HARD COPY will sell a wide range of vinyl records, including new and used records, rare and out-of-print records, and limited edition releases. The store will also sell a variety of audio equipment, such as turntables, speakers, and amplifiers. Additionally, HARD COPY will sell a selection of small music themed merchandise, such as badges, mugs, t-shirts, posters, and hats. A customer review section is also an important part of the service. Allowing customers to leave reviews and rate albums and products. Can become a discussion area.
+
+### Target Market
+
+HARD COPY's target market is music enthusiasts of all ages and backgrounds. The business will focus on customers who are passionate about music and who value the experience of listening to and playing vinyl records. This market while it seems niche, is in reality very wide, from nostalgic listeners to session DJs, and as the only real surviving pyhsical music format, fans of particular artists desire a "hard copy" of new releases to collect. Another market HARD COPY will target is the gift market. With collectable vinyl records and music merch, a very popular gift idea to all types of music lovers.
+As a luxury product, with a large portion of potential customers being willing to spend money for quality and treat is as a hobby, people with discretionary income will be a target also.
+
+### Marketing Plan
+
+HARD COPY will use a variety of marketing strategies to reach its target market. These strategies will include:
+
+Search engine optimization (SEO): HARD COPY will optimize its website for search engines so that potential customers can easily find the store online.
+Social media marketing: HARD COPY will use many social media platforms to connect with potential customers and promote its products and services. Facebook in particular will be its first and main platform to push on.
+Email marketing: HARD COPY will use a monthly subscription newsletter to keep customers informed about new releases, promotions, and other news from the store.
+
+### Launch Plan
+
+HARD COPY will aim to launch fully operational by late October to gain the benifits of the large Christmas retail market.
+
+HARD COPY will be launched in the following stages:
+
+Website development: HARD COPY will develop a website that is easy to use and navigate. The website will feature a wide selection of records, as well as information about the store's products and services.
+
+Marketing and advertising: HARD COPY will begin marketing and advertising its products and services to its target market accross all social platforms. Notifing potential customers of extra launch discounts.
+
+Website launch: HARD COPY will launch its website and begin accepting orders from customers.
+
+
+### Goals
+
+HARD COPY's short-term goals include:
+
+Generate €75,000 in revenue in the first year of operation.
+Establish a customer base of 1,500 customers in the first year of operation. Coming from an estimated 30,000 visitors from across Ireland anf the EU with a 5% conversion rate.
+Become the go-to online vinyl record store for music enthusiasts.
+
+
+HARD COPY is a new online vinyl record store that has the potential to be successful. The business has a strong target market, and a robust marketing plan, and unique look. It is well-positioned to become the go-to online vinyl record store for music enthusiasts in the local area.
+
+
 
 ## Search Engine Optimization (SEO) & Social Media Marketing
 
@@ -594,7 +622,24 @@ when searching online to find my page easily from a search engine.
 This included a series of the following keyword types
 
 - Short-tail (head terms) keywords
+ - vinyl
+ - vinyl records
+ - vinyl online
+ - LP
+ - vinyl collection
+ - record shop
+ - audio equipment
+ - turntables
+ - rare vinyl
+ - buy records
+
 - Long-tail keywords
+ - Best online vinyl record store
+ - vinyl records home delivery
+ - Best online vinyl record stores for collectors
+ - Best online vinyl record stores for beginners
+ - Where to buy rare vinyl records online
+ - Best online vinyl record stores for classic rock
 
 I also played around with [Word Tracker](https://www.wordtracker.com) a bit
 to check the frequency of some of my site's primary keywords (only until the free trial expired).
@@ -637,49 +682,20 @@ provided by Code Institute.
 
 ### Newsletter Marketing
 
-I have incorporate a newsletter sign-up form on my application, to allow users to supply their
-email address if they are interested in learning more. 
+I have incorporated a newsletter sign-up form on my application, to allow users to supply their
+email address if they are interested in learning more. In the footer of every page there is a simple email input box witha submit button. It is as simple as that. Once a user has submitted there emailaddress they are notified and tolsd they will recieve their first newlwtter, on the first week of the next month. 
+The email address are stored in its own model within the database with no links to other models, keeping it seperate. The site staff now have access to a list of subscibers to forward the monthly newsletters to.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-Option 1 (MailChimp):
-- Sign up for a Mailchimp account
-- This allows up to 2,500 subscription email sends per month
-- Incorporate the code and scripts into your project like in the CI lessons.
 
-Option 2 (Django):
-- Create a custom newsletter app in your project, with a custom model.
-- This method satisfies two assessment criteria:
-    - include a newsletter
-    - one of your custom models
-- It doesn't need anything except the "email" on the model.
-- Example:
-    ```python
-    class Newsletter(models.Model):
-    email = models.EmailField(null=False, blank=False)
-
-    def __str__(self):
-        return self.email
-    ```
 - Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
     - You can trigger an email sent out to subscribed users when new products are added to the site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Deployment
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-**IMPORTANT:**
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 The live deployed application can be found deployed on [Heroku](https://hard-copy-dca8835ff546.herokuapp.com).
 
@@ -986,14 +1002,6 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-### Local VS Deployment
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ## Credits
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
@@ -1060,15 +1068,8 @@ by sending yourself the following command: `!freemedia`.
 
 ### Acknowledgements
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
+- I would like to thank my Code Institute mentor, Rory Patrick Sheridan for their support and advice throughout the development of this project, and previous projects.
+- I would like to thank my previous Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the course and previous projects.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for its wealth of advice and moral support.
+- I would like to thank my partner Isabel and our kids, for their patience and support during this transition into software development.
