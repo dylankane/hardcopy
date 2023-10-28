@@ -1,13 +1,13 @@
 # HARDCOPY
+HARD COPY is a e-commerce application. An online vinyl record store. Selling vinyl records from all genres, audio equipment and music themed merchandise.
+A market place built to encourage vinyl lovers to come and rumage through the stock and easily make purchases they wont regret. A website with many features and a great UX, with a unique style. HARD COPY is a B2C e-commerce site selling physical products directly to customers. With a payment system using Stripe. A large stock base easily navigated around by category, genre or artists. Features include wishlists, customer reviews and customer ratings of any products. A robust application with users needs at the forefront, and built for staff to easily manage stock and content. The application has been built with Django Frameworks, based on the Python programming language. Front end is rendered with HTML and CSS, helped with the Bootstrap framework. With JavaScript via the jQuery library to manage some front-end logic.
 
+This site aims to bring an easy to use, pleasant space where vinyl enthusiasts will come for all the vinyl needs. Creating a profitable and highly functioning e-commerce platform, that meets the brief for the business needs. A good starting point for a new and growing online store. Easily added to and improved as the business needs change.
 
+I will explain in more detail all the features, tools used, proccesses followed and testing undertaken below.
 
-Overview of your project.
-"sales pitch".
+The live site can be found here:[HARD COPY](https://hard-copy-dca8835ff546.herokuapp.com/)
 
-
-
-What the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
 
 ![screenshot](documentation/features/mockup.png)
 
