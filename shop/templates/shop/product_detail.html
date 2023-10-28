@@ -40,16 +40,20 @@
                 {% endif %}
                     <p class="mb-2" id="product-detail-description">{{ product.description }}</p>
                     <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
-                {% if product.category %}
+                
                     <p class="small mt-1 mb-0 tags">
+                {% if product.category %}
                     <a class="mx-3" href="{% url 'shop' %}?category={{ product.category.name }}">
                         <i class="fa-solid fa-hashtag"></i>{{ product.category.friendly_name }}
                     </a>
+                {% endif %}
+                {% if product.genre %}
                     <a class="mx-3" href="{% url 'shop' %}?genre={{ product.genre.name }}">
                         <i class="fa-solid fa-hashtag"></i>{{ product.genre.friendly_name }}
                     </a>
-                    </p>
                 {% endif %}
+                    </p>
+                
                 <!-- Wish list button -->
                 <form class="wish_form" action="{% url 'wish_list' product.id %}?source=product_detail" method="POST">
                     {% csrf_token %}

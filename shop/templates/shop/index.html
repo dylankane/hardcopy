@@ -57,7 +57,7 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body p-0 w-100">
-                                    <!-- wishlist -->
+  
                                     <div class="float-right">
                                         <form class="wish_form" action="{% url 'wish_list' product.id %}?source=shop" method="POST">
                                             {% csrf_token %}
@@ -85,10 +85,11 @@
                                     </p>
                                     {% if product.artist %}
                                     <p class="mb-0 text-left">
-                                        <a href="{% url 'shop' %}?artist={{ product.artist }}">{{ product.artist }}</a>
+                                        <a href="{% url 'shop' %}?artist={{ product.artist|urlencode }}">{{ product.artist }}</a>
                                     </p>
                                     {% endif %}
                                 </div>
+                             
                                 <div class="card-footer p-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col mt-2">

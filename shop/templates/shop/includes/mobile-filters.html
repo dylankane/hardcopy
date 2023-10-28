@@ -52,7 +52,7 @@
                         <h3>Artists</h3>
                         <ul class="p-0 sidebar-lists">
                             {% for artist in artists %}
-                            <li><a class="p-2" href="{% url 'shop' %}?artist={{ artist }}">{{ artist }}</a></li>
+                            <li><a class="p-2" href="{% url 'shop' %}?artist={{ artist|urlencode }}">{{ artist }}</a></li>
                             <li class="dropdown-divider"></li>
                             {% endfor %}
                         </ul>
