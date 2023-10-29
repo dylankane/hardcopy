@@ -8,7 +8,6 @@
     <div class="row">
         <div class="col-12 mt-5 mb-5">
             <!-- Title -->
-            <hr class="w-75">
             <div class="row">
                 <div class="col text-center mt-3">
                     <h2>YOUR WISH LIST</h2>
@@ -46,7 +45,7 @@
                                     </p>
                                     {% if product.product.artist %}
                                     <p class="mb-0 text-left">
-                                        <a class="p-1" href="{% url 'shop' %}?artist={{ product.product.artist }}">{{ product.product.artist }}</a>
+                                        <a class="p-1" href="{% url 'shop' %}?artist={{ product.product.artist|urlencode }}">{{ product.product.artist }}</a>
                                     </p>
                                     {% endif %}
                                 </div>
@@ -89,6 +88,12 @@
                             </a>
                         </div>
                         {% endfor %}
+                    </div>
+                    <div class="row-12 mt-3 pl-2 text-center">
+                        <a href="{% url 'shop' %}" class="btn btn-dark rounded-0 mb-2 ml-2 w-50">
+                            <span class="icon"><i class="fa-regular fa-hand-point-left"></i>
+                            </span><span>KEEP SHOPPING</span>
+                        </a>
                     </div>
                 </div>
             </div>

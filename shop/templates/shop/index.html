@@ -8,7 +8,7 @@
         <img src="{{ MEDIA_URL }}Hard-Copy-logo-modified-small.png" alt="Logo image with company name">
     </p>
 </div>
-<div class="m-0 p-0 w-100">
+<div class="m-0 p-0 w-100 d-none d-md-block">
     <p class="banner lead m-0 rounded-0 w-100 text-center p-2 text-uppercase">One stop shop for all your vinyl record needs, eclectic mix of music, equipment and merch!!
     </p>
 </div>
@@ -42,6 +42,8 @@
             <div class="row">
                 <div class="product-container col-10 offset-1">
                     <div class="row mt-1 mb-2">
+                        <a class="btn btn-alt w-100 rounded-0 m-4" href="{% url 'shop' %}#footer">Subscribe To Our Newsletter<span>
+                            <i class="fa-solid fa-chevron-down"></i></span></a>
                         {% for product in page_obj %}
                         <div class="col-6 col-md-4 col-xl-3 mb-4">
                             <div class="card h-100 border-0">
@@ -181,7 +183,7 @@
                                     <span class="current-page p-2 text-muted">{{ num }}</span>
                                 </li>
                                 {% else %}
-                                <li>
+                                <li class="d-none d-md-block">
                                     <a class="p-2" href="?page={{ num }}">{{ num }}</a>
                                 </li>
                                 {% endif %}

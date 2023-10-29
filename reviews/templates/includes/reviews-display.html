@@ -53,8 +53,7 @@
                         </p>
                         {% if user == review.author %}
                         {{ review.body | linebreaks }}
-                        <a href="#" class="badge text-bg-light px-2">Delete</a>
-                        <a href="#" class="badge text-bg-light px-2">Edit</a>
+                        <p class="text-muted">This Is Your Review</p>
                         {% else %}
                         {{ review.body | linebreaks }}
                         {% endif %}
