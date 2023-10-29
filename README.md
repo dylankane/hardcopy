@@ -257,6 +257,7 @@ While the site is functioning well and hitting the user stories criteria. A good
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+- [Canva](https://www.canva.com/) used for editing images with text / logos.
 
 ## Database Design
 
@@ -686,11 +687,6 @@ I have incorporated a newsletter sign-up form on my application, to allow users 
 email address if they are interested in learning more. In the footer of every page there is a simple email input box witha submit button. It is as simple as that. Once a user has submitted there emailaddress they are notified and tolsd they will recieve their first newlwtter, on the first week of the next month. 
 The email address are stored in its own model within the database with no links to other models, keeping it seperate. The site staff now have access to a list of subscibers to forward the monthly newsletters to.
 
-
-
-- Consider using the same `send_mail()` functionality used on the `webhook_handler.py` file.
-    - You can trigger an email sent out to subscribed users when new products are added to the site!
-
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
@@ -1004,67 +1000,37 @@ You can fork this repository by using the following steps:
 
 ## Credits
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-### Content
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [Discogs](https://www.discogs.com/) | Data for fixture files | I used this site to gather all the data for the vinyl records, for my fixture files  |
+| [StackOverflow](https://stackoverflow.com/questions/65662459/django-how-to-display-error-if-the-query-results-are-empty) | entire site | How to return an error message when a query is empty from the template |
+| [JSfiddle](https://jsfiddle.net/bootstrapious/c7ash30w) | footer | used a template to build the footer layout |
+| [StackOverflow](https://stackoverflow.com/questions/16722451/dealing-with-spaces-in-urls-in-djangos-templates) | artist query urls | Info on using |urlencode |
+| [GitHub](https://github.com/WMRamadan/django-product-review-app) | reviews app | A public reviews app on github, used for inspiration in building the reviews app |
+| [Djangocentral](https://djangocentral.com/capturing-query-parameters-of-requestget-in-django/#google_vignette) | multiple locations | Capturing parameters of request.get |
+| [StackOverflow](https://stackoverflow.com/questions/7503241/how-to-obtain-a-queryset-of-all-rows-with-specific-fields-for-each-one-of-them) | artist list | getting a query of all the unique artist names in a list  |
+| [StackOverflow](https://stackoverflow.com/questions/42491691/how-do-i-add-custom-css-to-crispy-forms) | forms | add custom CSS to crispy forms |
+| [YouTube](https://www.youtube.com/watch?v=JEBFTM4ZJyY) | mobile filtering | To make a dropdown menu full width |
+| [Bootstrap documentation](https://getbootstrap.com/) | entire site | code snippets used from here in mutiple locations like modals and dropdown menus |
+| [Django documentation](https://docs.djangoproject.com/) | entire site | code snippets used from here in mutiple locations like getting average rating of review |
+| General | entire site | General help with the code side of this project has come from the code institute slack community, tutor support, and my mentor Rory |
 
-### Media
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Media / Content
 
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [Discogs](https://www.discogs.com/) | entire site| | data for fixture files | I used this site to gather all the data for the vinyl records, for my fixture files  |
+| [Discogs](https://www.discogs.com/) | entire Site | images | This is where I got all teh data for fixtures and also the images for each vinyl album |
+| [Currys](https://www.currys.co.uk/) | entire site | product | Here I found images and specs for audio equipment to create placeholder products |
+| [Unsplash](https://unsplash.com/photos/wireless-headphones-leaning-on-books-T3mKJXfdims) | home page | image | hero image background |
+| [Gauger](https://gauger.io/ ) | favicon | favicon | tool to create a favicon icon to load in head of templates |
+| [Unspalsh](https://unsplash.com/) | genre page | images | used to create the images on the genre page, with 'canva' to edit |
+| [Canva](https://www.canva.com/) | genre page | image | Used to edit images with text overlayed |
+| [Canva](https://www.canva.com/) | logo | image | Used to create black and white logo over the hero image |
 
 ### Acknowledgements
 
