@@ -20,7 +20,7 @@
                         {% for genre in genres %}
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4">
                             <div class="card h-100 border-0">
-                                <a href="{% url 'shop' %}?genre={{ genre.name }}">
+                                <a href="{% url 'shop' %}?genre={{ genre.name }}" aria-label="{{ genre.name }}">
                                     <img class="card-img-top img-fluid mb-2" src="{{ genre.image.url }}"
                                         alt="{{ genre.name }}">
                                 </a>

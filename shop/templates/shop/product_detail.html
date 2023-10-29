@@ -43,12 +43,12 @@
                 
                     <p class="small mt-1 mb-2 tags">
                 {% if product.category %}
-                    <a class="mx-3 p-1" href="{% url 'shop' %}?category={{ product.category.name }}">
+                    <a class="mx-3 p-1" href="{% url 'shop' %}?category={{ product.category.name }}" aria-label="{{ product.category.friendly_name }}">
                         <i class="fa-solid fa-hashtag"></i>{{ product.category.friendly_name }}
                     </a>
                 {% endif %}
                 {% if product.genre %}
-                    <a class="mx-3 p-1" href="{% url 'shop' %}?genre={{ product.genre.name }}">
+                    <a class="mx-3 p-1" href="{% url 'shop' %}?genre={{ product.genre.name }}" aria-label="{{ product.genre.friendly_name }}">
                         <i class="fa-solid fa-hashtag"></i>{{ product.genre.friendly_name }}
                     </a>
                 {% endif %}
@@ -59,14 +59,14 @@
                     {% csrf_token %}
                     {% if user.is_authenticated %}
                         {% if wished_for %}
-                            <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}"><i
+                            <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" aria-label="Remove from wish list"><i
                                     class="fa-sharp fa-solid fa-bookmark fa-beat"></i></button>
                         {% else %}
-                            <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}"><i
+                            <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" aria-label="Add from wish list"><i
                                     class="fa-sharp fa-regular fa-bookmark"></i></button>
                         {% endif %}
                     {% else %}
-                        <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}"><i
+                        <button class="wish-btn" type="submit" name="wish_list_id" value="{{product.id}}" aria-label="Wish Button"><i
                                 class="fa-sharp fa-regular fa-bookmark"></i></button>
                     {% endif %}
                 </form>

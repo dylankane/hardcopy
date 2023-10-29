@@ -70,9 +70,9 @@
 					<!-- Small serch bar -->
 					<div class="col-6 d-none d-lg-block">
 						<form class="d-flex input-group" method="GET" action="{% url 'shop' %}">
-							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label=" Submit search">
+							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label=" Search">
 							<div class="input-group-append">
-								<button class="form-control btn rounded-0" id="search-btn" type="submit">
+								<button class="form-control btn rounded-0" id="search-btn" type="submit" aria-label=" Submit search">
 									<span class="icon">
 										<i class="fa-solid fa-magnifying-glass"></i>
 									</span>
@@ -97,16 +97,16 @@
 								<div class="dropdown-menu rounded-0 mt-3" id="user-options" aria-labelledby="user-options" >
 									{% if request.user.is_authenticated %}
 										{% if request.user.is_superuser %}
-											<a href="{% url 'add_product' %}" class="dropdown-item">Stock Management</a>
+											<a href="{% url 'add_product' %}" class="dropdown-item" aria-label="Stock Management">Stock Management</a>
 											<p class="dropdown-divider"></p>
 										{% endif %}
-										<a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+										<a href="{% url 'profile' %}" class="dropdown-item" aria-label="My Profile">My Profile</a>
 										<p class="dropdown-divider"></p>
-										<a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+										<a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="Logout">Logout</a>
 									{% else %}
-										<a href="{% url 'account_signup' %}" class="dropdown-item">Sign Up</a>
+										<a href="{% url 'account_signup' %}" class="dropdown-item" aria-label="Sign Up">Sign Up</a>
 										<p class="dropdown-divider"></p>
-										<a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+										<a href="{% url 'account_login' %}" class="dropdown-item" aria-label="Login">Login</a>
 									{% endif %}
 								</div>
 							</li>
@@ -127,9 +127,9 @@
 				<div class="row w-100">
 					<div class="col-12 d-lg-none mt-3">
 						<form class="d-flex input-group" method="GET" action="{% url 'shop' %}">
-							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label=" Submit search">
+							<input type="text" name="q" class="form-control rounded-0" placeholder="SEARCH" aria-label=" Search">
 							<div class="input-group-append">
-								<button class="form-control btn rounded-0" id="search-btn-2" type="submit">
+								<button class="form-control btn rounded-0" id="search-btn-2" type="submit" aria-label=" Submit search">
 									<span class="icon">
 										<i class="fa-solid fa-magnifying-glass"></i>
 									</span>
@@ -147,58 +147,30 @@
 							VINYLS
 						</a>
 						<div class="dropdown-menu rounded-0" aria-labelledby="dropdownMenuLink">
-							<a class="dropdown-item" href="{% url 'shop' %}?category=vinyl,new_releases,clearance">ALL VINYLS</a>
+							<a class="dropdown-item" href="{% url 'shop' %}?category=vinyl,new_releases,clearance" aria-label="All Vinyls">ALL VINYLS</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="{% url 'genre_view' %}">GENRES</a>
+							<a class="dropdown-item" href="{% url 'genre_view' %}" aria-label="Genres"></a> >GENRES</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="{% url 'shop' %}?category=new_releases">NEW RELEASES</a>
+							<a class="dropdown-item" href="{% url 'shop' %}?category=new_releases" aria-label="New Releases"></a>>NEW RELEASES</a>
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="{% url 'shop' %}?category=clearance">CLEARANCE</a>
+							<a class="dropdown-item" href="{% url 'shop' %}?category=clearance" aria-label="Clearance">CLEARANCE</a>
 						</div>
 					</div>
 					<div class="col">
-						<a class="p-2" href="{% url 'shop' %}?category=equipment">EQUIPMENT</a>
+						<a class="p-2" href="{% url 'shop' %}?category=equipment" aria-label="Equipment">EQUIPMENT</a>
 					</div>
 					<div class="col">
-						<a class="p-2" href="{% url 'shop' %}?category=merchandise">MERCH</a>
+						<a class="p-2" href="{% url 'shop' %}?category=merchandise" aria-label="Merch">MERCH</a>
 					</div>
 					<div class="col d-none d-lg-block">
-						<a class="p-2" href="{% url 'shop' %}?category=new_releases">NEW RELEASES</a>
+						<a class="p-2" href="{% url 'shop' %}?category=new_releases" aria-label="New Releases">NEW RELEASES</a>
 					</div>
 					<div class="col d-none d-sm-block">
-						<a class="p-2" href="{% url 'shop' %}?category=clearance">CLEARANCE</a>
+						<a class="p-2" href="{% url 'shop' %}?category=clearance" aria-label="Clearance">CLEARANCE</a>
 					</div>
 				</div>
 			</div>
 		</nav>
-		<!-- Newsletter modal -->
-		<!-- <div class="modal fade" id="newsletterModal" tabindex="-1" role="dialog"
-			aria-labelledby="newsletterModalTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content rounded-0">
-					<div class="modal-header">
-						<h5 class="modal-title" id="newsletterModalTitle">HARD COPY NEWSLETTER</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<p class="text-muted mb-4">
-							Subscribe to our monthly newletter for up to date music news, new stock announcements, and
-							discounts!! Stay in
-							the know.
-						</p>
-						<form method="POST" action="{% url 'newsletter' %}">
-							{% csrf_token %}
-							{{ newsletter_form|crispy }}
-							<button type="submit" class="btn btn-dark rounded-0 w-100">SUBSCRIBE</button>
-						</form>
-						<p><small>Your data will not be used for anything other than our newsletter subscription.</small>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div> -->
 	</header>
 	{% if messages %}
 	<div class="message-box">
