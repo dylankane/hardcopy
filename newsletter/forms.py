@@ -3,6 +3,8 @@ from .models import Newsletter
 
 
 class NewsletterForm(forms.ModelForm):
+    prefix = 'newsletter_form'
+
     class Meta:
         model = Newsletter
         fields = (
