@@ -59,6 +59,11 @@ li {
     color: var(--background);
 }
 
+.btn-alt {
+    background-color: var(--background-secondary);
+    color: var(--text);
+}
+
 .btn-dark:hover {
     background-color: var(--background) !important;
     color: var(--text) !important;
@@ -109,6 +114,7 @@ li {
 .banner {
     background-color: black;
     color: white;
+    font-size: small;
 }
 
 
