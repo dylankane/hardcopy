@@ -98,30 +98,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 ## Browser Compatibility
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss testing the live/deployed site on various browsers.
-
-Consider testing at least 3 different browsers, if available on your system.
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Screenshot | Notes |
@@ -132,28 +108,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Responsiveness
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-I've tested my deployed project on multiple devices to check for responsiveness issues.
+I've tested my deployed project on multiple devices to check for responsiveness issues. These tests tested all pages on each device.
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
@@ -232,6 +187,10 @@ All these tests returned appropriate error.
 
 Below is a list of the main and most time consuming bugs I came accross. It is obviously not all the issues I came up against. But most were fixable with a short head scratch or a look through slack and or google. The usual url pathways and redirects gave plenty of errors when developing, and the inevitable typo issues. Or first iterations of a view function might not have the correct logic.
 
+- HTML validation was finding duplicate id values, in two places.
+
+    - To fix this for the profile and send message pages, I added a prefix to the newletter form, naming it uniquely. Due to the newsletter form being present on all pages, the email field rendered by crispy for each form, was creating a duplicate id value in the rendered html soursce code. The other instance was of duplicate id attribute. This was coming from the custom widget to handle the image file being uploaded to the add and edit product forms. The widget was creating an id attribute, and the element itself had been given an id, for the javascript to target. So the name of the file would be rendered. To fix this I used the id created by the widget for the javascript to target, and removed the redundant id attribute. 
+
 - Error 400 in stripe, making payment intent and charging
 
     - To fix this, I had to set the port on the local site to public from by gitpod workspace.
@@ -274,43 +233,14 @@ which was picking up the spaces in the artist names. Still worked but failed htm
 
 ## Unfixed Bugs
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+- SORT-BY. An issue with the filtering needs to be fixed still. While all the 'sort by' and filtering is working. The 'sort by' filters, will only re-order the list of all products and not sort the sub category / genre / artist lists. This was overlooked in the devolpment stage, only realised in testing not leaving enough time to fix. This should just involve a bit of re-structing in the view for the page, that also handles the queries. As the number of products is not extensive yet, this doesnt create too much of an issue, but it is important to fix for a fully functioning ecommerce site with a large inventory.
 
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
 
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
+- PERFORMANCE. Another issue is the loading performance. As seen in the lighthouse tests the performance score is not brilliant. This seems to be mainly down to the images loading. I should have used webp files for the images, although the cross browser compatibilty might not be great. The best solution I can think of for this is to write a function that will convert the images to webp from the code, without having to change all the stored files. With some research it seems there are a few possible ways to achieve this, using 'pillow'. this should still leave the original jpg / png files avaiable for browsers that dont still support webp format. Another thing worth looking into is the caching, and make sure it is set up efficiently.
 
-Some examples:
+- LAYOUT. Another issue with the site is the layout of the filtering links. While I think it looks good on large screens the solution, to handling the smaller screens feels a bit klunky. On small screens, the filtering is moved to 3 drop down menus. While it does work and is functioning, but from a design point of view i dont think it works very well. A slution could be a collapsible side menu, that could still be visible on large screens.
 
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- In testing I realised the the newletter form, when completed with an existing email address, it sends a error message, but this message really should be specific to why the form failed, notifyin the user it is due to the email already being subscribed.
 
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
 
-    ![screenshot](documentation/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
-
-    ![screenshot](documentation/unfixed-bug02.png)
-
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/unfixed-bug03.png)
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-There are no remaining bugs that I am aware of.
+Return back to the [README.md](README.md) file.
