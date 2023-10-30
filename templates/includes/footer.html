@@ -2,10 +2,9 @@
 	<div class="container-fluid p-5" id="footer">
 		<div class="row py-4">
 			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-				<h2 class="mb-4"><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h2>
-				<p class="font-italic text-muted">HARD COPY is an online vinyl record shop. A place for the lovers of
-					this
-					amazing format to find some great gems!!</p>
+				<h3 class="mb-4"><a href="{% url 'shop' %}" class="p-2">HARD COPY</a></h3>
+				<p class="font-italic">HARD COPY is an online vinyl record shop. A place for the lovers of
+					this amazing format to find some great gems!!</p>
 				<ul class="list-inline mt-4">
 					<li class="list-inline-item"><a href="https://www.facebook.com/" target="_blank" title="facebook"
 							class="social-icon"><i class="fa-brands fa-facebook fa-lg"></i></a></li>
@@ -20,41 +19,44 @@
 				</ul>
 			</div>
 			<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-				<h6 class="text-uppercase font-weight-bold mb-4">COMPANY</h6>
+				<h4 class="text-uppercase mb-4">COMPANY</h4>
 				<ul class="list-unstyled mb-0">
-					<li class="mb-2"><a href="{% url 'about' %}" class="text-muted p-2">Contact Us</a></li>
-					<li class="mb-2"><a href="{% url 'about' %}#about-section" class="text-muted p-2">About Us</a></li>
-					<li class="mb-2"><a href="{% url 'about' %}#shipping-section" class="text-muted p-2">Shipping</a>
-					</li>
-					<li class="mb-2"><a href="{% url 'about' %}#terms-section" class="text-muted p-2">T & C's</a></li>
+					<li class="mb-2"><a href="{% url 'about' %}" class="p-2">Contact Us</a></li>
+					<li class="mb-2"><a href="{% url 'about' %}#about-section" class="p-2">About Us</a></li>
+					<li class="mb-2"><a href="{% url 'about' %}#shipping-section" class="p-2">Shipping</a></li>
+					<li class="mb-2"><a href="{% url 'about' %}#terms-section" class="p-2">T & C's</a></li>
 				</ul>
 			</div>
 			<div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
-				<h6 class="text-uppercase font-weight-bold mb-4">ACCOUNTS</h6>
+				<h4 class="text-uppercase mb-4">ACCOUNTS</h4>
 				<ul class="list-unstyled mb-0">
-					<li class="mb-2"><a href="#" class="text-muted p-2">Login</a></li>
-					<li class="mb-2"><a href="#" class="text-muted p-2">Register</a></li>
-					<li class="mb-2"><a href="#" class="text-muted p-2">My Profile</a></li>
-					<li class="mb-2"><a href="#" class="text-muted p-2">Wish List</a></li>
+					{% if request.user.is_authenticated %}
+					<li class="mb-2"><a href="{% url 'account_logout' %}" class="p-2">Log-Out</a></li>
+					<li class="mb-2"><a href="{% url 'profile' %}" class="p-2">My Profile</a></li>
+					<li class="mb-2"><a href="{% url 'list_of_wishes' %}" class="p-2">Wish List</a></li>
+					{% else %}
+					<li class="mb-2"><a href="{% url 'account_login' %}" class="p-2">Log-In</a></li>
+					<li class="mb-2"><a href="{% url 'account_signup' %}" class="p-2">Register</a></li>
+					{% endif %}
 				</ul>
 			</div>
 			<div class="col-lg-4 col-md-6 mb-lg-0 newsletter-footer">
-				<h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
-				<p class="text-muted mb-4">
+				<h4 class="text-uppercase mb-4">Newsletter</h4>
+				<h5 class="mb-4">
 					Subscribe to our monthly newletter for up to date music news, new stock announcements, and
 					discounts!! Stay in
 					the know.
-				</p>
+				</h5>
 				<div>
 					<form method="POST" action="{% url 'newsletter' %}">
 						{% csrf_token %}
 						{{ newsletter_form|crispy }}
 						<button type="submit" class="btn btn-dark rounded-0">SUBMIT</button>
 					</form>
+					<p><small>Your data will not be used for anything other than our newsletter subscription.</small></p>
 				</div>
 			</div>
-			<p><small>Your data will not be used for anything other than our newsletter subscription.</small>
-			</p>
+			
 		</div>
 	</div>
 	<div class="row text-center">
