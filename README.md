@@ -664,7 +664,10 @@ Inside, I've included the default settings:
 
 ```
 User-agent: *
-Disallow:
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /profiles/
+Disallow: /cart/
 Sitemap: https://hard-copy-dca8835ff546.herokuapp.com/sitemap.xml
 ```
 
@@ -679,11 +682,14 @@ Further links for future implementation:
 Creating a strong social base (with participation) and linking that to the business site can help drive sales.
 Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
 
-I've created a mockup Facebook business account using the
-[Balsamiq template](https://code-institute-org.github.io/5P-Assessments-Handbook/files/Facebook_Mockups.zip)
-provided by Code Institute.
+I've created a Facebook business account:
 
-![screenshot](documentation/mockup-facebook.png)
+![screenshot](documentation/general/facebook1.png)
+![screenshot](documentation/general/facebook2.png)
+![screenshot](documentation/general/facebook3.png)
+![screenshot](documentation/general/facebook.png)
+
+As this is a fictional business this facebook page may be taken down So I wont link it directly in the site itself.
 
 ### Newsletter Marketing
 
