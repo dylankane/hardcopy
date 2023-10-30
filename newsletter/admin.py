@@ -3,7 +3,7 @@ from .models import Newsletter
 
 
 class NewsletterAdmin(admin.ModelAdmin):
-    list_display = ('email',)
+    list_display = ('email', 'subscribed_on',)
     list_filter = ('email', 'subscribed_on',)
     search_fields = ('email', 'subscribed_on',)
 
