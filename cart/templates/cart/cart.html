@@ -42,7 +42,7 @@
                             </td>
                             <td class="align-middle">
                                 <p>{{ item.product.name }}</p>
-                                <p class="text-muted">{{ item.product.artist }}</p>
+                                <p>{{ item.product.artist }}</p>
                             </td>
                             <td class="align-middle text-center">
                                 <p>€{{ item.product.price }}</p>
@@ -56,7 +56,7 @@
                                             <div class="input-group-prepend">
                                                 <button class="decrement-qty btn btn-dark rounded-0"
                                                     data-item_id="{{ item.item_id }}"
-                                                    id="decrement-qty_{{ item.item_id }}" aria label="decrement quantity">
+                                                    id="decrement-qty_{{ item.item_id }}" aria label="decrease quantity" title="decrease quantity">
                                                     <span>
                                                         <i class="fa-solid fa-minus"></i>
                                                     </span>
@@ -67,7 +67,7 @@
                                                 data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                             <div class="input-group-append">
                                                 <button class="increment-qty btn btn-dark rounded-0" data-item_id="{{ item.item_id }}"
-                                                    id="increment-qty_{{ item.item_id }}" aria label="increment quantity">
+                                                    id="increment-qty_{{ item.item_id }}" aria label="increase quantity" title="increase quantity">
                                                     <span>
                                                         <i class="fa-solid fa-plus"></i>
                                                     </span>
