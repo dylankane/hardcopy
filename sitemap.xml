@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/cart/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?category=vinyl,new_releases,clearance</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/genre_view/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?category=new_releases</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?category=clearance</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?category=equipment</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?category=merchandise</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?sort=price&amp;direction=asc</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?sort=price&amp;direction=desc</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?sort=release_date&amp;direction=asc</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?sort=release_date&amp;direction=desc</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=rock</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=indie_alternative</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=metal_punk</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=folk_singer_songwriter</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=electronic_dance</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=pop</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=country</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=jazz</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=funk_soul</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=classical</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=hip_hop</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=latin</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=stage_screen</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=reggae</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=blues</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=world</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Adele</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Amy%20Winehouse</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Animal%20Collective</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Arcade%20Fire</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Bad%20Brains</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=B.B.%20King</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Beyonc%C3%A9</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Black%20Sabbath</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Blur</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Bob%20Marley%20%26%20The%20Wailers</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Buena%20Vista%20Social%20Club</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Cupcake</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Daft%20Punk</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Dua%20Lipa</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Emma%20Anderson</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Fleet%20Foxes</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Gareth%20Brooks</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Glenn%20Gould</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Iggy%20And%20The%20Stooges</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Jamie%20xx</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=John%20Coltrane</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=John%20Lee%20Hooker</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Kacey%20Musgraves</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Kanye%20West</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Kendrick%20Lamar</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Led%20Zeppelin</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Les%20Mamans%20Du%20Congo</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Lorde</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Luis%20Miguel</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Megadeth</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Metallica</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Miley%20Cyrus</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Miranda%20Lambert</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Mothership%20Connection</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Muddy%20Waters</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Nicanor%20Zabaleta</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Nirvana</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Pink%20Floyd</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Planxty</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Pyotr%20Tchaikovsky</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Radiohead</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Rolling%20Stones</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Santana</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Solange</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Starcrawler</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Stevie%20Ray%20Vaughan</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Stevie%20Wonder</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Taylor%20Swift</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Chieftains</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Clancy%20Brothers</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Clash</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Flying%20Burrito%20Bros</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Pogues</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Prodigy</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Strokes</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Wailers</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20Weeknd</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20West%20Side%20Story</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=The%20White%20Stripes</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Van%20Morrison</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Various%20Artists</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Wilco</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Willie%20Nelson</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=Wu-Tang%20Clan</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?artist=None</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/34/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?category=vinyl</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/1/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/2/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/70/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?genre=</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/3/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/4/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/5/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/6/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/7/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/8/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/9/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/10/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?page=2</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?page=3</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?page=4</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?page=5</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?page=6</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?page=7</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/about/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/11/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/30/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/22/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/39/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/12/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/34/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/1/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/2/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/70/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/3/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/4/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/5/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/6/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/7/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/8/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/9/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/10/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/?page=1</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/contact/contact_message/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/11/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/30/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/22/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/39/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=/reviews/add_review/12/</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F34%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F1%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F2%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F70%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F3%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F4%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F5%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F6%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F7%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F8%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F9%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F10%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Fcontact%2Fcontact_message%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F11%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F30%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F22%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F39%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/signup/?next=%2Freviews%2Fadd_review%2F12%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F34%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F1%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F2%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F70%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F3%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F4%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F5%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F6%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F7%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F8%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F9%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F10%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Fcontact%2Fcontact_message%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F11%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F30%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F22%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F39%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://hard-copy-dca8835ff546.herokuapp.com/accounts/login/?next=%2Freviews%2Fadd_review%2F12%2F</loc>
+  <lastmod>2023-10-30T01:41:09+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>

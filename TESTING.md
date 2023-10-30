@@ -2,7 +2,12 @@
 
 Return back to the [README.md](README.md) file.
 
-Below I have outlined the different tests I have undertaken on this project to prove its robustness. 
+Below I have outlined the different tests I have undertaken on this project to prove its robustness.
+
+For testing the stipe payment system, the following card numbers can be used for different tests:
+Successful payment: 4242424242424242
+Failed payment: 4000000000009995
+Requires authentication: 4000002500003155
 
 ## Code Validation
 
@@ -236,7 +241,7 @@ which was picking up the spaces in the artist names. Still worked but failed htm
 - SORT-BY. An issue with the filtering needs to be fixed still. While all the 'sort by' and filtering is working. The 'sort by' filters, will only re-order the list of all products and not sort the sub category / genre / artist lists. This was overlooked in the devolpment stage, only realised in testing not leaving enough time to fix. This should just involve a bit of re-structing in the view for the page, that also handles the queries. As the number of products is not extensive yet, this doesnt create too much of an issue, but it is important to fix for a fully functioning ecommerce site with a large inventory.
 
 
-- PERFORMANCE. Another issue is the loading performance. As seen in the lighthouse tests the performance score is not brilliant. This seems to be mainly down to the images loading. I should have used webp files for the images, although the cross browser compatibilty might not be great. The best solution I can think of for this is to write a function that will convert the images to webp from the code, without having to change all the stored files. With some research it seems there are a few possible ways to achieve this, using 'pillow'. this should still leave the original jpg / png files avaiable for browsers that dont still support webp format. Another thing worth looking into is the caching, and make sure it is set up efficiently.
+- PERFORMANCE. Another issue is the loading performance. As seen in the lighthouse tests the performance score is not brilliant. This seems to be mainly down to the images loading. I should have used webp files for the images, although the cross browser compatibilty might not be great. The best solution I can find of for this is to write a function that will convert the images to webp from the code, using a module called django-webp-converter, without having to change all the stored files. With some research it seems there are a few possible ways to achieve this, using 'pillow'. This should still leave the original jpg / png files avaiable for browsers that dont still support webp format. Another thing worth looking into is the caching, and make sure it is set up efficiently.
 
 - LAYOUT. Another issue with the site is the layout of the filtering links. While I think it looks good on large screens the solution, to handling the smaller screens feels a bit klunky. On small screens, the filtering is moved to 3 drop down menus. While it does work and is functioning, but from a design point of view i dont think it works very well. A slution could be a collapsible side menu, that could still be visible on large screens.
 

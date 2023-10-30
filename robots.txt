@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /admin/
+Disallow: /profiles/
+Disallow: /cart/
+
+sitemap: https: https://hard-copy-dca8835ff546.herokuapp.com/sitemap.xml
