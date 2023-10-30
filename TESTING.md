@@ -124,34 +124,20 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 ## Lighthouse Audit
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
-| Page | Screenshot | Notes |
-| --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| Product detail | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
-| Wishlist | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
-| Cart | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Genre | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
-| Checkout | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| About | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
+| Page | Screenshot |
+| --- | --- |
+| Home | ![screenshot](documentation/testing/lighthouse-homepage.png) |
+| Product detail | ![screenshot](documentation/testing/lighthouse-product-page.png) |
+| Wishlist | ![screenshot](documentation/testing/lighthouse-wishlist-page.png) |
+| Cart | ![screenshot](documentation/testing/lighthouse-cart-page.png) |
+| Genre | ![screenshot](documentation/testing/lighthouse-genre.png) |
+| Checkout | ![screenshot](documentation/testing/lighthouse-checkout.png) |
+| About | ![screenshot](documentation/testing/lighthouse-about.png) |
+| Add product | ![screenshot](documentation/testing/lighthouse-add-product.png) |
+| Edit product | ![screenshot](documentation/testing/lighthouse-edit-product.png) |
 
 ## Defensive Programming
 
@@ -182,7 +168,7 @@ All these tests returned appropriate error.
 ![Product card testing](documentation/testing/product-card-test.png)
 
 ### Filters
-![Filter testing](documentation/testing/Form-tests.png)
+![Filter testing](documentation/testing/filter-tests.png)
 
 ### Navigation
 ![Navigation testing](documentation/testing/navigation-test.png)
