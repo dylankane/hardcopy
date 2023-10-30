@@ -196,6 +196,10 @@ thead {
     max-height: 150px;
 }
 
+#mobile-cart-total {
+    background-color: var(--background-secondary);
+}
+
 /* Dropdowns */
 
 #dropdownMenuLink {
