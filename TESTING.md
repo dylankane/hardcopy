@@ -183,85 +183,49 @@ Sample Lighthouse testing documentation:
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
-| Page | Size | Screenshot | Notes |
-| --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
-| About | Mobile | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
-| About | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Gallery | Mobile | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
-| Gallery | Desktop | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Page | Screenshot | Notes |
+| --- | --- | --- |
+| Home | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
+| Product detail | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
+| Wishlist | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
+| Cart | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
+| Genre | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
+| Checkout | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
+| About | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
 
 ## Defensive Programming
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
+### Restricted Areas
 
-Defensive programming (defensive design) is extremely important!
-
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-
-Flask/Django:
+Authentication tests were undertaken and passed using the following criteria:
 - Users cannot brute-force a URL to navigate to a restricted page
 - Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
 - Non-Authenticated users should not be able to access pages that require authentication
 - Standard users should not be able to access pages intended for superusers
 
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
+The following areas were tested: 
+- All auth account pages
+- Profile page
+- Review form
+- Send Message form
+- Wish List
+- Edit and delete product forms
+- Admin panel
 
-You should include any manual tests performed, and the expected results/outcome.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Defensive programming was manually tested with the below user acceptance testing:
+All these tests returned appropriate error.
 
 ### Forms
-
- - Search
-        Search bar will return items matching keywords and show a no stock message if keywords dont match
- - Newsletter
- - Send Message
- - Review
- - Add Product
- - Edit Product
- - Profile Details
- - Quatity Controls
- - Checkout
- - 
+![Form testing](documentation/testing/Form-tests.png)
 
 
-### Links
- - Home logo
- - Nav Bar
- - Categories
- - Product Card
- - Genre Page
- - 
- - 
- - 
- - 
- - 
+### Product Card
+![Product card testing](documentation/testing/product-card-test.png)
 
-### Restricted urls
- - Wish List
- - Send Message
- - Review
- - Profile
- - 
- - 
- - 
- - 
- - 
+### Filters
+![Filter testing](documentation/testing/Form-tests.png)
+
+### Navigation
+![Navigation testing](documentation/testing/navigation-test.png)
 
 
 ## Bugs
