@@ -12,19 +12,19 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | Screenshot | Notes |
 | --- | --- | --- |
-| index.html | ![screenshot](documentation) |  |
-| product_detail.html | ![screenshot](documentation) |  |
-| list_of_wishes.html | ![screenshot](documentation) |  |
-| profile.html | ![screenshot](documentation) |  |
-| genre_view.html | ![screenshot](documentation) |  |
-| about.html | ![screenshot](documentation) |  |
-| add_product.html | ![screenshot](documentation) |  |
-| edit_product.html | ![screenshot](documentation) |  |
-| cart.html | ![screenshot](documentation) |  |
-| checkout.html | ![screenshot](documentation) |  |
-| checkout_success.html | ![screenshot](documentation) |  |
-| contact_message.html | ![screenshot](documentation) |  |
-| add_review.html | ![screenshot](documentation) |  |
+| index.html | ![screenshot](documentation/testing/html-index.png) | Pass: No Errors |
+| product_detail.html | ![screenshot](documentation/testing/html-product-detail.png) | Pass: No Errors |
+| list_of_wishes.html | ![screenshot](documentation/testing/html-wishlist.png) | Pass: No Errors |
+| profile.html | ![screenshot](documentation/testing/html-profile.png) | Pass: No Errors |
+| genre_view.html | ![screenshot](documentation/testing/html-genre-view.png) | Pass: No Errors |
+| about.html | ![screenshot](documentation/testing/html-about.png) | Pass: No Errors |
+| add_product.html | ![screenshot](documentation/testing/html-add-product.png) | Pass: No Errors |
+| edit_product.html | ![screenshot](documentation/testing/html-edit-product.png) | Pass: No Errors |
+| cart.html | ![screenshot](documentation/testing/html-cart.png) | Pass: No Errors |
+| checkout.html | ![screenshot](documentation/testing/html-checkout.png) | Pass: No Errors |
+| checkout_success.html | ![screenshot](documentation/testing/html-checkout-success.png) | Pass: No Errors |
+| contact_message.html | ![screenshot](documentation/testing/html-send-message.png) | Pass: No Errors |
+| add_review.html | ![screenshot](documentation/testing/html-add_review.png) | Pass: No Errors |
 
 ### CSS
 
