@@ -23,8 +23,8 @@ def newsletter(request):
         else:
             messages.error(
                 request,
-                'An error has occurred, you have not been subscribed, check if\
-                    the email address in the form is valid')
+                'Email, was not added. Either not a valid email\
+                    or this email already exists on our subscription list.')
         return redirect(reverse('shop'))
     else:
         newsletter_form = NewsletterForm()
