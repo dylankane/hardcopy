@@ -126,14 +126,9 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox.png) | Works as expected |
-| Edge | ![screenshot](documentation/browser-edge.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave.png) | Works as expected |
-| Opera | ![screenshot](documentation/browser-opera.png) | Minor differences |
-| Internet Explorer | ![screenshot](documentation/browser-iex.png) | Does not work as expected |
-| x | x | repeat for any other tested browsers |
+| Chrome | ![screenshot](documentation/testing/browser-chrome.png) | Works as expected |
+| Firefox | ![screenshot](documentation/testing/browser-firefox.png) | Works as expected |
+| Edge | ![screenshot](documentation/testing/browser-edge2.png) | Works as expected |
 
 ## Responsiveness
 
