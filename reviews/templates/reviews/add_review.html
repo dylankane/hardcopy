@@ -12,11 +12,7 @@
             <h3>Leave a Review</h3>
             <form method="post">
                 {% csrf_token %}
-                <!-- {% if review_form %} -->
                 {{ review_form|crispy }}
-                <!-- {% else %}
-                <p>Review form is not provided to the template.</p> -->
-                <!-- {% endif %} -->
                 <button type="submit" class="btn btn-dark rounded-0 w-100">SUBMIT</button>
             </form>
             <div class="row mt-3 pl-2">

@@ -62,4 +62,3 @@ def delete_user(request):
             request, 'Your account has been successfully deleted.')
         return redirect('shop')
     return redirect(reverse('shop'))
-    # return render(request, 'shop')
